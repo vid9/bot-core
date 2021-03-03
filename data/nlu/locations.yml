@@ -1,0 +1,355 @@
+version: '2.0'
+nlu:
+  - lookup: location
+    examples: |
+      - Žužemberk
+      - Žirovnica
+      - Žiri
+      - Zrece
+      - Zgornje Jezersko
+      - Zgornja Kungota
+      - Žetale
+      - Železniki
+      - Zavrč
+      - Zalog
+      - Žalec
+      - Zagorje ob Savi
+      - Zagorje ob Savi
+      - Žabnica
+      - Vuzenica
+      - Vrtojba
+      - Vrhnika
+      - Vrhnika
+      - Vransko
+      - Volčja Draga
+      - Volavlje
+      - Vojnik
+      - Voglje
+      - Vodice
+      - Vnanje Gorice
+      - Vitomarci
+      - Vitanje
+      - Vir pri Stični
+      - Vipava
+      - Videm
+      - Veržej
+      - Verd
+      - Velike Lašče
+      - Velika Polana
+      - Turnišče
+      - Trzin
+      - Tržič
+      - Trška Gora
+      - Trebnje
+      - Trbovlje
+      - Trbovlje
+      - Topolšica
+      - Topol pri Medvodah
+      - Sveti Tomaž
+      - Tolminski Lom
+      - Tolmin
+      - Velenje
+      - Velenje
+      - Tišina
+      - Temnica
+      - Tabor
+      - Sv. Ana v Slov. Goricah
+      - Štore
+      - Starše
+      - Stara Vrhnika
+      - Srednja Vas
+      - Središče ob Dravi
+      - Spodnji Duplek
+      - Spodnje Hoče
+      - Spodnja Idrija
+      - Spodnja Hajdina
+      - Spodnja Besnica
+      - Sostro
+      - Šoštanj
+      - Solčava
+      - Sodražica
+      - Šmartno pri Litiji
+      - Šmartno ob Paki
+      - Šmarje pri Jelšah
+      - Šmarca
+      - Slovenske Konjice
+      - Slovenske Konjice
+      - Slovenska Bistrica
+      - Slovenj Gradec
+      - Slovenj Gradec
+      - Republic of Slovenia
+      - Skoke
+      - Škofljica
+      - Škofja Loka
+      - Škocjan
+      - Sežana
+      - Sevnica
+      - Šentrupert
+      - Šentjur
+      - Šentjernej
+      - Šentilj v Slov. Goricah
+      - Senovo
+      - Šenčur
+      - Šempeter v Savinj. Dolini
+      - Šempeter pri Gorici
+      - Šempas
+      - Semič
+      - Sečovlje
+      - Šalovci
+      - Ruše
+      - Rogoza
+      - Rogatec
+      - Rogašovci
+      - Rogaška Slatina
+      - Rodine
+      - Ročinj
+      - Rjavče
+      - Ribnica na Pohorju
+      - Ribnica
+      - Renče
+      - Rečica ob Savinji
+      - Razvanje
+      - Ravni
+      - Ravne na Koroškem
+      - Ravne
+      - Ravne
+      - Rakičan
+      - Rakek
+      - Radovljica
+      - Radovljica
+      - Radomlje
+      - Radlje ob Dravi
+      - Radenci
+      - Radeče
+      - Rače
+      - Puconci
+      - Ptuj
+      - Ptuj
+      - Prvačina
+      - Prevalje
+      - Preddvor
+      - Prebold
+      - Pragersko
+      - Postojna
+      - Postojna
+      - Portorož
+      - Polzela
+      - Poljčane
+      - Podvelka
+      - Podmolnik
+      - Podlehnik
+      - Podhom
+      - Podčetrtek
+      - Pivka
+      - Piran
+      - Piran
+      - Pesnica pri Mariboru
+      - Pekre
+      - Pameče
+      - Ormož
+      - Oplotnica
+      - Odranci
+      - Novo Mesto
+      - Nova Vas
+      - Nova Gorica
+      - Nova Gorica
+      - Naklo
+      - Muta
+      - Murska Sobota
+      - Murska Sobota
+      - Mozirje
+      - Mostec
+      - Moravče
+      - Mokronog
+      - Mojstrana
+      - Mislinja
+      - Mirna Peč
+      - Mirna
+      - Miren
+      - Miklavž na Dravskem Polju
+      - Mežica
+      - Metlika
+      - Merče
+      - Mengeš
+      - Mekinje
+      - Medvode
+      - Markovci
+      - Maribor
+      - Maribor
+      - Makole
+      - Majšperk
+      - Lukovica pri Domžalah
+      - Luče
+      - Lovrenc na Pohorju
+      - Log pri Brezovici
+      - Logatec
+      - Ljutomer
+      - Ljubljana
+      - Litija
+      - Lipovci
+      - Limbuš
+      - Lesce
+      - Lendava
+      - Lenart v Slov. Goricah
+      - Laško
+      - Kuzma
+      - Krško
+      - Kromberk
+      - Krog
+      - Križevci pri Ljutomeru
+      - Kranjska Gora
+      - Kranj
+      - Kranj
+      - Kozje
+      - Kozina
+      - Kotlje
+      - Kostanjevica na Krki
+      - Koper
+      - Koper
+      - Komen
+      - Kokrica
+      - Kočevje
+      - Kobilje
+      - Kobarid
+      - Kidričevo
+      - Kanal
+      - Kamnik
+      - Kamnica
+      - Kal
+      - Juršinci
+      - Sveti Jurij ob Ščavnici
+      - Ježa
+      - Jesenice
+      - Jesenice
+      - Jareninski Vrh
+      - Izola
+      - Izola
+      - Izlake
+      - Ivančna Gorica
+      - Ilirska Bistrica
+      - Ilirska Bistrica
+      - Ig
+      - Idrija
+      - Idrija
+      - Hrušica
+      - Hrib-Loški Potok
+      - Hrastnik
+      - Hrastnik
+      - Horjul
+      - Hodoš
+      - Hočko Pohorje
+      - Grosuplje
+      - Grosuplje
+      - Griže
+      - Sv. Trojica v Slov. Goricah
+      - Grad
+      - Gotovlje
+      - Gornji Petrovci
+      - Gornji Grad
+      - Gornja Radgona
+      - Gorišnica
+      - Gorenji Logatec
+      - Gorenja Vas
+      - Straža
+      - Golnik
+      - Gančani
+      - Dutovlje
+      - Dravograd
+      - Dragomer
+      - Dornava
+      - Domžale
+      - Dol pri Ljubljani
+      - Dolenje Karteljevo
+      - Dobrovo
+      - Dobrovnik
+      - Dobrova
+      - Dobrna
+      - Dobrava pri Konjicah
+      - Dobje pri Planini
+      - Dob
+      - Divača
+      - Destrnik
+      - Deskle
+      - Dekani
+      - Črnuče
+      - Črnomelj
+      - Črna na Koroškem
+      - Črenšovci
+      - Černelavci
+      - Cerkvenjak
+      - Cerknica
+      - Cerklje na Gorenjskem
+      - Cerkljanski Vrh
+      - Celje
+      - Celje
+      - Cankova
+      - Britof
+      - Britof
+      - Brezovica pri Ljubljani
+      - Brezje v Podbočju
+      - Brežice
+      - Bresternica
+      - Breginj
+      - Braslovče
+      - Bovec
+      - Borovnica
+      - Bohinjska Bistrica
+      - Bled
+      - Bistrica ob Sotli
+      - Bilje
+      - Benedikt
+      - Beltinci
+      - Bakovci
+      - Apače
+      - Ankaran
+      - Ajdovščina
+      - Adlešiči
+      - Razkrižje
+      - Solkan
+      - Žigoni
+      - Podova
+      - Zeče
+      - Koroška Bela
+      - Cerkno
+      - Murovci
+      - Logatec
+      - Uhk
+      - Ankaran
+      - Pivka
+      - Vipava
+      - Miren-Kostanjevica
+      - Kanal
+      - Cerkno
+      - Naklo
+      - Kranjska Gora
+      - Vodice
+      - Medvode
+      - Pesnica
+      - Občina Rače-Fram
+      - Rogatec
+      - Videm pri Ptuju
+      - Zreče
+      - Radizel
+      - Selnica ob Dravi
+      - Lucija
+      - Jagodje
+      - Kisovec
+      - Cirkulane
+      - Šmarjeske Toplice
+#      - Občina Žalec
+#      - Občina Renče-Vogrsko
+#      - Občina Hoče-Slivnica
+#      - Mestna Občina Ljubljana
+#      - Občina Kobarid
+#      - Občina Bovec
+#      - Občina Bled
+#      - Občina Semič
+#      - Občina Šenčur
+#      - Občina Brežice
+#      - Občina Domžale
+#      - Občina Kočevje
+#      - Občina Tolmin
+#      - Občina Krško
+#      - Občina Sežana
+#      - Mestna Občina Novo mesto
+#      - Občina Škofja Loka

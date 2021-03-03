@@ -1,0 +1,27 @@
+version: "2.0"
+rules:
+  - rule: Greet when the user starts a conversation with greet
+    conversation_start: True
+    steps:
+    - intent: greet
+    - action: utter_greet
+
+  - rule: Say goodbye anytime the user says goodbye
+    steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+  - rule: Tell the time if user asks for it
+    steps:
+    - intent: time
+    - action: action_time
+
+  - rule: respond to chitchat
+    steps:
+    - intent: chitchat
+    - action: utter_chitchat
+
+  - rule: out-of-scope
+    steps:
+    - intent: out_of_scope
+    - action: utter_out_of_scope

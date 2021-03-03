@@ -1,0 +1,58 @@
+version: "2.0"
+nlu:
+- intent: create_list
+  examples: |
+    - ustvari nov seznam
+    - nov seznam
+    - ustvari nov seznam z imenom nakupovanje
+    - ustvari nov seznam kupi
+    - nov seznam z imenom opravila
+    - ustvari seznam todo
+    - dodaj seznam
+    - kako lahko naredim nov seznam
+    - a lahko naredim nov seznam
+    - nardi nov seznam
+    - ustvari seznam
+    - rad bi ustvaril seznam
+    - ustvaari seznam
+    - Znaš narediti seznam opravil?
+    - Ustvari seznam
+- intent: update_list
+  examples: |
+    - uredi seznam
+    - popravi seznam
+    - spremeni seznam
+    - popravi moj seznam
+    - popravi zadnji seznam
+    - spremeni zadnji seznam
+    - dodaj nove elemente na seznam
+    - kako lahko uredim seznam?
+    - rad bi uredil seznam
+- intent: remove_list
+  examples: |
+    - izbriši seznam
+    - pobriši seznam
+    - odstrani zadnji seznam
+    - izbriši zadnji seznam
+    - izbriši seznam todo
+    - prosim odstrani seznam
+    - odstrani seznam
+    - Izbriši seznam
+- intent: show_list
+  examples: |
+    - prikaži sezname
+    - pokaži kaj je na seznamu
+    - moji sezname
+    - kaj imam na seznamu
+    - moj seznam
+    - katere sezname imam
+    - kaj imam na seznamih
+    - katere stvari so na mojem seznamu
+    - kaj je na seznamu
+    - prikaži mi sezname
+    - prikaži vse moje sezname
+    - imam kakšen seznam?
+    - Pokaži seznam
+    - Katere sezname imam
+    - Moji seznami
+    - moji seznami

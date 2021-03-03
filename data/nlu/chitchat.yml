@@ -1,0 +1,152 @@
+version: "2.0"
+nlu:
+- intent: chitchat/ask_builder
+  examples: |
+    - Kdo je tvoj avtor?
+    - Kdo te je sprogramiral?
+    - Kako je ime tvojemu avtorju?
+    - kdo te je zgradil?
+    - kdo te je ustvaril?
+- intent: chitchat/ask_howbuilt
+  examples: |
+    - Kako so te zgradili?
+    - Kako so te naredili?
+    - kako si zgrajen?
+    - Iz česa si zgrajen?
+    - Kaj te sestavlja?
+    - Na kakšen način so te zgradili?
+- intent: chitchat/ask_howold
+  examples: |
+    - Koliko si star?
+    - A si še mlad?
+    - te lahko vprašam koliko si star
+    - rad bi vedel koliko let imaš
+    - kako dolgo že obstajaš?
+    - koliko let imaš?
+    - povej mi koliko si star
+    - kdaj imaš rojstni dan?
+- intent: chitchat/ask_howdoing
+  examples: |
+    - Super, pa ti?
+    - Dobro, kako si ti?
+    - Kako si kaj?
+    - Kako si kaj
+    - Kako kaj?
+    - Kako gre?
+    - hej, kako si kaj?
+    - in ti?
+    - hvala, ti?
+    - ok, kaj pa ti?
+    - Kako se počutiš?
+    - Kako smo danes?
+    - Kaj bo dobrega?
+    - si srečen?
+    - kako se počutiš?
+    - kako si kaj danes?
+    - Si ok?
+    - Kako si?
+- intent: chitchat/ask_whatdoing
+  examples: |
+    - kaj počneš?
+    - kaj delaš
+    - Kaj delaš
+    - kaj pa kaj delaš?
+    - delaš kaj?
+    - kaj trentno delaš
+    - kaj zdaj delaš?
+    - kaj je novega?
+- intent: chitchat/ask_isbot
+  examples: |
+    - Kaj pomeni chatbot?
+    - A si klepetalnik?
+    - si chatbot?
+    - povej mi, a si robot?
+    - a si resničen?
+    - Kaj si?
+    - si res robot?
+    - Uporabljaš ai?
+    - Si res bot?
+- intent: chitchat/ask_ishuman
+  examples: |
+    - a si človek?
+    - ti si človek ali robot
+    - se pogovarjam s človekom?
+    - si oseba ali robot?
+    - si resnična oseba?
+    - izgledaš kot človek
+    - zanimiv robot si, deluješ kot človek
+- intent: chitchat/ask_whatismyname
+  examples: |
+    - Kako mi je ime?
+    - mi lahko poveš kako mi je ime
+    - a veš kako mi je ime?
+    - lahko poveš kako mi je ime
+    - povej mi kako mi je ime
+    - ugani kako mi je ime
+    - a veš kako me kličejo prijatelji
+- intent: chitchat/ask_whoami
+  examples: |
+    - mi lahko poveš kdo sem jaz?
+    - a veš kdo sem jaz
+    - kdo sem jaz
+    - ugani kdo sem jaz
+    - kako lahko ugotovim kdo sem jaz
+    - povej mi kdo sem jaz
+- intent: chitchat/ask_whoisit
+  examples: |
+    - Kako ti je ime?
+    - Povej mi kako ti je ime
+    - kako se kličeš
+    - kakšno ime imaš
+    - kdo si?
+    - kako ti je že ime?
+    - kako te kličejo prijatelji?
+- intent: chitchat/ask_wherefrom
+  examples: |
+    - iz kje prihajaš?
+    - kje si doma?
+    - kje se trenutno nahajaš?
+    - kje prebivaš?
+    - iz kje si?
+    - kje živiš?
+    - iz katerega mesta prihajaš?
+- intent: chitchat/ask_whatspossible
+  examples: |
+    - Kaj lahko narediš?
+    - Kaj znaš?
+    - Imaš kake posodobitve?
+    - Kaj te lahko vprašam?
+    - Kaj mi lahko pokažeš?
+    - kaj mi lahko poveš?
+    - kakšna znanja imaš
+    - kaj je možno narediti s tabo
+    - Te lahko vprašam še kaj?
+    - Mi lahko prosim poveš kaj znaš?
+    - kaj lahko narediš?
+    - Ne vem, kaj pa znaš?
+    - kakšne zmožnosti imaš?
+    - Zanima me kaj znaš?
+    - Kaj znaš
+- intent: chitchat/handleinsult
+  examples: |
+    - Rit
+    - Neumen si
+    - Govoriš neumnosti
+    - nehaj govoriti neumnosti
+    - idiot
+- intent: chitchat/nicetomeetyou
+  examples: |
+    - Lepo te je bilo spoznati
+    - Vesel sem, da sem te spoznal
+    - Lepo te je blo spoznat
+    - Hvala, lepo je bilo govoriti s tabo
+    - Super se je bilo družiti s teboj
+- intent: chitchat/compliment
+  examples: |
+    - Dober si :)
+    - Smešen si
+    - Zabaven si
+    - Res si zabaven
+    - Res si smešen
+    - Kok si smešen
+

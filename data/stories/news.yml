@@ -1,0 +1,30 @@
+version: "2.0"
+stories:
+  - story: Latest news
+    steps:
+      - intent: latest_news
+      - action: action_current_news
+
+  - story: Subscribe to daily news
+    steps:
+      - intent: news_subscribe
+      - action: action_news_subscribe
+
+  - story: Unsubscribe from daily news
+    steps:
+      - intent: news_unsubscribe
+      - action: action_news_unsubscribe
+
+  - story: news help
+    steps:
+      - intent: help
+        entities:
+          - news: novice
+      - action: utter_help_news
+
+  - story: Latest news with category
+    steps:
+      - intent: latest_news
+        entities:
+          - news_category: sport
+      - action: action_current_news_by_category

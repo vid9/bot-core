@@ -1,0 +1,96 @@
+version: "2.0"
+nlu:
+- intent: latest_news
+  examples: |
+    - prikaži mi zadnje novice
+    - prikaži novice
+    - aktualne novice v [Sloveniji]{"entity": "news_category", "value": "slovenija"}
+    - kaj se dogaja v [svetu]{"entity": "news_category", "value": "svet"}?
+    - kaj je novega v [ZDA](news_category)?
+    - novice [košarka]{"entity": "news_category", "value": "kosarka"}?
+    - je kaj novega v novicah?
+    - kaj se je zgodilo danes?
+    - novice []
+    - najbolj brane novice danes
+    - kaj je danes v novicah?
+    - današnji dogodki
+    - novice o [evropski uniji]{"entity": "news_category", "value": "EU"}
+    - [kulturne]{"entity": "news_category", "value": "kultura"} novice
+    - današnja [črna kronika]{"entity": "news_category", "value": "crna-kronika"}
+    - je kaj novega o [koronavirusu]{"entity": "news_category", "value": "koronavirus"}?
+    - prikaži novice o [kulturi]{"entity": "news_category", "value": "kultura"}
+    - novice [šport]{"entity": "news_category", "value": "sport"}
+    - novice [zdravje](news_category)
+    - aktualne novice o [Sloveniji]{"entity": "news_category", "value": "slovenija"} in [svetu]{"entity": "news_category", "value": "svet"}
+    - Kaj je novega v [svetu]{"entity": "news_category", "value": "svet"}?
+    - kaj je novega [gospodarstvo](news_category)
+    - Kaj novega v [športu]{"entity": "news_category", "value": "sport"}?
+    - nove [kolumne](news_category) na rtv
+    - nove novice v kategoriji [zabava]{"entity": "news_category", "value": "zabava-in-slog"}
+    - Zanimajo ne novice
+    - [teniške]{"entity": "news_category", "value": "tenis"} novice
+    - kdo danes igra v [ligi prvakov]{"entity": "news_category", "value": "liga-prvakov-v-nogometu"}
+    - je kakšna nova novica o [nogometu]{"entity": "news_category", "value": "nogomet"}
+    - današnje novice
+    - zadnje novice
+    - je kakšna nova novica
+    - novice iz kategorije [šport]{"entity": "news_category", "value": "sport"}
+    - Novice [kultura](news_category)
+    - [Šport]{"entity": "news_category", "value": "sport"}
+    - [Črna kronika]{"entity": "news_category", "value": "crna-kronika"}
+- intent: news_subscribe
+  examples: |
+    - želim se naročiti na dnevne novice
+    - želim se naročiti na novice
+    - naroči me na novice
+    - prosim naroči me na dnevne novice
+    - pošiljaj mi dnevne novice
+    - naroči na dnevne novice
+    - prijavi me na dnevne novice
+    - Prijavi me na dnevne novice
+    - naroči se na dnevne novice
+    - prijavi se na dnevne novice
+- intent: news_unsubscribe
+  examples: |
+    - želim se odjaviti od dnevnih novic
+    - odjavi me od dnevnih novic
+    - odjava od novic
+    - nehaj mi pošiljati novice
+- synonym: slovenija
+  examples: |
+    - Sloveniji
+- synonym: svet
+  examples: |
+    - svetu
+- synonym: kosarka
+  examples: |
+    - košarka
+- synonym: EU
+  examples: |
+    - evropski uniji
+- synonym: kultura
+  examples: |
+    - kulturne
+    - kulturi
+- synonym: crna-kronika
+  examples: |
+    - črna kronika
+- synonym: koronavirus
+  examples: |
+    - koronavirusu
+- synonym: sport
+  examples: |
+    - šport
+    - športu
+- synonym: zabava-in-slog
+  examples: |
+    - zabava
+- synonym: tenis
+  examples: |
+    - teniške
+- synonym: liga-prvakov-v-nogometu
+  examples: |
+    - ligi prvakov
+- synonym: nogomet
+  examples: |
+    - nogometu

@@ -1,0 +1,11 @@
+version: "2.0"
+nlu:
+    - regex: date_number
+      examples: |
+        - [\d]{1,2}\. [\d]{1,2}\.
+        - [\d]{1,2}\. [\d]{1,2}\.[\d]{4}
+        - [\d]{1,2}\.[\d]{1,2}\.
+        - [\d]{1,2}\.[\d]{1,2}\.[\d]{4}
+    - regex: time_number
+      examples: |
+        - [\d]{1,2}\:[\d]{1,2}

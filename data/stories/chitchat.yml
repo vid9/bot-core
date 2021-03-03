@@ -1,0 +1,116 @@
+version: "2.0"
+stories:
+- story: chitchat builder
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: chitchat
+  - action: utter_chitchat
+- story: chitchat howdoing sad mood
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_how_can_help
+  - intent: chitchat
+  - action: utter_chitchat
+- story: chitchat howdoing happy mood
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_how_can_help
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+- story: chitchat is bot
+  steps:
+  - intent: chitchat
+  - action: utter_chitchat
+- story: chitchat is bot
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: chitchat
+  - action: utter_chitchat
+- story: chitchat builder + is bot
+  steps:
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: chitchat
+  - action: utter_chitchat
+- story: chitchat is bot/builder
+  steps:
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: chitchat
+  - action: utter_chitchat
+- story: chitchat what possible + weather
+  steps:
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: weather_current
+  - action: utter_ask_location
+  - intent: enter_data
+    entities:
+    - location: Nova Gorica
+  - action: action_weather_current
+- story: chitchat what possible + date
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: date
+  - action: action_date
+  - intent: thanks
+  - action: utter_thanks
+- story: chitchat what possible + time
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: time
+  - action: action_time
+- story: chitchat what possible + out of scope
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+- story: chitchat greet and nice to meet
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: chitchat
+  - action: utter_chitchat
+- story: interactive_story_2
+  steps:
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: time
+  - action: action_time
+  - intent: date
+    entities:
+    - day: danes
+  - slot_was_set:
+    - day: danes
+  - action: action_date
+  - intent: goodbye
+  - action: utter_goodbye

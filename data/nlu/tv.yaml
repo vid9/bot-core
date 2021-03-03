@@ -1,0 +1,74 @@
+version: "2.0"
+nlu:
+- intent: currently_playing
+  examples: |
+    - kaj je trenutno na programu [Kino](program)?
+    - katera oddaja se predvja na [dvojki]{"entity": "program", "value": "TV SLO 2"}
+    - kaj je na [kanalu a]{"entity": "program", "value": "Kanal A"}
+    - kaj se predvaja po TV?
+    - kaj je trenutno na tv?
+    - kaj se predvaja po televiziji?
+    - kateri [film](category) se trenutno predvaja?
+    - Kaj se predvaja po tv?
+    - Kaj se trenutno predvaja po TV slo 1
+    - Kaj se trenutno predvaja po tv?
+    - Kaj je trenutno na [TV SLO 1](program)
+    - kaj se predvaja po tv?
+- intent: program_schedule
+  examples: |
+    - spored [slovenija 1]{"entity": "program", "value": "TV SLO 1"}
+    - spored [tv slo 2](program)
+    - spored za [kanal A](program)
+    - kaj bo [jutri](day) na [pop tv](program)
+    - [današnji]{"entity": "day", "value":"danes"} spored [slo 3] {"entity": "program", "value":"TV SLO 3"}
+    - Kaj bo v [torek](day) na [pop TV](program)?
+    - Spored za [kanal a](program)
+    - spored za [Kanal A](location)
+    - Spored za [jutri](day)
+    - Rada bi spored
+    - Spored bi želela
+    - Spored [tv slo 1](program) [danes](day)
+    - [Tv slo 3](program) spored
+    - Spored [planet](program) [danes](day)
+    - Spored [planet](program)
+    - Kaj bo [jutri](day) na sporedu [TV SLO 1](program)
+    - Kaj je na sporedu?
+    - Spored
+    - Kaj bo po TV?
+    - Kaj bo na [televiziji](day)
+    - [Danes](day) na TV?
+- intent: schedule_query
+  examples: |
+    - kateri [filmi]{"entity": "category", "value": "film"} so [danes](day) na sporedu?
+    - [informativne oddaje]{"entity": "category", "value": "informativni"} spored
+    - [Dokumentrani](category) filmi na [Fox]{"entity": "program", "value": "FOX"}
+    - katere [nadaljevanke]{"entity": "category", "value": "nadaljevanka"} so [jutri](day) na [Planet](program) TV
+    - spored za [filme]{"entity": "category", "value": "film"} [jutri](day)
+    - [serije]{"entity": "category", "value": "nadaljevanka"} [jutri](day) na [kanalu A]{"entity": "program", "value": "Kanal A"}
+    - kateri [filmi]{"entity": "category", "value": "film"} so po tv?
+    - katere [filmi]{"entity": "category", "value": "film"} so [danes](day)
+    - je [jutri](day) kak [dokumentarec]{"entity": "category", "value": "dokumentarni"}  na [planetu](program)?
+    - kdaj bo [jutri](day) [mladinski]{"entity": "category", "value": "otroški in mladinski"} program na [National Geographic](program)
+    - je [danes](day) kakšna [kulturna]{"entity": "category", "value": "kulturno-umetniški"} oddaja
+    - katere [verske]{"entity": "category", "value": "verski"} oddaje so po tv
+- synonym: TV SLO 2
+  examples: |
+    - dvojki
+- synonym: Kanal A
+  examples: |
+    - kanalu a
+    - kanalu A
+- synonym: film
+  examples: |
+    - filmi
+    - filme
+- synonym: informativni
+  examples: |
+    - informativne oddaje
+- synonym: FOX
+  examples: |
+    - Fox
+- synonym: nadaljevanka
+  examples: |
+    - nadaljevanke
+    - serije

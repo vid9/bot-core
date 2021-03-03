@@ -1,0 +1,130 @@
+version: "2.0"
+stories:
+  - story: weather_forecast with day and entity
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: weather_forecast
+        entities:
+          - location: Ljubljana
+          - day: jutri
+      - action: action_weather_forecast
+
+  - story: weather forecast, location separately
+    steps:
+      - intent: weather_forecast
+        entities:
+          - day: jutri
+      - action: utter_ask_location
+      - intent: enter_data
+        entities:
+          - location: Novo Mesto
+      - action: action_weather_forecast
+      - intent: thanks
+      - action: utter_thanks
+
+  - story: weather forecast, location + date separately
+    steps:
+      - intent: weather_forecast
+      - action: utter_ask_location
+      - intent: enter_data
+        entities:
+          - location: Nova Gorica
+          - day: torek
+      - action: action_weather_forecast
+
+  - story: current weather with day and location, second only with location
+    steps:
+      - intent: weather_current
+        entities:
+          - location: Bohinj
+          - day: danes
+      - action: action_weather_current
+      - intent: weather_current
+        entities:
+          - location: Koper
+      - action: action_weather_current
+
+  - story: current weather with day and location, second only with location
+    steps:
+      - intent: weather_current
+        entities:
+          - location: Bohinj
+          - day: danes
+      - action: action_weather_current
+      - intent: weather_forecast
+        entities:
+          - day: jutri
+      - action: action_weather_forecast
+
+  - story: multiple search weather + location
+    steps:
+      - intent: weather_current
+      - action: utter_ask_location
+      - intent: enter_data
+        entities:
+          - location: Nova Gorica
+      - action: action_weather_current
+      - intent: weather_current
+        entities:
+          - location: Piran
+      - action: action_weather_current
+
+  - story: interactive_story_1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: weather_current
+      - action: utter_ask_location
+      - intent: enter_data
+        entities:
+          - location: Koper
+      - action: action_weather_current
+      - intent: thanks
+      - action: utter_thanks
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: weather forecast ask location
+    steps:
+      - intent: weather_forecast
+        entities:
+          - day: torek
+      - action: utter_ask_location
+      - intent: enter_data
+        entities:
+          - location: Koper
+      - action: action_weather_forecast
+      - intent: thanks
+      - action: utter_thanks
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: weather forecast no date
+    steps:
+      - intent: weather_forecast
+        entities:
+          - location: Vipavi
+      - action: utter_ask_day
+      - intent: enter_data
+        entities:
+          - day: danes
+      - action: action_weather_forecast
+
+  - story: weather forecast no location
+    steps:
+      - intent: weather_forecast
+        entities:
+          - date_number: 20.2.
+      - action: utter_ask_location
+      - intent: enter_data
+        entities:
+          - location: Kanal
+      - action: action_weather_forecast
+
+  - story: weather help
+    steps:
+      - intent: help
+        entities:
+          - weather: vremenska napoved
+      - action: utter_help_weather

@@ -1,0 +1,149 @@
+version: "2.0"
+stories:
+  - story: tv currently playing
+    steps:
+      - intent: currently_playing
+        entities:
+          - program: TV SLO 2
+      - action: action_tv_curretly_playing
+
+  - story: tv currently playing, ask for program
+    steps:
+      - intent: currently_playing
+      - action: utter_ask_program
+      - intent: enter_data
+        entities:
+          - program: TV SLO 2
+      - action: action_tv_curretly_playing
+
+  - story: get schedule for category, today
+    steps:
+      - intent: schedule_query
+        entities:
+          - program: TV SLO 2
+          - category: film
+          - day: today
+      - action: action_tv_search_query
+
+  - story: get schedule for category, ask for day
+    steps:
+      - intent: schedule_query
+        entities:
+          - program: TV SLO 2
+          - category: film
+      - action: utter_ask_day_tv
+      - intent: enter_data
+        entities:
+          - day: today
+      - action: action_tv_search_query
+
+  - story: get schedule for category, without tv program, ask for day
+    steps:
+      - intent: schedule_query
+        entities:
+          - category: film
+      - action: utter_ask_day_tv
+      - intent: enter_data
+        entities:
+          - day: today
+      - action: action_tv_search_query
+
+  - story: get schedule for category, without tv program
+    steps:
+      - intent: schedule_query
+        entities:
+          - category: film
+          - day: today
+      - action: action_tv_search_query
+
+  - story: get schedule for tv program
+    steps:
+      - intent: program_schedule
+        entities:
+          - program: TV SLO 2
+          - day: today
+      - action: action_tv_schedule
+
+  - story: get schedule for tv program
+    steps:
+      - intent: program_schedule
+        entities:
+          - day: today
+      - action: utter_ask_program
+      - intent: enter_data
+        entities:
+          - program: TV SLO 2
+      - action: action_tv_schedule
+
+  - story: get schedule for tv program
+    steps:
+      - intent: program_schedule
+        entities:
+          - program: TV SLO 2
+      - action: utter_ask_day_tv
+      - intent: enter_data
+        entities:
+           - day: today
+      - action: action_tv_schedule
+
+  - story: tv help
+    steps:
+      - intent: help
+        entities:
+          - tv: spored
+      - action: utter_help_tv
+
+  - story: get schedule for category
+    steps:
+      - intent: schedule_query
+        entities:
+          - program: kanal a
+          - category: film
+          - day: danes
+      - action: action_tv_search_query
+
+  - story: get schedule for category, ask for day
+    steps:
+      - intent: schedule_query
+        entities:
+          - program: kanal a
+          - category: film
+      - action: utter_ask_day_tv
+      - intent: enter_data
+        entities:
+          - day: danes
+      - action: action_tv_search_query
+
+  - story: Get schedule for program and day, ask for category
+    steps:
+      - intent: schedule_query
+        entities:
+          - program: kanal a
+          - day: jutri
+      - action: utter_ask_day_tv
+      - intent: enter_data
+        entities:
+          - category: film
+      - action: action_tv_search_query
+
+  - story: Get schedule for category, ask for day
+    steps:
+      - intent: schedule_query
+        entities:
+          - category: film
+      - action: utter_ask_day_tv
+      - intent: enter_data
+        entities:
+          - day: torek
+      - action: action_tv_search_query
+
+  - story: Get schedule for program, ask for day
+    steps:
+      - intent: program_schedule
+        entities:
+          - program: tv slo 3
+      - action: utter_ask_day_tv
+      - intent: enter_data
+        entities:
+          - day: sobota
+      - action: action_tv_schedule

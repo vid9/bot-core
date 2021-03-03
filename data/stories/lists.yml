@@ -1,0 +1,148 @@
+version: "2.0"
+stories:
+
+  - story: Story from Conversation ID b50f3b22bfa64726b2bf9d52b672c401
+    steps:
+      - intent: create_list
+      - action: action_reset_list_slots
+      - slot_was_set:
+          - list_name: null
+      - action: list_form
+      - active_loop: list_form
+      - slot_was_set:
+          - requested_slot: list_name
+      - intent: enter_data
+        entities:
+          - light_name: kuhinja
+      - action: list_form
+      - slot_was_set:
+          - list_name: kuhinja
+      - intent: nlu_fallback
+      - action: list_form
+      - slot_was_set:
+          - list_item: null
+      - intent: nlu_fallback
+      - action: list_form
+      - slot_was_set:
+          - list_item: null
+      - intent: nlu_fallback
+      - action: list_form
+      - slot_was_set:
+          - list_item: null
+      - intent: deny
+      - action: list_form
+      - active_loop: null
+      - slot_was_set:
+          - list_item: end
+      - action: utter_ok
+      - action: action_update_user_lists
+      - slot_was_set:
+        - list_item: null
+
+  - story: Show all lists
+    steps:
+      - intent: show_list
+      - action: action_show_all_lists
+
+  - story: Show all lists, user click payload
+    steps:
+      - intent: show_list
+      - action: action_show_all_lists
+      - intent: show_list
+      - slot_was_set:
+          - list_name: kupi
+      - action: action_show_list_items
+      - intent: update_list
+      - action: list_update_form
+      - active_loop: list_update_form
+
+  - story: Show all lists, user click payload
+    steps:
+      - intent: show_list
+      - action: action_show_all_lists
+      - intent: show_list
+      - slot_was_set:
+          - list_name: kupi
+      - action: action_show_list_items
+      - intent: remove_list
+      - action: action_remove_list_confirmation
+      - slot_was_set:
+          - list_name: morje
+      - intent: affirm
+      - action: action_remove_list
+
+  - story: Remove list, ask for name
+    steps:
+      - intent: remove_list
+      - action: action_remove_list_confirmation
+      - slot_was_set:
+          - list_name: null
+      - intent: remove_list
+      - slot_was_set:
+          - list_name: opravki
+      - action: action_remove_list
+
+  - story: User decides not to remove list
+    steps:
+      - intent: remove_list
+      - action: action_remove_list_confirmation
+      - slot_was_set:
+          - list_name: ime seznama
+      - intent: deny
+      - slot_was_set:
+          - list_name: null
+      - action: utter_list_not_removed
+
+  - story: User doesnt have any lists and wants to create a new one
+    steps:
+      - intent: remove_list
+      - action: action_remove_list_confirmation
+      - intent: affirm
+      - action: list_form
+      - active_loop: list_form
+
+  - story: User doesnt have a list to remove and does not want to create a new one
+    steps:
+      - intent: remove_list
+      - action: action_remove_list_confirmation
+      - intent: deny
+      - action: utter_ok
+
+  - story: User interrupts the list but wants to continue
+    steps:
+      - action: list_form
+      - active_loop: list_form
+      - slot_was_set:
+          - requested_slot: list_name
+      - intent: stop
+      - action: utter_ask_continue
+      - intent: affirm
+      - action: list_form
+
+  - story: User interrupts list_form
+    steps:
+      - action: list_form
+      - active_loop: list_form
+      - slot_was_set:
+          - requested_slot: list_name
+      - intent: stop
+      - action: utter_ask_continue
+      - intent: deny
+      - active_loop: null
+      - action: utter_anything_else
+      - intent: deny
+      - action: utter_ok
+
+  - story: User interrupts list_form
+    steps:
+      - action: list_form
+      - active_loop: list_form
+      - slot_was_set:
+          - requested_slot: list_name
+      - intent: stop
+      - action: utter_ask_continue
+      - intent: deny
+      - active_loop: null
+      - action: utter_anything_else
+      - intent: affirm
+      - action: utter_how_can_help

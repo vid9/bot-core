@@ -1,0 +1,168 @@
+version: "2.0"
+stories:
+  - story: User creates a reminder and provides date and time at once
+    steps:
+      - intent: create_reminder
+      - action: reminder_form
+      - active_loop: reminder_form
+      - slot_was_set:
+          - requested_slot: reminder_name
+      - intent: nlu_fallback
+      - action: reminder_form
+      - slot_was_set:
+          - reminder_name: zakleni vrata
+      - slot_was_set:
+          - date_number: 10. 2.
+      - intent: enter_data
+        entities:
+          - date_number: 10. 2.
+          - time_number: 20:55
+      - slot_was_set:
+          - time_number: 20:55
+      - action: reminder_form
+      - active_loop: null
+      - slot_was_set:
+          - reminder_date: 02.10.2021
+      - action: action_set_reminder
+
+  - story: User creates a reminder and provides name,date and time
+    steps:
+      - intent: create_reminder
+      - action: reminder_form
+      - active_loop: reminder_form
+      - slot_was_set:
+          - requested_slot: reminder_name
+      - intent: mood_great
+      - action: reminder_form
+      - slot_was_set:
+          - reminder_name: počisti kuhinjo
+      - slot_was_set:
+          - date_number: 12. 2.
+      - intent: enter_data
+        entities:
+          - date_number: 12. 2.
+      - action: reminder_form
+      - slot_was_set:
+          - reminder_date: 02.12.2021
+      - slot_was_set:
+          - time_number: 12:2
+      - intent: enter_data
+        entities:
+          - time_number: 12:2
+      - action: reminder_form
+      - active_loop: null
+      - slot_was_set:
+          - reminder_time: 12:02
+      - action: action_set_reminder
+      - intent: great
+      - action: utter_happy_emoji
+
+  - story: User wants to see his reminders
+    steps:
+      - intent: show_reminders
+      - action: action_show_all_reminders
+      - intent: remove_reminder
+      - action: action_remove_reminder
+
+  - story: user creates reminder and instantly removes it
+    steps:
+      - action: action_set_reminder
+      - intent: remove_reminder
+      - action: action_remove_reminder
+
+  - story: User wants to remove reminder by clicking on it
+    steps:
+      - intent: remove_reminder
+      - action: action_remove_reminder
+      - intent: remove_reminder
+      - slot_was_set:
+          - reminder_name: opomnik
+      - action: action_remove_reminder
+
+  - story: reminder help
+    steps:
+      - intent: help
+        entities:
+          - reminder: opomnik
+      - action: utter_help_reminder
+
+  - story: User wants to see his reminders
+    steps:
+      - intent: show_reminders
+      - action: action_show_all_reminders
+      - intent: affirm
+      - action: reminder_form
+      - active_loop: reminder_form
+
+  - story: User wants to see his reminders
+    steps:
+      - intent: show_reminders
+      - action: action_show_all_reminders
+      - intent: deny
+      - action: utter_anything_else
+      - intent: deny
+      - action: utter_have_a_nice_day
+
+  - story: Cancel reminder
+    steps:
+      - intent: create_reminder
+      - action: reminder_form
+      - active_loop: reminder_form
+      - slot_was_set:
+          - requested_slot: reminder_name
+      - intent: stop
+      - action: utter_ask_continue
+      - or:
+        - intent: deny
+        - intent: stop
+      - action: action_deactivate_loop
+      - active_loop: null
+      - action: action_reset_reminder_slots
+      - slot_was_set:
+          - reminder_name: null
+      - slot_was_set:
+          - reminder_date: null
+      - slot_was_set:
+          - reminder_time: null
+
+  - story: Try to cancel reminder, but then continue
+    steps:
+      - intent: create_reminder
+      - action: reminder_form
+      - active_loop: reminder_form
+      - slot_was_set:
+          - requested_slot: reminder_name
+      - intent: stop
+      - action: utter_ask_continue
+      - intent: affirm
+      - slot_was_set:
+          - reminder_name: null
+      - action: reminder_form
+
+  - story: Try to cancel reminder, but then continue
+    steps:
+      - intent: create_reminder
+      - action: reminder_form
+      - active_loop: reminder_form
+      - slot_was_set:
+          - requested_slot: reminder_date
+      - intent: stop
+      - action: utter_ask_continue
+      - intent: affirm
+      - slot_was_set:
+          - reminder_date: null
+      - action: reminder_form
+
+  - story: Try to cancel reminder, but then continue
+    steps:
+      - intent: create_reminder
+      - action: reminder_form
+      - active_loop: reminder_form
+      - slot_was_set:
+          - requested_slot: reminder_time
+      - intent: stop
+      - action: utter_ask_continue
+      - intent: affirm
+      - slot_was_set:
+          - reminder_time: null
+      - action: reminder_form

@@ -1,0 +1,48 @@
+version: "2.0"
+rules:
+  - rule: Trigger `action_react_to_reminder` for `EXTERNAL_reminder`
+    steps:
+    - intent: EXTERNAL_reminder
+    - action: action_react_to_reminder
+
+  - rule: Trigger `action_react_to_news_subscription` for `EXTERNAL_news`
+    steps:
+      - intent: EXTERNAL_news
+      - action: action_react_to_news_subscription
+
+  - rule: Reminder notification when user is creating a list
+    condition:
+      - active_loop: list_form
+    steps:
+      - intent: EXTERNAL_reminder
+      - action: action_react_to_reminder
+      - action: list_form
+      - active_loop: list_form
+
+  - rule: Reminder notification when user is editing a list
+    condition:
+      - active_loop: list_update_form
+    steps:
+      - intent: EXTERNAL_reminder
+      - action: action_react_to_reminder
+      - action: list_update_form
+      - active_loop: list_update_form
+
+  - rule: Reminder notification when bot is telling a joke
+    condition:
+      - active_loop: joke_form
+    steps:
+      - intent: EXTERNAL_reminder
+      - action: action_react_to_reminder
+      - action: joke_form
+      - active_loop: joke_form
+
+
+  - rule: Reminder notification when user is creating a reminder
+    condition:
+      - active_loop: reminder_form
+    steps:
+      - intent: EXTERNAL_reminder
+      - action: action_react_to_reminder
+      - action: reminder_form
+      - active_loop: reminder_form

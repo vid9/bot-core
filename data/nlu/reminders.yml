@@ -1,0 +1,47 @@
+version: "2.0"
+nlu:
+- intent: create_reminder
+  examples: |
+    - ustvari opomnik
+    - dodaj opomnik
+    - želim ustvariti opomnik
+    - nov opomnik
+    - ustvari nov opomnik
+    - ustvar opomnik
+    - želim ustvariti nov opomnik
+    - Nastavi opomnik
+    - Naredi opomnik
+    - kako lahko ustvarim nov opomnik
+    - Ustvari opomnik
+    - Ustvari nov opomnik
+    - Nov opomnik
+- intent: remove_reminder
+  examples: |
+    - Izbriši opomnik
+    - ne me spomniti
+    - izbriši opomnike
+    - izbriši zadnji opomnik
+    - prekliči opomnik
+    - izbriši vsa obvestila
+    - prekliči vse opomnike
+    - Izbrisala bi en opomnik
+    - odstrani opomnik
+    - odstrani opomnik večerjo
+    - Izbriši vse opomnike
+    - izbriši opomnik
+    - Izbriši opomnike
+- intent: show_reminders
+  examples: |
+    - prikaži opomnike
+    - prikaži vse opomnike
+    - nastavljeni opomniki
+    - moji opomniki
+    - katere opomnike imam za danes?
+    - Kdaj je naslednji opomnik
+    - Pokaži opomnike
+    - Vsi opomniki
+    - Opomniki
+    - Kateri so moji opomniki?
+    - Pokaži moje opomnike
+    - Kateri je nasledni opomnik?
+    - Pokaži prosim vse moje opomnike

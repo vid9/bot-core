@@ -1,0 +1,46 @@
+# Fast text pipeline
+language: sl
+pipeline:
+#  - name: "custom_components.StanzaNLPTokenizer.StanzaNLPTokenizer"
+#    lang: "sl"
+#    cache_dir: "custom_components/cache"
+  - name: custom_components.ClasslaTokenizer.ClasslaTokenizer
+  - name: RegexFeaturizer
+  - name: LexicalSyntacticFeaturizer
+    "features": [
+      [ "low", "title", "upper" ],
+      [ "BOS", "EOS", "low", "upper", "title", "digit", "pos" ],
+      [ "low", "title", "upper" ],
+    ]
+  - name: CountVectorsFeaturizer
+  - name: CountVectorsFeaturizer
+    analyzer: "char_wb"
+    min_ngram: 1
+    max_ngram: 4
+  - name: custom_components.ftfeautures.FastTextFeaturizer
+    cache_dir: "custom_components/cache"
+    file: "cc.sl.300.bin"
+  - name: DIETClassifier
+    epochs: 200
+    model_confidence: cosine
+    constrain_similarities: True
+  - name: EntitySynonymMapper
+  - name: ResponseSelector
+    epochs: 100
+    retrieval_intent: chitchat
+    scale_loss: false
+  - name: FallbackClassifier
+    threshold: 0.6
+
+policies:
+  - name: TEDPolicy
+    epochs: 100
+    max_history: 5
+  - name: AugmentedMemoizationPolicy
+    max_history: 5
+  - name: RulePolicy
+    core_fallback_threshold: 0.3
+    core_fallback_action_name: "action_default_fallback"
+    enable_fallback_prediction: true
+    restrict_rules: true
+    check_for_contradictions: true

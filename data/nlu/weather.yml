@@ -1,0 +1,60 @@
+version: "2.0"
+nlu:
+- intent: weather_forecast
+  examples: |
+    - kakšno vreme bo v [četrtek](day)
+    - kakšno vreme bo [jutri](day) v [Kopru](location)
+    - kakšna je vremenska napoved za [Novo Gorico]{"entity": "location", "value": "Nova Gorica"}
+    - kakšno bo vreme v [Šempetru pri Novi Gorici]{"entity": "location", "value": "\u0160empeter pri Novi Gorici"}
+    - vreme v [Vipavi](location) [jutri](day)
+    - Kakšno vreme bo v [torek](day) v [Ljubljani](location)?
+    - Kakšno vreme bo v [četrtek](day) v [Tolminu](location)?
+    - vremenska napoved za [Ajdovščino](location)?
+    - kakšno bo [danes](day) vreme v [Ljubljani](location)
+    - kakšno bo [jutri](day) vreme v [Ljubljani](location)?
+    - kakšno vreme bo [jutri](day) v [ljubljani](location)?
+    - Vremenska napoved za [jutri](day)
+    - Kakšno vreme bo [jutri](day) v [Kopru](location)?
+    - Vremenska napoved za [Ljubljano](location)
+    - kakšno vreme bo [jutri](day) v [Kopru](location)?
+    - Kakšno vreme bo v [Ljubljani](location)?
+    - Kakšno vreme bo [jutri](day)?
+    - mi lahko poveš kakšno bo vreme?
+    - Vreme v [sredo]{"entity": "day", "value": "sreda"}?
+    - Kakšne bojo temperature v [Ljubljani](location)
+    - Kakšno bo vreme v [Ljubljani](location)
+    - Kakšno bo vreme v [Vipavi](location)?
+    - Vreme v [nedeljo]{"entity": "day", "value": "nedelja"}
+    - Vreme čez vikend
+    - Rada bi vedela ali bo v [Ljubljani](location) sonce
+    - Kakšno bo vreme v [soboto]{"entity": "day", "value": "sobota"}
+    - vreme v [petek](day)
+    - Vreme v [petek](day)
+    - Kakšno bo vreme v [petek](day) v [Ljubljani](location)
+    - Vremenska napoved za [jutri](day) v [Ljubljani](location)
+    - Vremenska napoved
+    - Kakšno bo vreme v [Ljubljani](location)?
+    - Ni napovedi?
+- intent: weather_current
+  examples: |
+    - Kakšno vreme je v [Ljubljani](location)
+    - kakšno je vreme [danes](day) v [Vipavi](location)
+    - zanima me kakšno vreme je zunaj
+    - vreme v [Celju](location)
+    - kakšno vreme je v [Postojni](location)
+    - trenutno vreme v [Mariboru](location)
+    - vreme [Novo mesto](location)
+    - kakšno je vreme v [Vipavi](location)?
+    - vreme [Ljubljana](location)
+    - Kakšno vreme je zunaj
+    - Zanima me kakšno vreme je zunaj?
+    - Vreme [Ljubljana](location)
+    - Vreme [novo Mesto](location)
+    - Vreme [Vipava](location)
+    - Kakšno vreme je v [Ljubljani](location)?
+    - Vreme [Ptuj](location)
+    - Vreme v [Ljubljani](location)
+    - Vreme
+    - Kok stopinj je zunaj?
+    - kakšno vreme je zunaj
+    - Kakšno je vreme

@@ -1,0 +1,169 @@
+version: "2.0"
+stories:
+
+  - story: date path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: date
+      - action: action_date
+
+  - story: date path happy
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_happy
+      - intent: date
+      - action: action_date
+
+  - story: time path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: time
+      - action: action_time
+
+  - story: time path happy
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_happy
+      - intent: time
+      - action: action_time
+
+  - story: date and time path
+    steps:
+      - intent: date
+      - action: action_date
+      - intent: time
+      - action: action_time
+
+  - story: date and time path with goodbye
+    steps:
+      - intent: date
+      - action: action_date
+      - intent: time
+      - action: action_time
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_happy
+
+  - story: sad path 1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
+
+  - story: sad path 2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_how_can_help
+
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_happy
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: sad path happy ending
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
+
+  - story: sad path happy ending
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_how_can_help
+
+  - story: say goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: thanks + do you want more
+    steps:
+      - intent: thanks
+      - action: utter_thanks
+
+  - story: try to cheer up and fail
+    steps:
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_sad
+
+  - story: try to cheer up and succed
+    steps:
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
+
+  - story: help
+    steps:
+      - intent: help
+      - action: utter_help
+
+  - story: Ask for traffic
+    steps:
+      - intent: traffic_conditions
+      - action: action_traffic
+
+  - story: Ask for traffic
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: traffic_conditions
+      - action: action_traffic
+
+  - story: User says great
+    steps:
+      - intent: great
+      - action: utter_happy_emoji
+
+  - story: Tell a joke
+    steps:
+      - intent: tellajoke
+      - action: joke_form
+      - active_loop: joke_form
+      - slot_was_set:
+          - requested_slot: joke_guess
+      - intent: chitchat
+      - action: joke_form
+      - active_loop: null
+      - slot_was_set:
+          - joke_guess: kaj
+      - action: action_jokepunchline
+      - slot_was_set:
+          - punchline: null
+

@@ -1,0 +1,306 @@
+version: "2.0"
+nlu:
+- intent: affirm
+  examples: |
+    - da
+    - itak
+    - ja
+    - drži
+    - dobro
+    - dobr
+    - mhm
+    - ok
+    - pravilno
+    - seveda
+    - tako je
+    - velja
+    - kul
+    - jp
+    - Kul
+    - Je
+    - Res je
+    - Fajn
+    - Prav.
+    - Da
+    - Super, izbriši
+    - Je :)
+    - nadaljuj
+    - želim nadaljevati
+    - hočem nadaljevati
+    - Izbriši ga
+    - Ok
+    - Ja
+    - da želim
+- intent: deny
+  examples: |
+    - ne
+    - nee
+    - neee
+    - ni mogoče
+    - ni mi všeč
+    - nikoli
+    - nep
+    - nočem
+    - pomoje ne
+    - to ni mogoče
+    - Ne vem
+    - Ni mi pomagalo
+    - Ne
+    - Ne...
+    - Nič
+    - Ne želim
+    - Nočem
+- intent: stop
+  examples: |
+    - stop
+    - nehaj
+    - ustavi se
+    - prenehaj
+    - prekliči
+    - prekini
+    - nočem tega
+    - nočem ustvariti opomnika
+    - Prekini
+    - Stop
+    - nočem narediti opomnika
+    - nočem nadaljevati
+    - Koncaj
+    - Prekliči
+    - Ustavi
+- intent: mood_great
+  examples: |
+    - zelo dobro
+    - odličo sem
+    - počutim se dobro
+    - počutim se čudovito
+    - trenutno sem dobro
+    - super sem
+    - dobro sem, hvala
+    - Kar dobro :)
+    - hahaha
+    - Hahaha
+    - :)
+- intent: mood_unhappy
+  examples: |
+    - slabo
+    - zelo jezen
+    - nisem ravno dobro
+    - nisem ok
+    - zanič sem
+    - ne počutim se dobro
+    - trenutno sem slabo
+    - grrrr
+    - Jaz nisem ravno dobro
+    - Žalosten sem
+    - Jaz sem slabo
+    - Žalostna sem
+    - :(
+- intent: thanks
+  examples: |
+    - hvala
+    - najlepša hvala
+    - zelo sem ti hvaležen
+    - Super, zelo si mi pomagal
+    - hvala za pomoč
+    - ok, hvala
+    - Hvala
+    - Ni potrebe hvala
+- intent: great
+  examples: |
+    - super
+    - odlično
+    - to je dobro
+    - lepo
+    - ful dobro
+    - izjemno
+    - super!
+    - Odlično!
+- intent: greet
+  examples: |
+    - dober dan
+    - dober večer
+    - dobro jutro
+    - dan
+    - hej
+    - heja
+    - hoj
+    - hojla
+    - hejla
+    - hola
+    - jutro
+    - jo
+    - oj
+    - ojla
+    - pozdravljeni
+    - pozdravljen
+    - serbus
+    - servus
+    - zdravo
+    - živjo
+    - Zdravo
+    - Ojla
+    - Hej
+    - Oj
+    - Hoj
+    - Živjo digipomocnik
+    - Hejlo
+    - Dober vecer
+    - Ahoj
+- intent: goodbye
+  examples: |
+    - adijo
+    - ajde
+    - čau
+    - čaw
+    - nasvidenje
+    - se vidimo kasneje
+    - srečno
+    - zbogom
+    - Lahko noč
+    - Lepo spi
+    - noč
+    - nočko
+    - Caw
+    - Čao
+    - Adijo
+- intent: date
+  examples: |
+    - kateri dan je [jutri](day)?
+    - [današnji]{"entity": "day", "value": "danes"} datum
+    - kateri dan bo v [ponedeljek](day)?
+    - katerega smo v [torek](day)?
+    - katerega bomo v [sredo]{"entity": "day", "value": "sreda"}
+    - katerega smo bili v [četrtek](day)
+    - katerega dan je bil [včeraj](day)
+    - kateri datum je na [nedeljo]{"entity": "day", "value": "nedelja"}
+    - Kateri dan je [danes](day)?
+    - Informacije o datumu
+    - Katerega smo danes?
+    - Kateri dan?
+    - Katero leto
+- intent: time
+  examples: |
+    - koliko je ura?
+    - kok je ura?
+    - ura?
+    - ura
+    - čas
+    - povej mi koliko je ura?
+    - trenutni čas
+    - Koliko je ura?
+    - Koliko je ura
+- intent: lights_on
+  examples: |
+    - odpri luč v [kopalnici](light_name)
+    - Prižgi luči
+    - prižgi luči v [kopalnici](light_name)
+    - prižgi luč [soba](light_name)
+    - vklopi luči
+    - prižgi luči v [veži](light_name)
+    - vklopi luč v [garaži](light_name)
+    - Prižgi luc
+    - Odpri luc
+    - priži luč
+    - prižgi luč
+    - prižgi luči
+    - prižgi luč v [kopalnici](light_name)
+    - Vžgi luč
+    - Prižgi luč v [kopalnici](light_name)
+    - Prižgi luč
+- intent: lights_off
+  examples: |
+    - ugasni luči v [dnevni sobi]{"entity": "light_name", "value": "dnevna soba"}
+    - ugasni luči v [kuhinji](light_name)
+    - izklopi luč
+    - zapri luč na [hodniku](light_name)
+    - ugasni luč
+    - Ugasni luč na [hodniki](light_name)
+    - Zapri luč
+    - Zapri luč v [kleti](light_name)
+    - Zapreš luč?
+- intent: traffic_conditions
+  examples: |
+    - kakšno je stanje na cestah?
+    - je kakšna prometna nesreča?
+    - so kje zastoji?
+    - prometno poročilo
+    - poročilo ceste
+    - kakšen je trenutno promet
+    - razmere na cesti
+    - Razmere na cesti
+    - Promet
+    - promet
+    - prometne novice
+- intent: help
+  examples: |
+    - kaj mi lahko poveš o [vremenu](weather)?
+    - kaj znaš o [vremenu](weather)?
+    - znaš napovedati [vreme](weather)?
+    - [vreme](weather) pomoč
+    - kako lahko uporabljam [vreme](weather)
+    - potrebujem pomoč
+    - mi lahko pomagaš
+    - Mi lahko pomagaš?
+    - Kako mi lahko pomagaš?
+    - kako lahko naredim [opomnik](reminder)?
+    - pomagaj mi narediti [opomnik](reminder)?
+    - pomoč
+    - kako lahko ustvarim [opomnik](reminder)?
+    - zakaj ne morem narediti [opomnika](reminder)
+    - kako se ustvari [opomnik](reminder)?
+    - [opomniki](reminder) pomoč
+    - pomoč [novice](news)
+    - kako uporabljam [novice](news)?
+    - pomoč [spored](tv)
+    - kakši so ukazi za [spored](tv)
+    - Katere [programe](tv) imaš?
+    - Kako ustvarim [opomnik](reminder)?
+    - Pomagaj mi
+    - Pomoč
+    - Rabim pomoč
+    - [Vreme](weather) pomoč
+- intent: tellajoke
+  examples: |
+    - povej šalo
+    - povej mi šalo
+    - še eno šalo
+    - reči kaj smešenga
+    - vic
+    - povej mi kaj smešnega
+    - a znaš kaj smešnega
+    - povej kaj smešnegaa
+    - Povej mi salo
+    - Vici
+    - Se en vic
+    - Se eno
+    - Imaš kako šalo
+    - Poznaš kak vic?
+    - Poznaš kak vič?
+- synonym: danes
+  examples: |
+    - današnji
+- synonym: sreda
+  examples: |
+    - sredo
+- synonym: nedelja
+  examples: |
+    - nedeljo
+- synonym: dnevna soba
+  examples: |
+    - dnevni sobi
+    - dnevni
+- synonym: Kranjska Gora
+  examples: |
+    - Kranjsko Goro
+- synonym: sobota
+  examples: |
+    - soboto
+- synonym: TV SLO 1
+  examples: |
+    - Slovenija 1
+- synonym: Nova Gorica
+  examples: |
+    - Novo Gorico
+- synonym: Šempeter pri Novi Gorici
+  examples: |
+    - Šempetru pri Novi Gorici

@@ -1,0 +1,236 @@
+version: '2.0'
+nlu:
+  - lookup: program
+    examples: |
+      - TV SLO 1
+      - National Geographic
+      - National Geographic Wild
+      - Viasat History
+      - BBC Earth
+      - History Channel
+      - Da Vinci Learning
+      - Travel Channel
+      - CBS Reality
+      - Outdoor
+      - Viasat Nature
+      - Planet
+      - Viasat Explore
+      - Travelxp HD
+      - TV Golica
+      - Nova 24 TV
+      - Nova 24 TV 2
+      - Gold TV
+      - TV SLO 2
+      - HBO 2
+      - HBO 3
+      - Cinemax
+      - Cinemax 2
+      - Planet PLUS
+      - FOX
+      - FOX Life
+      - FOX Crime
+      - FOX Movies
+      - TV 1000
+      - Kino
+      - Planet 2
+      - Brio
+      - Cinestar TV 1
+      - CineStar TV Action & Thriller
+      - CineStar TV Premiere 1
+      - CineStar TV Premiere 2
+      - AXN
+      - AXN Spin
+      - Klasik TV
+      - AMC
+      - Diva
+      - Pink Movies
+      - Pink Family
+      - Red TV
+      - Pink Film
+      - Epic Drama
+      - SciFi
+      - Cinestar TV 2
+      - Cinestar Fantasy
+      - 24Kitchen
+      - E!
+      - Fashion TV
+      - Dr. Fit
+      - Woman
+      - Arte
+      - RTL
+      - RTL II
+      - Super RTL
+      - Kabel 1
+      - VOX
+      - SAT 1
+      - Pro7
+      - 3sat
+      - n-tv
+      - TVE
+      - TV5MONDE
+      - Mediaset Italia
+      - Top TV
+      - PINK SI
+      - EWTN
+      - Pink Plus
+      - Pink Zabava
+      - Pink World
+      - Pink Reality
+      - HGTV
+      - POP TV
+      - Minimax
+      - OTO
+      - Baby TV
+      - Nickelodeon
+      - Cartoon
+      - Boomerang
+      - JimJam
+      - Disney Channel
+      - Disney Junior
+      - Pink Kids
+      - Nick Jr.
+      - NickToons
+      - RTL Kockica
+      - Šport TV 1
+      - Šport TV 2
+      - Šport TV 3
+      - Arena Sport 1
+      - Arena Sport 2
+      - Arena eSport
+      - Eurosport 1
+      - Eurosport 2
+      - Extreme TV
+      - Sport1
+      - Motorvision TV HD
+      - Trace Sport
+      - Nautical Channel
+      - eSport 24
+      - HBO
+      - VH1
+      - CMC
+      - Jugoton
+      - Club MTV
+      - MTV Hits
+      - Trace Urban
+      - MTV 90s
+      - MTV 80s
+      - Mezzo
+      - Pink Music
+      - DM SAT
+      - Pink Extra
+      - Pink Folk
+      - TV Veseljak
+      - Golica Antena TV
+      - Tv8
+      - BOOM TV
+      - NET TV
+      - Vaš kanal
+      - Vitel
+      - Ptujska TV
+      - SIP TV
+      - TV As
+      - RTS Maribor
+      - VTV
+      - BK TV
+      - TV Celje
+      - Kanal 10 / Idea TV
+      - TV Galeja
+      - ePosavje TV
+      - Exodus TV
+      - ATM TV Kranjska Gora
+      - S-TV Skledar
+      - vŽIVO.si
+      - TV SG
+      - Arena TV
+      - Oron TV
+      - ETV HD
+      - TV3
+      - TV SLO 3
+      - TV Koper Capodistria
+      - Tele Maribor
+      - HRT 1
+      - HRT 2
+      - HRT 3
+      - OBN
+      - RT Srbija HD
+      - RTCG 1
+      - Al Jazeera Balkans
+      - Hayat
+      - ELTA TV
+      - BN TV
+      - CNN
+      - BBC World
+      - Sky News
+      - France 24
+      - ZDF
+      - ARD
+      - Russia Today
+      - ORF 1
+      - ORF 2
+      - RAI 1
+      - RAI 2
+      - RAI 3
+      - Duna World
+      - Dom Kino
+      - Telecafe
+      - Vremya
+      - TNT Comedy
+      - Muzika Pervogo
+      - Karousel
+      - RTVi
+      - TNT Music
+      - TV Center
+      - Tring 7
+      - Tring Max
+      - Tring Shiqip
+      - Tring Tring
+      - Tring Vizion+
+      - Elta 2
+      - FTV
+      - NTV IC Kakanj
+      - RTRS
+      - O Kanal
+      - TV Sarajevo
+      - Zdrava TV
+      - RTL Hrvaška
+      - RTL 2 Hrvaška
+      - RTL Living
+      - Jabuka (OTV)
+      - Narodna TV
+      - TV RI
+      - TV Jadran
+      - Z1 Televizija
+      - Alsat Macedonia
+      - MTV 1
+      - MTV 2
+      - TV Sitel
+      - B92
+      - Happy TV
+      - Vikom
+      - KCN
+      - KCN Music
+      - PRVA Srbska TV
+      - RTS 1
+      - RTS 2
+      - TV Duga Novi sad
+      - TV Svet Plus Beograd
+      - Kanal A
+      - BHT1
+      - Hema
+      - RTCG 2
+      - SLON TV extra
+      - TV Vijesti
+      - Televizija 24
+      - OTV Valentino
+      - Discovery Channel
+      - Animal Planet
+      - Discovery TLC
+      - Discovery ID Xtra
+      - Discovery Channel HD
+      - Dusk TV
+      - Sexation
+      - Reality Kings TV
+      - Sitel 3
+      - Discovery Science
+      - DTX
+      - Fight Channel

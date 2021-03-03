@@ -1,0 +1,453 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- affirm:
+    use_entities: true
+- ask_cancel_reminders:
+    use_entities: true
+- chitchat:
+    use_entities: []
+- create_list:
+    use_entities: true
+- create_reminder:
+    use_entities: true
+- currently_playing:
+    use_entities: true
+- date:
+    use_entities: true
+- deny:
+    use_entities: true
+- enter_data:
+    use_entities: true
+- EXTERNAL_news:
+    use_entities: true
+- EXTERNAL_reminder:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- great:
+    use_entities: true
+- greet:
+    use_entities: true
+- latest_news:
+    use_entities: true
+- lights_off:
+    use_entities: true
+- lights_on:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- help:
+    use_entities: true
+- news_subscribe:
+    use_entities: true
+- news_unsubscribe:
+    use_entities: true
+- nlu_fallback:
+    use_entities: true
+- out_of_scope:
+    use_entities: true
+- program_schedule:
+    use_entities: true
+- reminder_date:
+    use_entities: true
+- remove_list:
+    use_entities: true
+- remove_reminder:
+    use_entities: true
+- schedule_query:
+    use_entities: true
+- show_list:
+    use_entities: true
+- show_reminders:
+    use_entities: true
+- stop:
+    use_entities: true
+- tellajoke:
+    use_entities: true
+- thanks:
+    use_entities: true
+- time:
+    use_entities: true
+- traffic_conditions:
+    use_entities: true
+- update_list:
+    use_entities: true
+- update_reminder:
+    use_entities: true
+- weather_forecast:
+    use_entities: true
+- weather_current:
+    use_entities: true
+entities:
+- category
+- country
+- day
+- date_number
+- feedback_value
+- item
+- level
+- light_name
+- list_name
+- location
+- news
+- news_category
+- PER
+- query
+- program
+- time_number
+- tv
+- reminder
+- room_light
+- weather
+- date
+slots:
+  category:
+    type: rasa.shared.core.slots.CategoricalSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+    values:
+    - dokumentarni
+    - film
+    - informativni
+    - izobraževalni
+    - kulturno-umetniški
+    - nadaljevanka
+    - nanizanka
+    - neznan
+    - otroški in mladinski
+    - pogovorni
+    - politika
+    - propagandni program
+    - razvedrilni
+    - verski
+    - za odrasle
+    - šport
+  date_number:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  day:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  joke_guess:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  light_action:
+    type: rasa.shared.core.slots.CategoricalSlot
+    initial_value: null
+    auto_fill: false
+    influence_conversation: false
+    values:
+    - on
+    - off
+  list_item:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  list_items:
+    type: rasa.shared.core.slots.ListSlot
+    initial_value: null
+    auto_fill: false
+    influence_conversation: false
+  list_name:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  location:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  news_category:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  PER:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  program:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  punchline:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: false
+    influence_conversation: true
+  reminder_name:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: false
+    influence_conversation: true
+  time_number:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  user_lists:
+    type: rasa.shared.core.slots.ListSlot
+    initial_value: null
+    auto_fill: false
+    influence_conversation: true
+  reminder_date:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  reminder_time:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  requested_slot:
+    type: rasa.shared.core.slots.UnfeaturizedSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+responses:
+  utter_anything_else:
+  - text: Ti lahko še kako pomagam?
+  utter_ask_continue:
+  - text: Želiš nadaljevati?
+  utter_ask_day:
+  - text: Za kateri dan želiš napoved?
+  utter_ask_day_tv:
+  - text: Za kateri dan te zanima?
+  utter_ask_list_form_list_name:
+  - text: Kako naj ga poimenujem?
+  utter_ask_list_update_form_list_name:
+  - text: Kateri seznam želiš urediti?
+  - text: Kakšno ime ima seznam, ki ga želiš urediti?
+  utter_ask_location:
+  - text: Kateri kraj te zanima?
+  utter_ask_program:
+  - text: Kateri program te zanima?
+  utter_ask_category:
+  - text: Kateri program te zanima?
+  utter_ask_news_subscribe_time:
+  - text: Ob kateri uri želiš prejemati dnevne novice?
+  utter_ask_reminder_form_reminder_date:
+  - text: Ok, kdaj želiš, da te spomnim? 📅
+  - text: Kateri dan?
+  - text: Kdaj naj te opozorim? 📅
+  utter_ask_reminder_form_reminder_time:
+  - text: Ob kateri uri? ⌚
+  utter_ask_reminder_form_reminder_name:
+  - text: Ok, kako naj ga poimenujem?
+  - text: Kakšno ime mu želiš dati?
+  utter_ask_remove_other_list:
+  - text: Želiš izbrisati drug seznam?
+  utter_ask_rephrase:
+  - text: Nisem te dobro razumel, lahko prosim preoblikuješ stavek?
+  utter_greet:
+  - text: Zdravo!
+  - text: Živjo, kako ti lahko pomagam?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Mislim, da te bo to razveselilo:'
+  - image: https://i.imgur.com/u4qSjQL.jpg
+    text: 'Mislim, da te bo to razveselilo:'
+  - image: https://i.imgur.com/xyPtn4m.jpg
+    text: 'Mislim, da te bo to razveselilo:'
+  utter_did_that_help:
+  - text: Ti je to pomagalo? 🙂
+  - text: Je kaj pomagalo?
+  utter_list_not_removed:
+  - text: Ok, ne bom izbrisal seznama ˝{list_name}˝.
+  utter_default:
+  - text: Nisem te dobro razumel, lahko prosim preoblikuješ stavek?
+  - text: Oprosti, nisem te dobro razumel. Lahko preoblikuješ?
+  - text: Žal tega ne razumem. Lahko preoblikuješ svoje sporočilo?
+  utter_how_can_help:
+  - text: Kako ti lahko pomagam?
+  utter_have_a_nice_day:
+  - text: Ok, želim ti lep dan še naprej! 🙂
+  - text: Ok, tu bom, če me boš potreboval.
+  utter_happy:
+  - text: Super, sem zelo vesel!
+  - text: 🙂
+  utter_happy_emoji:
+  - text: 🙂
+  - text: ☺
+  - text: 😁
+  - text: 😄
+  - text: 😃
+  utter_lights_not_implemented:
+  - text: Žal trenutno še ne znam dodati novih luči. Ti lahko kako drugače pomagam?
+  utter_thanks:
+  - text: Ni problema, sem vesel, da sem ti lahko pomagal!
+  - text: Ni zakaj, ti lahko še kako pomagam?
+  utter_goodbye:
+  - text: Adijo!
+  - text: Nasvidenje!
+  utter_out_of_scope:
+  - text: Oprosti, pri tem ti ne morem pomagati.
+  utter_noworries:
+  - text: Ni problema!
+  - text: Malenkost!
+  - text: Vesel sem, da sem ti lahko pomagal.
+  - text: Z veseljem!
+  - text: Ni za kaj!
+  utter_great:
+  - text: Odlično! 👍
+  - text: Fantastično! 🙌
+  - text: Enkratno! 🎉
+  utter_ok:
+  - text: 👍
+  - text: Dobro.
+  - text: Okej.
+  - text: V redu.
+  - text: Ok 👍
+  utter_help_weather:
+  - quick_replies:
+    - payload: /weather_current
+      title: Vreme
+    - payload: /weather_forecast{{"day":"danes"}}
+      title: Vremenska napoved
+    - payload: /weather_forecast{{"day":"jutri"}}
+      title: Vremenska napoved za jutri
+    - payload: /weather_forecast{{"day":"torek"}}
+      title: Vreme torek
+    - payload: /weather_forecast{{"day":"petek"}}
+      title: Vreme petek
+    text: Lahko ti podam informacije o trenutnem vremenu v različnih krajih po Sloveniji ali pa poiščem vremensko napoved za katerikoli dan v tednu.
+  utter_help_news:
+  - quick_replies:
+    - payload: /latest_news
+      title: Novice
+    - payload: /latest_news{{"news_category":"sport"}}
+      title: Šport
+    - payload: /latest_news{{"news_category":"zdravje"}}
+      title: Zdravje
+    - payload: /latest_news{{"news_category":"slovenija"}}
+      title: Slovenija
+    - payload: /latest_news{{"news_category":"svet"}}
+      title: Svet
+    - payload: /latest_news{{"news_category":"kultura"}}
+      title: Kultura
+    - payload: /latest_news{{"news_category":"okolje"}}
+      title: Okolje
+    - payload: /latest_news{{"news_category":"eu"}}
+      title: EU
+    - payload: /latest_news{{"news_category":"zabava in slog"}}
+      title: Zabava in slog
+    text: Lahko ti poiščem aktualne novice iz različnih področij. Če želiš se lahko prijaviš na vsakodnevno obveščanje o novicah.
+  utter_help:
+  - quick_replies:
+    - payload: /help{{"weather":"vreme"}}
+      title: Vreme
+    - payload: /help{{"tv":"spored"}}
+      title: Televizija
+    - payload: /help{{"news":"novice"}}
+      title: Novice
+    - payload: /help{{"reminder":"opomnik"}}
+      title: Opomniki
+    text: Nisem dobro razumel kje potrebuješ pomoč. Če želiš, ti lahko podrobneje razložim katero od mojih znanj.
+  utter_help_reminder:
+  - quick_replies:
+    - payload: /create_reminder
+      title: Ustvari nov opomnik
+    text: Nov opomnik lahko ustvariš kadarkoli v zgolj nekaj stavkih. Najprej napiši, da bi rad ustvaril nov opomnik.
+  utter_help_tv:
+  - text: Vprašaš me lahko o tem kaj se trenutno predvaja po televiziji ali pa kaj bo v na sporedu naslednjih dneh.
+  utter_sad:
+  - text: Škoda 😟
+  - text: 🙁
+  - text: 😥
+  utter_restart_with_button:
+  - buttons:
+    - payload: /restart
+      title: Ponovni zagon
+    text: Če želiš začeti popolnoma od začetka pritisni na spodnji gumb.
+actions:
+- action_ask_joke_guess
+- action_current_news
+- action_current_news_by_category
+- action_date
+- action_default_fallback
+- action_default_ask_affirmation
+- action_jokepunchline
+- action_light_name
+- action_lights_interaction
+- action_set_reminder
+- action_news_subscribe
+- action_news_unsubscribe
+- action_show_all_lists
+- action_show_all_reminders
+- action_show_list_items
+- action_show_removable_lists
+- action_time
+- action_traffic
+- action_top_news
+- action_tv_curretly_playing
+- action_tv_schedule
+- action_tv_search_query
+- action_update_reminder
+- action_weather_forecast
+- action_weather_current
+- action_react_to_news_subscription
+- action_react_to_reminder
+- action_remove_list
+- action_remove_list_confirmation
+- action_remove_reminder
+- action_reset_list_slots
+- action_reset_reminder_slots
+- action_update_user_lists
+- validate_reminder_form
+- validate_list_form
+- validate_list_update_form
+forms:
+  reminder_form:
+    reminder_date:
+    - entity: date_number
+      type: from_entity
+    - entity: day
+      type: from_entity
+    reminder_name:
+    - not_intent:
+      - stop
+      type: from_text
+    reminder_time:
+    - entity: time_number
+      type: from_entity
+  list_form:
+    list_item:
+    - not_intent:
+      - stop
+      type: from_text
+    list_name:
+    - not_intent:
+      - stop
+      type: from_text
+  list_update_form:
+    list_item:
+    - not_intent:
+      - stop
+      type: from_text
+    list_name:
+    - not_intent:
+      - stop
+      type: from_text
+  joke_form:
+    joke_guess:
+    - type: from_text
+e2e_actions: []
