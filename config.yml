@@ -1,11 +1,10 @@
 # Fast text pipeline
 language: sl
 pipeline:
-  - name: custom_components.ClasslaTokenizer.ClasslaTokenizer
+  - name: custom_component.stanzatokenizer.StanzaTokenizer
+    lang: "sl"
+    cache_dir: "~/stanza_resources"
   - name: RegexFeaturizer
-  - name: LanguageModelFeaturizer
-    model_weights: ./custom_components/cache
-    model_name: "bert"
   - name: LexicalSyntacticFeaturizer
     "features": [
       [ "low", "title", "upper" ],
