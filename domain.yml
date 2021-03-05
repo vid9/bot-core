@@ -91,15 +91,11 @@ entities:
 - day
 - date_number
 - feedback_value
-- item
-- level
 - light_name
 - list_name
 - location
 - news
 - news_category
-- PER
-- query
 - program
 - time_number
 - tv
@@ -246,9 +242,9 @@ responses:
   utter_ask_news_subscribe_time:
   - text: Ob kateri uri želiš prejemati dnevne novice?
   utter_ask_reminder_form_reminder_date:
-  - text: Ok, kdaj želiš, da te spomnim? 📅
+  - text: Kateri dan naj te opozorim? 📅
   - text: Kateri dan?
-  - text: Kdaj naj te opozorim? 📅
+  - text: Ok, kdaj želiš, da te spomnim? 📅
   utter_ask_reminder_form_reminder_time:
   - text: Ob kateri uri? ⌚
   utter_ask_reminder_form_reminder_name:

@@ -149,4 +149,6 @@ nlu:
     - Res si zabaven
     - Res si smešen
     - Kok si smešen
-
+- intent: nlu_fallback
+  examples: |
+    - pečica

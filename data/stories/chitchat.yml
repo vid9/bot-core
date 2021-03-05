@@ -114,3 +114,31 @@ stories:
   - action: action_date
   - intent: goodbye
   - action: utter_goodbye
+- story: Story from Conversation ID 0554580888d749b084257ef241048b80
+  steps:
+  - intent: create_reminder
+  - action: reminder_form
+  - active_loop: reminder_form
+  - slot_was_set:
+    - requested_slot: reminder_name
+  - intent: affirm
+  - action: reminder_form
+  - slot_was_set:
+    - reminder_name: jagoda
+  - slot_was_set:
+    - requested_slot: reminder_date
+  - intent: enter_data
+    entities:
+    - program: '5'
+    - location: min
+  - slot_was_set:
+    - location: min
+  - slot_was_set:
+    - program: '5'
+  - action: action_weather_forecast
+  - intent: enter_data
+    entities:
+    - time_number: 10h
+  - slot_was_set:
+    - time_number: 10h
+  - action: action_lights_interaction
