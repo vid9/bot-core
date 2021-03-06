@@ -14,13 +14,14 @@ nlu:
     - Kaj se trenutno predvaja po tv?
     - Kaj je trenutno na [TV SLO 1](program)
     - kaj se predvaja po tv?
+    - Kaj je trenutno po pop tv?
 - intent: program_schedule
   examples: |
     - spored [slovenija 1]{"entity": "program", "value": "TV SLO 1"}
     - spored [tv slo 2](program)
     - spored za [kanal A](program)
     - kaj bo [jutri](day) na [pop tv](program)
-    - [današnji]{"entity": "day", "value":"danes"} spored [slo 3] {"entity": "program", "value":"TV SLO 3"}
+    - [današnji]{"entity": "day", "value": "danes"} spored [slo 3] {"entity": "program", "value":"TV SLO 3"}
     - Kaj bo v [torek](day) na [pop TV](program)?
     - Spored za [kanal a](program)
     - spored za [Kanal A](location)
@@ -48,8 +49,8 @@ nlu:
     - kateri [filmi]{"entity": "category", "value": "film"} so po tv?
     - katere [filmi]{"entity": "category", "value": "film"} so [danes](day)
     - je [jutri](day) kak [dokumentarec]{"entity": "category", "value": "dokumentarni"}  na [planetu](program)?
-    - kdaj bo [jutri](day) [mladinski]{"entity": "category", "value": "otroški in mladinski"} program na [National Geographic](program)
-    - je [danes](day) kakšna [kulturna]{"entity": "category", "value": "kulturno-umetniški"} oddaja
+    - kdaj bo [jutri](day) [mladinski]{"entity": "category", "value": "otro\u0161ki in mladinski"} program na [National Geographic](program)
+    - je [danes](day) kakšna [kulturna]{"entity": "category", "value": "kulturno-umetni\u0161ki"} oddaja
     - katere [verske]{"entity": "category", "value": "verski"} oddaje so po tv
 - synonym: TV SLO 2
   examples: |
@@ -72,3 +73,15 @@ nlu:
   examples: |
     - nadaljevanke
     - serije
+- synonym: dokumentarni
+  examples: |
+    - dokumentarec
+- synonym: otroški in mladinski
+  examples: |
+    - mladinski
+- synonym: kulturno-umetniški
+  examples: |
+    - kulturna
+- synonym: verski
+  examples: |
+    - verske
