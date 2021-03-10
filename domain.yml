@@ -92,7 +92,6 @@ entities:
 - date_number
 - feedback_value
 - light_name
-- list_name
 - location
 - news
 - news_category
