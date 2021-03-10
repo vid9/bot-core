@@ -38,6 +38,8 @@ nlu:
     - Kaj bo po TV?
     - Kaj bo na [televiziji](day)
     - [Danes](day) na TV?
+    - TV spored
+    - TV spored [SLO1](program)
 - intent: schedule_query
   examples: |
     - kateri [filmi]{"entity": "category", "value": "film"} so [danes](day) na sporedu?

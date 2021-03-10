@@ -67,6 +67,9 @@ nlu:
     - Koncaj
     - Prekliči
     - Ustavi
+    - zaključi
+    - konec
+    - zapri
 - intent: mood_great
   examples: |
     - zelo dobro
@@ -279,25 +282,6 @@ nlu:
 - synonym: danes
   examples: |
     - današnji
-- synonym: sreda
-  examples: |
-    - sredo
-- synonym: nedelja
-  examples: |
-    - nedeljo
-- synonym: dnevna soba
-  examples: |
-    - dnevni sobi
-    - dnevni
-- synonym: Kranjska Gora
-  examples: |
-    - Kranjsko Goro
-- synonym: sobota
-  examples: |
-    - soboto
-- synonym: TV SLO 1
-  examples: |
-    - Slovenija 1
 - synonym: Nova Gorica
   examples: |
     - Novo Gorico
