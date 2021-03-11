@@ -7,8 +7,6 @@ session_config:
 intents:
 - affirm:
     use_entities: true
-- ask_cancel_reminders:
-    use_entities: true
 - chitchat:
     use_entities: []
 - create_list:
@@ -16,8 +14,6 @@ intents:
 - create_reminder:
     use_entities: true
 - currently_playing:
-    use_entities: true
-- date:
     use_entities: true
 - deny:
     use_entities: true
@@ -79,19 +75,15 @@ intents:
     use_entities: true
 - update_list:
     use_entities: true
-- update_reminder:
-    use_entities: true
 - weather_forecast:
     use_entities: true
 - weather_current:
     use_entities: true
 entities:
 - category
-- country
 - day
 - date
 - date_number
-- feedback_value
 - light_name
 - list
 - location
@@ -101,7 +93,6 @@ entities:
 - time_number
 - tv
 - reminder
-- room_light
 - weather
 slots:
   category:
@@ -170,11 +161,6 @@ slots:
     auto_fill: true
     influence_conversation: true
   news_category:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
-    auto_fill: true
-    influence_conversation: true
-  PER:
     type: rasa.shared.core.slots.TextSlot
     initial_value: null
     auto_fill: true
@@ -423,7 +409,6 @@ actions:
 - action_tv_curretly_playing
 - action_tv_schedule
 - action_tv_search_query
-- action_update_reminder
 - action_weather_forecast
 - action_weather_current
 - action_react_to_news_subscription

@@ -28,6 +28,7 @@ nlu:
     - dodaj nove elemente na seznam
     - kako lahko uredim seznam?
     - rad bi uredil seznam
+    - želim dodati nove stvari na seznam
 - intent: remove_list
   examples: |
     - izbriši seznam

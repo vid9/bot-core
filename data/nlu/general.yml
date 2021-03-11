@@ -167,6 +167,8 @@ nlu:
     - Caw
     - Čao
     - Adijo
+    - Lepo se imej
+    - Lahko noč :)
 - intent: date
   examples: |
     - kateri dan je [jutri](day)?
