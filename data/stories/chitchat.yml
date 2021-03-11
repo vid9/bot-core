@@ -142,3 +142,9 @@ stories:
   - slot_was_set:
     - time_number: 10h
   - action: action_lights_interaction
+- story: list help
+  steps:
+  - intent: help
+    entities:
+    - list: seznam
+  - action: utter_help_lists

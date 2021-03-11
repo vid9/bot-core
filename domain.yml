@@ -89,9 +89,11 @@ entities:
 - category
 - country
 - day
+- date
 - date_number
 - feedback_value
 - light_name
+- list
 - location
 - news
 - news_category
@@ -101,7 +103,6 @@ entities:
 - reminder
 - room_light
 - weather
-- date
 slots:
   category:
     type: rasa.shared.core.slots.CategoricalSlot
