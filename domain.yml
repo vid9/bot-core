@@ -344,8 +344,14 @@ responses:
       title: Okolje
     - payload: /latest_news{{"news_category":"eu"}}
       title: EU
-    - payload: /latest_news{{"news_category":"zabava in slog"}}
+    - payload: /latest_news{{"news_category":"zabava-in-slog"}}
       title: Zabava in slog
+    - payload: /latest_news{{"news_category":"gospodarstvo"}}
+      title: Gospodarstvo
+    - payload: /latest_news{{"news_category":"znanost-in-tehnologija"}}
+      title: Znanost in tehnologija
+    - payload: /latest_news{{"news_category":"lokalne-novice"}}
+      title: Lokalne novice
     text: Lahko ti poiščem aktualne novice iz različnih področij. Če želiš se lahko prijaviš na vsakodnevno obveščanje o novicah.
   utter_help:
   - quick_replies:
@@ -364,7 +370,16 @@ responses:
       title: Ustvari nov opomnik
     text: Nov opomnik lahko ustvariš kadarkoli v zgolj nekaj stavkih. Najprej napiši, da bi rad ustvaril nov opomnik.
   utter_help_tv:
-  - text: Vprašaš me lahko o tem kaj se trenutno predvaja po televiziji ali pa kaj bo v na sporedu naslednjih dneh.
+  - quick_replies:
+    - payload: '/currently_playing{{"program": "TV SLO 1"}}'
+      title: Trenutno na TV SLO 1
+    - payload: '/program_schedule{{"program": "Kanal A", "day": "danes"}}'
+      title: Spored Kanal A
+    - payload: '/schedule_query{{"program": "POP TV", "day": "danes", "category": "film"}}'
+      title: Filmi na POP TV
+    - payload: '/schedule_query{{"program": "FOX", "day": "danes", "category": "nadaljevanke"}}'
+      title: Nadaljevanke na FOX
+    text: Vprašaš me lahko o tem kaj se trenutno predvaja po televiziji ali pa kaj bo na sporedu v naslednjih dneh. Iščeš lahko tudi po različnih kategorijah (https://tv-spored.siol.net/kategorije).
   utter_sad:
   - text: Škoda 😟
   - text: 🙁

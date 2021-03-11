@@ -148,3 +148,13 @@ stories:
     entities:
     - list: seznam
   - action: utter_help_lists
+- story: Help news and help lists
+  steps:
+  - intent: help
+    entities:
+    - news: novice
+  - action: utter_help_news
+  - intent: help
+    entities:
+    - list: seznami
+  - action: utter_help_lists

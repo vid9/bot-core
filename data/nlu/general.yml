@@ -182,6 +182,7 @@ nlu:
     - Katerega smo danes?
     - Kateri dan?
     - Katero leto
+    - Katerega smo?
 - intent: time
   examples: |
     - koliko je ura?
@@ -263,8 +264,10 @@ nlu:
     - Pomoč
     - Rabim pomoč
     - [Vreme](weather) pomoč
-    - Kako upravljam [sezname](category)
+    - Kako upravljam [sezname](list)
     - [novice ](news)kategorije
+    - kako lahko upravljam [sezname](list)?
+    - pomoč [seznami](list)
 - intent: tellajoke
   examples: |
     - povej šalo
