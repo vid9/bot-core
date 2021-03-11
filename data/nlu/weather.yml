@@ -62,3 +62,4 @@ nlu:
     - Kakšno je vreme
     - Kakšno je vreme v [Ljubljani](location)?
     - Kakšno vreme je v [Vipavi](location)?
+    - Koliko je stopinj?

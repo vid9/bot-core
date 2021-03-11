@@ -38,6 +38,7 @@ nlu:
     - Novice [kultura](news_category)
     - [Šport]{"entity": "news_category", "value": "sport"}
     - [Črna kronika]{"entity": "news_category", "value": "crna-kronika"}
+    - Novice [Znanost](news_category)
 - intent: news_subscribe
   examples: |
     - želim se naročiti na dnevne novice
@@ -75,6 +76,7 @@ nlu:
 - synonym: crna-kronika
   examples: |
     - črna kronika
+    - Črna kronika
 - synonym: koronavirus
   examples: |
     - koronavirusu
@@ -82,6 +84,7 @@ nlu:
   examples: |
     - šport
     - športu
+    - Šport
 - synonym: zabava-in-slog
   examples: |
     - zabava

@@ -149,6 +149,7 @@ nlu:
     - Hejlo
     - Dober vecer
     - Ahoj
+    - O
 - intent: goodbye
   examples: |
     - adijo
@@ -262,6 +263,7 @@ nlu:
     - Pomoč
     - Rabim pomoč
     - [Vreme](weather) pomoč
+    - Kako upravljam [sezname](category)
 - intent: tellajoke
   examples: |
     - povej šalo

@@ -373,6 +373,17 @@ responses:
     - payload: /restart
       title: Ponovni zagon
     text: Če želiš začeti popolnoma od začetka pritisni na spodnji gumb.
+  utter_help_lists:
+  - quick_replies:
+    - payload: /create_list
+      title: Ustvari seznam
+    - payload: /show_list
+      title: Prikaži moje sezname
+    - payload: /update_list
+      title: Uredi seznam
+    - payload: /remove_list
+      title: Izbriši seznam
+    text: Ustvariš lahko različne sezname in na njih dodajaš elemente. V primeru, da hočeš videti katere elemente že imaš na seznamu, me lahko to vprašaš. Seznam lahko urejaš z uporabo besed ˝dodaj˝ ali ˝odstrani˝ in imenom elementa, ki ga želiš dodati ali odstraniti.
 actions:
 - action_ask_joke_guess
 - action_current_news
