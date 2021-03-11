@@ -158,3 +158,67 @@ stories:
     entities:
     - list: seznami
   - action: utter_help_lists
+- story: Prekini urejanje seznama
+  steps:
+  - intent: update_list
+  - action: list_update_form
+  - active_loop: list_update_form
+  - slot_was_set:
+    - requested_slot: list_name
+  - intent: deny
+  - active_loop: null
+  - action: utter_anything_else
+- story: No light action provided
+  steps:
+  - action: action_lights_interaction
+  - slot_was_set:
+    - light_action: null
+  - intent: affirm
+  - action: utter_lights_not_implemented
+- story: User doesnt have any lists and wants to create new list
+  steps:
+  - intent: show_list
+  - action: action_show_all_lists
+  - slot_was_set:
+    - list_name: null
+  - intent: affirm
+  - action: list_form
+  - active_loop: list_form
+- story: User doesnt have any lists doesnt want to continue
+  steps:
+  - intent: show_list
+  - action: action_show_all_lists
+  - slot_was_set:
+    - list_name: null
+  - intent: deny
+  - action: utter_anything_else
+- story: TV schedule ask for program and day
+  steps:
+  - intent: program_schedule
+  - action: utter_ask_program
+  - intent: enter_data
+    entities:
+    - program: TV SLO 1
+  - slot_was_set:
+    - program: TV SLO 1
+  - action: utter_ask_day_tv
+  - intent: enter_data
+    entities:
+    - day: danes
+  - slot_was_set:
+    - day: danes
+  - action: action_tv_schedule
+- story: User wants to know schedule, time provided
+  steps:
+  - intent: program_schedule
+    entities:
+    - day: danes
+    - time_number: 20h
+    - program: Planet
+  - slot_was_set:
+    - day: danes
+  - slot_was_set:
+    - program: Planet
+  - slot_was_set:
+    - time_number: 20h
+  - action: action_tv_schedule

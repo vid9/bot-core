@@ -43,6 +43,7 @@ nlu:
     - spored [Pop tv](program) [nedelja](day)
     - spored [pop tv](program) v [nedeljo]{"entity": "day", "value": "nedelja"}
     - spored [tv slo 2](program) [jutri](day)
+    - Kdaj bo dnevnik na sporedu?
 - intent: schedule_query
   examples: |
     - kateri [filmi]{"entity": "category", "value": "film"} so [danes](day) na sporedu?

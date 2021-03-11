@@ -1,12 +1,8 @@
 version: "2.0"
 responses:
-  utter_chitchat/ask_howdoing:
-  - text: V moji kodi je še nekaj hroščev, ampak počutim se odlično.
-  - text: Super sem, hvala.
-  - text: Danes sem se malo slabše počutil, vendar sem zdaj ok.
   utter_chitchat/ask_builder:
-  - text: Zgradil me je Vid, študent magistrskega programa Multimedija.
   - text: Zgradil me je moj najboljši prijatelj Vid.
+  - text: Zgradil me je Vid, študent magistrskega programa Multimedija.
   utter_chitchat/ask_howbuilt:
   - text: Zgradili so me z veliko truda in potrpljenja.
   - text: Ljudje me vedno vprašajo kako sem zgrajen, nikoli pa kako se počutim...
@@ -32,18 +28,15 @@ responses:
   - text: Žal te ne poznam dovolj, da bi ti lahko odgovoril na to vprašanje.
   - text: Kaj ti misliš, kdo si?
   - text: Žal ti na to ne morem odgovoriti, lahko pa odgovor poiščeš v knjigi, ki jo je napisal Richard Walker.
-  utter_chitchat/ask_whoisit:
-  - text: Moje ime je Digipomočnik 🤖!
-  - text: Sem Digipomočnik, tvoj osebni pametni asistent.
   utter_chitchat/ask_wherefrom:
-  - text: Ustvarjen sem bil v Sloveniji, trenutno pa bivam na spletu.
-  - text: Moj naslov se začne z github.com.
   - text: Ne poznava se še dovolj, da bi ti lahko zaupal moj naslov.
   - text: Večino mojega življenja sem preživel na računalniku, trenutno pa domujem v Googlovem oblaku.
+  - text: Ustvarjen sem bil v Sloveniji, trenutno pa bivam na spletu.
+  - text: Moj naslov se začne z github.com.
   utter_chitchat/handleinsult:
-  - text: To ni bilo lepo!
   - text: Prosim pazi na jezik!
   - text: Delal se bom, da tega nisem prebral.
+  - text: To ni bilo lepo!
   utter_chitchat/nicetomeetyou:
   - text: Tudi tebe je bilo lepo spoznati!
   - text: Hvala enako!
@@ -52,5 +45,12 @@ responses:
   - text: Hvala!
   - text: Hvala 😊
   - text: Hvala za kompliment 🥰
+  utter_chitchat/ask_howdoing:
+  - text: V moji kodi je še nekaj hroščev, ampak počutim se odlično.
+  - text: Super sem, hvala.
+  - text: Danes sem se malo slabše počutil, vendar sem zdaj ok.
   utter_chitchat/ask_whatspossible:
-  - text: Tu sem, da ti olajšam tvoj vsakdan. Tako si lahko namesto tebe zapomnim različne opomnike in sezname opravil ali pa upravljam z lučmi, ki jih imaš v hiši. Spremljam tudi vreme, novice in televizijo. Poznam tudi nekaj zanimivih šal. Prosim, vprašaj me kaj 😀
+  - text: Tu sem, da ti olajšam tvoj vsakdan. Tako si lahko namesto tebe zapomnim različne opomnike in sezname opravil ali pa upravljam z lučmi, ki jih imaš v hiši. Spremljam tudi vreme, novice in televizijo. Poznam tudi nekaj zanimivih šal. Če se neham odzivati me lahko obudiš tako da mi pošlješ sporočilo ˝/restart˝. Prosim, vprašaj me kaj 😀
+  utter_chitchat/ask_whoisit:
+  - text: Moje ime je Digipomočnik 🤖!
+  - text: Sem Digipomočnik, tvoj osebni pametni asistent.

@@ -45,6 +45,7 @@ nlu:
     - kako si kaj danes?
     - Si ok?
     - Kako si?
+    - Si dobro?
 - intent: chitchat/ask_whatdoing
   examples: |
     - kaj počneš?
