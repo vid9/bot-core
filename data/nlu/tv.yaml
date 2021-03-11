@@ -40,6 +40,9 @@ nlu:
     - [Danes](day) na TV?
     - TV spored
     - TV spored [SLO1](program)
+    - spored [Pop tv](program) [nedelja](day)
+    - spored [pop tv](program) v [nedeljo]{"entity": "day", "value": "nedelja"}
+    - spored [tv slo 2](program) [jutri](day)
 - intent: schedule_query
   examples: |
     - kateri [filmi]{"entity": "category", "value": "film"} so [danes](day) na sporedu?
@@ -54,6 +57,7 @@ nlu:
     - kdaj bo [jutri](day) [mladinski]{"entity": "category", "value": "otro\u0161ki in mladinski"} program na [National Geographic](program)
     - je [danes](day) kakšna [kulturna]{"entity": "category", "value": "kulturno-umetni\u0161ki"} oddaja
     - katere [verske]{"entity": "category", "value": "verski"} oddaje so po tv
+    - [nadaljevanke]{"entity": "category", "value": "nadaljevanka"}  [danes](day) na [TV SLO 2](program)
 - synonym: TV SLO 2
   examples: |
     - dvojki

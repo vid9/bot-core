@@ -39,6 +39,9 @@ nlu:
     - [Šport]{"entity": "news_category", "value": "sport"}
     - [Črna kronika]{"entity": "news_category", "value": "crna-kronika"}
     - Novice [Znanost](news_category)
+    - novice [rokomet](news_category)
+    - novice [Znanost](news_category)
+    - novice [znanost](news_category)
 - intent: news_subscribe
   examples: |
     - želim se naročiti na dnevne novice
