@@ -264,6 +264,7 @@ nlu:
     - Rabim pomoč
     - [Vreme](weather) pomoč
     - Kako upravljam [sezname](category)
+    - [novice ](news)kategorije
 - intent: tellajoke
   examples: |
     - povej šalo
