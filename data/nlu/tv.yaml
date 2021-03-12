@@ -59,7 +59,7 @@ nlu:
     - je [danes](day) kakšna [kulturna]{"entity": "category", "value": "kulturno-umetni\u0161ki"} oddaja
     - katere [verske]{"entity": "category", "value": "verski"} oddaje so po tv
     - [nadaljevanke]{"entity": "category", "value": "nadaljevanka"}  [danes](day) na [TV SLO 2](program)
-    - Kdaj so [danes](day) [informativne](category) oddaje na [TV SLO 1]?(program)
+    - Kdaj so [danes](day/) [informativne](category/) oddaje na [TV SLO 1](program)?
     - [Serije]{"entity": "category", "value": "nadaljevanka"} na [planet tv](program) [sobota](day)
     - [Informativne oddaje]{"entity": "category", "value": "informativni"} na [planet tv](program) [sobota](day)
 - synonym: TV SLO 2
