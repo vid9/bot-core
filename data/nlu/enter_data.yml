@@ -115,6 +115,7 @@ nlu:
     - [Golica]{"entity": "program", "value": "TV Golica"}
     - [Pop tv](program)
     - [litija](location)
+    - [SLO1](program)
 - synonym: sreda
   examples: |
     - sredo
