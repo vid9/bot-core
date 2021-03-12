@@ -83,6 +83,7 @@ nlu:
     - hahaha
     - Hahaha
     - :)
+    - dobro sem
 - intent: mood_unhappy
   examples: |
     - slabo
