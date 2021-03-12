@@ -77,6 +77,7 @@ nlu:
 - synonym: informativni
   examples: |
     - informativne oddaje
+    - Informativne oddaje
 - synonym: FOX
   examples: |
     - Fox
@@ -84,6 +85,7 @@ nlu:
   examples: |
     - nadaljevanke
     - serije
+    - Serije
 - synonym: dokumentarni
   examples: |
     - dokumentarec
