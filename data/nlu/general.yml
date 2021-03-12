@@ -60,6 +60,10 @@ nlu:
     - Nič
     - Ne želim
     - Nočem
+    - nočem tega
+    - nočem ustvariti opomnika
+    - nočem narediti opomnika
+    - nočem nadaljevati
 - intent: stop
   examples: |
     - stop
@@ -68,12 +72,8 @@ nlu:
     - prenehaj
     - prekliči
     - prekini
-    - nočem tega
-    - nočem ustvariti opomnika
     - Prekini
     - Stop
-    - nočem narediti opomnika
-    - nočem nadaljevati
     - Koncaj
     - Prekliči
     - Ustavi
@@ -288,7 +288,6 @@ nlu:
     - Se eno
     - Imaš kako šalo
     - Poznaš kak vic?
-    - Poznaš kak vič?
 - synonym: danes
   examples: |
     - današnji

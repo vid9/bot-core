@@ -36,7 +36,7 @@ nlu:
     - Kakšno bo vreme v [Ljubljani](location)?
     - Ni napovedi?
     - vreme [jutri](day) [Ljubljana](location)
-    - Kdaj bo danes sončni zahod?
+    - Kdaj bo [danes](day) sončni zahod?
     - kakšno bo vreme [danes](day)
 - intent: weather_current
   examples: |

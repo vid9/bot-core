@@ -19,6 +19,7 @@ nlu:
 - intent: help
   examples: |
     - Znaš narediti [seznam](list) opravil?
+    - kako lahko uredim [seznam](list)?
 - intent: update_list
   examples: |
     - uredi seznam
@@ -28,7 +29,6 @@ nlu:
     - popravi zadnji seznam
     - spremeni zadnji seznam
     - dodaj nove elemente na seznam
-    - kako lahko uredim seznam?
     - rad bi uredil seznam
     - želim dodati nove stvari na seznam
 - intent: remove_list
