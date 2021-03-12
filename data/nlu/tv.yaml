@@ -60,6 +60,7 @@ nlu:
     - katere [verske]{"entity": "category", "value": "verski"} oddaje so po tv
     - [Serije]{"entity": "category", "value": "nadaljevanka"} na [planet tv](program) [sobota](day)
     - [Informativne oddaje]{"entity": "category", "value": "informativni"} na [planet tv](program) [sobota](day)
+    - Kateri [filmi]{"entity": "category", "value": "film"} bodo [jutri](day) na [tv slo 2](program)?
 - synonym: TV SLO 2
   examples: |
     - dvojki

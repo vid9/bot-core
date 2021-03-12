@@ -41,6 +41,7 @@ nlu:
     - super!
     - Odlično!
     - Bravo
+    - to je pa lepo slišat
 - intent: deny
   examples: |
     - ne

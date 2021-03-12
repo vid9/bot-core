@@ -222,3 +222,13 @@ stories:
   - slot_was_set:
     - time_number: 20h
   - action: action_tv_schedule
+- story: User does not want to remove list
+  steps:
+  - intent: remove_list
+  - action: action_remove_list_confirmation
+  - slot_was_set:
+    - list_name: kemiki
+  - intent: deny
+  - action: utter_list_not_removed
+  - slot_was_set:
+    - list_name: null
