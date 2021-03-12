@@ -51,8 +51,6 @@ intents:
     use_entities: true
 - program_schedule:
     use_entities: true
-- reminder_date:
-    use_entities: true
 - remove_list:
     use_entities: true
 - remove_reminder:
@@ -78,6 +76,8 @@ intents:
 - weather_forecast:
     use_entities: true
 - weather_current:
+    use_entities: true
+- date:
     use_entities: true
 entities:
 - category
