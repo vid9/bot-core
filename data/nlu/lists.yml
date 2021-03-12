@@ -15,8 +15,10 @@ nlu:
     - ustvari seznam
     - rad bi ustvaril seznam
     - ustvaari seznam
-    - Znaš narediti seznam opravil?
     - Ustvari seznam
+- intent: help
+  examples: |
+    - Znaš narediti [seznam](list) opravil?
 - intent: update_list
   examples: |
     - uredi seznam

@@ -10,7 +10,6 @@ nlu:
     - novice [košarka]{"entity": "news_category", "value": "kosarka"}?
     - je kaj novega v novicah?
     - kaj se je zgodilo danes?
-    - novice []
     - najbolj brane novice danes
     - kaj je danes v novicah?
     - današnji dogodki

@@ -16,10 +16,8 @@ nlu:
     - velja
     - kul
     - jp
-    - Kul
     - Je
     - Res je
-    - Fajn
     - Prav.
     - Da
     - Super, izbriši
@@ -31,6 +29,18 @@ nlu:
     - Ok
     - Ja
     - da želim
+- intent: great
+  examples: |
+    - Fajn
+    - super
+    - odlično
+    - to je dobro
+    - lepo
+    - ful dobro
+    - izjemno
+    - super!
+    - Odlično!
+    - Bravo
 - intent: deny
   examples: |
     - ne
@@ -73,7 +83,7 @@ nlu:
 - intent: mood_great
   examples: |
     - zelo dobro
-    - odličo sem
+    - odlično sem
     - počutim se dobro
     - počutim se čudovito
     - trenutno sem dobro
@@ -109,17 +119,6 @@ nlu:
     - ok, hvala
     - Hvala
     - Ni potrebe hvala
-- intent: great
-  examples: |
-    - super
-    - odlično
-    - to je dobro
-    - lepo
-    - ful dobro
-    - izjemno
-    - super!
-    - Odlično!
-    - Bravo
 - intent: greet
   examples: |
     - dober dan

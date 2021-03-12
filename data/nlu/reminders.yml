@@ -11,11 +11,13 @@ nlu:
     - želim ustvariti nov opomnik
     - Nastavi opomnik
     - Naredi opomnik
-    - kako lahko ustvarim nov opomnik
     - Ustvari opomnik
     - Ustvari nov opomnik
     - Nov opomnik
     - Še en opomnik
+- intent: help
+  examples: |
+    - kako lahko ustvarim nov [opomnik](reminder)
 - intent: remove_reminder
   examples: |
     - Izbriši opomnik

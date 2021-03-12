@@ -23,7 +23,7 @@ nlu:
     - [današnji]{"entity": "day", "value": "danes"} spored [slo 3] {"entity": "program", "value":"TV SLO 3"}
     - Kaj bo v [torek](day) na [pop TV](program)?
     - Spored za [kanal a](program)
-    - spored za [Kanal A](location)
+    - spored za [Kanal A](program)
     - Spored za [jutri](day)
     - Rada bi spored
     - Spored bi želela
@@ -42,7 +42,7 @@ nlu:
     - spored [Pop tv](program) [nedelja](day)
     - spored [pop tv](program) v [nedeljo]{"entity": "day", "value": "nedelja"}
     - spored [tv slo 2](program) [jutri](day)
-    - Kdaj bo dnevnik na sporedu?
+    - Kdaj bo [dnevnik](program) na sporedu?
     - Kaj bo [danes](day) ob [20h](time_number) na [Planet](program)
 - intent: schedule_query
   examples: |
@@ -77,6 +77,7 @@ nlu:
   examples: |
     - informativne oddaje
     - Informativne oddaje
+    - dnevnik
 - synonym: FOX
   examples: |
     - Fox
