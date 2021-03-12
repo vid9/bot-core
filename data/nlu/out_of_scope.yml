@@ -7,3 +7,5 @@ nlu:
     - Kakšne barve je sonce?
     - S kom se pogovarjaš?
     - Kdaj gre avtobus iz Ajdddovščine v [Ljubljano](location)?
+    - Karantena v [Slovenij](news_category)
+    - Kje so odprte [gostilne](news_category)
