@@ -114,7 +114,6 @@ nlu:
     - [Nova Gorica](location)
     - [Golica]{"entity": "program", "value": "TV Golica"}
     - [Pop tv](program)
-    - [SLO1](program)
     - [litija](location)
 - synonym: sreda
   examples: |
