@@ -119,6 +119,7 @@ nlu:
     - izjemno
     - super!
     - Odlično!
+    - Bravo
 - intent: greet
   examples: |
     - dober dan
