@@ -20,7 +20,7 @@ nlu:
     - spored [tv slo 2](program)
     - spored za [kanal A](program)
     - kaj bo [jutri](day) na [pop tv](program)
-    - [današnji](day///////////////////////////////////////////) spored [slo 3](program)
+    - [današnji](day) spored [slo 3](program)
     - Kaj bo v [torek](day) na [pop TV](program)?
     - Spored za [kanal a](program)
     - spored za [Kanal A](program)
