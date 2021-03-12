@@ -3,18 +3,17 @@ nlu:
 - intent: currently_playing
   examples: |
     - kaj je trenutno na programu [Kino](program)?
-    - katera oddaja se predvja na [dvojki]{"entity": "program", "value": "TV SLO 2"}
+    - katera oddaja se predvaja na [dvojki]{"entity": "program", "value": "TV SLO 2"}
     - kaj je na [kanalu a]{"entity": "program", "value": "Kanal A"}
     - kaj se predvaja po TV?
     - kaj je trenutno na tv?
     - kaj se predvaja po televiziji?
     - kateri [film](category) se trenutno predvaja?
     - Kaj se predvaja po tv?
-    - Kaj se trenutno predvaja po TV slo 1
+    - Kaj se trenutno predvaja po [TV slo 1](program)
     - Kaj se trenutno predvaja po tv?
     - Kaj je trenutno na [TV SLO 1](program)
-    - kaj se predvaja po tv?
-    - Kaj je trenutno po pop tv?
+    - Kaj je trenutno po [pop tv](program)?
 - intent: program_schedule
   examples: |
     - spored [slovenija 1]{"entity": "program", "value": "TV SLO 1"}
@@ -39,7 +38,7 @@ nlu:
     - Kaj bo na [televiziji](day)
     - [Danes](day) na TV?
     - TV spored
-    - TV spored [SLO1](program)
+    - TV spored [SLO1]{"entity": "program", "value": "TV SLO 1"}
     - spored [Pop tv](program) [nedelja](day)
     - spored [pop tv](program) v [nedeljo]{"entity": "day", "value": "nedelja"}
     - spored [tv slo 2](program) [jutri](day)
@@ -60,7 +59,7 @@ nlu:
     - je [danes](day) kakšna [kulturna]{"entity": "category", "value": "kulturno-umetni\u0161ki"} oddaja
     - katere [verske]{"entity": "category", "value": "verski"} oddaje so po tv
     - [nadaljevanke]{"entity": "category", "value": "nadaljevanka"}  [danes](day) na [TV SLO 2](program)
-    - Kdaj so [danes](day) [informativne](category) oddaje na [TV SLO 1?](program)
+    - Kdaj so [danes](day) [informativne](category) oddaje na [TV SLO 1]?(program)
     - [Serije]{"entity": "category", "value": "nadaljevanka"} na [planet tv](program) [sobota](day)
     - [Informativne oddaje]{"entity": "category", "value": "informativni"} na [planet tv](program) [sobota](day)
 - synonym: TV SLO 2
