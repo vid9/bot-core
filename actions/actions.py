@@ -44,7 +44,6 @@ def tokenize(text) -> List[str]:
     stanza_tokens = []
     for i in doc.sentences:
         stanza_tokens += i.tokens
-
     lemmas = []
     for t in stanza_tokens:
         lemmas.append(t.words[0].lemma if len(t.words) == 1 else None)
