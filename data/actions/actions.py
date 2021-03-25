@@ -14,12 +14,12 @@ import classla
 import dateparser
 from rasa_sdk.types import DomainDict
 
-import actions.helpers.logic_helper as lh
-from actions.helpers import reminder_helper as rh, weather_helper as wh
-from actions.helpers import news_helper as nh
-from actions.helpers import tv_helper as tvh
-from actions.helpers import traffic_helper as th
-from actions.helpers import list_helper
+import helpers.logic_helper as lh
+from helpers import reminder_helper as rh, weather_helper as wh
+from helpers import news_helper as nh
+from helpers import tv_helper as tvh
+from helpers import traffic_helper as th
+from helpers import list_helper
 
 from rasa_sdk import Action, Tracker, FormValidationAction
 from rasa_sdk.events import ReminderCancelled, ReminderScheduled, UserUtteranceReverted, ConversationPaused, SlotSet, \
