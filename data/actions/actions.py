@@ -15,11 +15,7 @@ import dateparser
 from rasa_sdk.types import DomainDict
 
 import data.actions.helpers.logic_helper as lh
-from data.actions.helpers import reminder_helper as rh, weather_helper as wh
-from data.actions.helpers import news_helper as nh
-from data.actions.helpers import tv_helper as tvh
-from data.actions.helpers import traffic_helper as th
-from data.actions.helpers import list_helper
+from actions.helpers import reminder_helper as rh, weather_helper as wh, news_helper as nh, tv_helper as tvh, traffic_helper as th, list_helper
 
 from rasa_sdk import Action, Tracker, FormValidationAction
 from rasa_sdk.events import ReminderCancelled, ReminderScheduled, UserUtteranceReverted, ConversationPaused, SlotSet, \

@@ -1,7 +1,7 @@
 import datetime
 import dateparser
 
-import data.actions.database as database
+import actions.database as database
 
 
 def save_reminder(name, user_id, date_time):
