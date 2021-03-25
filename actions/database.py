@@ -5,10 +5,10 @@ def get_connection():
     connection = psycopg2.connect(
         dbname="rasa",
         user="postgres",
-        #password="ltFMnVTAVRRvvGaLkO5c",
-        password="admin",
-        # host="172.17.0.1",
-        host="127.0.0.1",
+        password="ltFMnVTAVRRvvGaLkO5c",
+        #password="admin",
+        host="172.17.0.1",
+        #host="127.0.0.1",
         port="5432",
     )
     return connection
