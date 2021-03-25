@@ -52,7 +52,6 @@ schedule_query;Spored za {category};category
 schedule_query;{day};day
 schedule_query;Na {program};program
 show_reminders;Prikaži opomnike;
-show_list;Prikaži moje sezname;
 stop;Prekliči;
 traffic_conditions;Razmere na cestah;
 time;Koliko je ura?;
