@@ -31,9 +31,7 @@ intents:
     use_entities: true
 - latest_news:
     use_entities: true
-- lights_off:
-    use_entities: true
-- lights_on:
+- lights:
     use_entities: true
 - mood_great:
     use_entities: true
@@ -85,6 +83,8 @@ entities:
 - date_number
 - light_name
 - list
+- light_on
+- light_off
 - location
 - news
 - news_category
@@ -131,14 +131,6 @@ slots:
     initial_value: null
     auto_fill: true
     influence_conversation: true
-  light_action:
-    type: rasa.shared.core.slots.CategoricalSlot
-    initial_value: null
-    auto_fill: false
-    influence_conversation: false
-    values:
-    - on
-    - off
   list_item:
     type: rasa.shared.core.slots.TextSlot
     initial_value: null
@@ -252,6 +244,10 @@ responses:
   utter_did_that_help:
   - text: Ti je to pomagalo? 🙂
   - text: Je kaj pomagalo?
+  utter_light_on_name:
+    - text: Katero luč želiš prižgati?
+  utter_light_off_name:
+    - text: Katero luč želiš ugasniti?
   utter_list_not_removed:
   - text: Ok, ne bom izbrisal seznama ˝{list_name}˝.
   utter_default:
@@ -348,7 +344,7 @@ responses:
       title: Novice
     - payload: /help{{"reminder":"opomnik"}}
       title: Opomniki
-    text: Nisem dobro razumel kje potrebuješ pomoč. Če želiš, ti lahko podrobneje razložim katero od mojih znanj.
+    text: Nisem dobro razumel kje potrebuješ pomoč. Če želiš, ti lahko podrobneje razložim katerega od mojih znanj.
   utter_help_reminder:
   - quick_replies:
     - payload: /create_reminder
@@ -393,7 +389,6 @@ actions:
 - action_default_fallback
 - action_default_ask_affirmation
 - action_jokepunchline
-- action_light_name
 - action_lights_interaction
 - action_set_reminder
 - action_news_subscribe

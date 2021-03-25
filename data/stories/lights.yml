@@ -2,23 +2,30 @@ version: "2.0"
 stories:
   - story: lights off story
     steps:
-      - intent: lights_off
+      - intent: lights
         entities:
           - light_name: kopalnica
+          - light_off: ugasni
       - action: action_lights_interaction
+      - slot_was_set:
+          - light_off: null
+          - light_on: null
       - intent: affirm
       - action: utter_lights_not_implemented
 
   - story: lights off story, ask for room
     steps:
-      - intent: lights_off
-      - action: action_light_name
+      - intent: lights
       - slot_was_set:
-          - light_action: off
+          - light_off: ugasni
+      - action: utter_light_off_name
       - intent: enter_data
         entities:
           - light_name: dnevna soba
       - action: action_lights_interaction
+      - slot_was_set:
+          - light_off: null
+          - light_on: null
       - intent: affirm
       - action: utter_lights_not_implemented
       - intent: affirm
@@ -26,38 +33,46 @@ stories:
 
   - story: lights on story
     steps:
-      - intent: lights_on
+      - intent: lights
         entities:
           - light_name: kopalnica
+          - light_on: prižgi
       - action: action_lights_interaction
+      - slot_was_set:
+          - light_off: null
+          - light_on: null
       - intent: deny
       - action: utter_anything_else
 
   - story: lights on story, ask for room
     steps:
-      - intent: lights_on
-      - action: action_light_name
-      - slot_was_set:
-          - light_action: on
+      - intent: light
+        entities:
+          - light_on: prižgi
+      - action: utter_light_on_name
       - intent: enter_data
         entities:
           - light_name: dnevna soba
       - action: action_lights_interaction
+      - slot_was_set:
+          - light_off: null
+          - light_on: null
       - intent: deny
       - action: utter_anything_else
 
   - story: Lights not implemented, user does not need anything else
     steps:
-      - intent: lights_on
-      - action: action_light_name
-      - slot_was_set:
-          - light_action: on
+      - intent: lights
+      - entities:
+          - light_on: prižgi
+      - action: utter_light_on_name
       - intent: enter_data
         entities:
           - light_name: kleti
       - action: action_lights_interaction
       - slot_was_set:
-          - light_action: null
+          - light_off: null
+          - light_on: null
       - intent: affirm
       - action: utter_lights_not_implemented
       - intent: deny

@@ -199,35 +199,33 @@ nlu:
     - trenutni čas
     - Koliko je ura?
     - Koliko je ura
-- intent: lights_on
+- intent: lights
   examples: |
-    - odpri luč v [kopalnici](light_name)
-    - Prižgi luči
-    - prižgi luči v [kopalnici](light_name)
-    - prižgi luč [soba](light_name)
-    - vklopi luči
-    - prižgi luči v [veži](light_name)
-    - vklopi luč v [garaži](light_name)
-    - Prižgi luc
-    - Odpri luc
-    - priži luč
-    - prižgi luč
-    - prižgi luči
-    - prižgi luč v [kopalnici](light_name)
-    - Vžgi luč
-    - Prižgi luč v [kopalnici](light_name)
-    - Prižgi luč
-- intent: lights_off
-  examples: |
-    - ugasni luči v [dnevni sobi]{"entity": "light_name", "value": "dnevna soba"}
-    - ugasni luči v [kuhinji](light_name)
-    - izklopi luč
-    - zapri luč na [hodniku](light_name)
-    - ugasni luč
-    - Ugasni luč na [hodniki](light_name)
-    - Zapri luč
-    - Zapri luč v [kleti](light_name)
-    - Zapreš luč?
+    - [odpri](light_on) luč v [kopalnici](light_name)
+    - [Prižgi](light_on) luči
+    - [prižgi](light_on) luči v [kopalnici](light_name)
+    - [prižgi](light_on) luč [soba](light_name)
+    - [vklopi](light_on) luči
+    - [prižgi](light_on) luči v [veži](light_name)
+    - [vklopi](light_on) luč v [garaži](light_name)
+    - [Prižgi](light_on) luc
+    - [Odpri](light_on) luc
+    - [priži](light_on) luč
+    - [prižgi](light_on) luč
+    - [prižgi](light_on) luči
+    - [prižgi](light_on) luč v [kopalnici](light_name)
+    - [Vžgi](light_on) luč
+    - [Prižgi](light_on) luč v [kopalnici](light_name)
+    - [Prižgi](light_on) luč
+    - [ugasni](light_off) luči v [dnevni sobi]{"entity": "light_name", "value": "dnevna soba"}
+    - [ugasni](light_off) luči v [kuhinji](light_name)
+    - [izklopi](light_off) luč
+    - [zapri](light_off) luč na [hodniku](light_name)
+    - [ugasni](light_off) luč
+    - [Ugasni](light_off) luč na [hodniki](light_name)
+    - [Zapri](light_off) luč
+    - [Zapri](light_off) luč v [kleti](light_name)
+    - [Zapreš](light_off) luč?
 - intent: traffic_conditions
   examples: |
     - kakšno je stanje na cestah?

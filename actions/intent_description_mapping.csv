@@ -1,0 +1,66 @@
+﻿intent;button;entities
+;;
+affirm;Da;
+chitchat/ask_builder;Kdo te je ustvaril?;
+chitchat/ask_howbuilt;Kako si zgrajen?;
+chitchat/ask_howold;Koliko si star?;
+chitchat/ask_howdoing;Kako si?;
+chitchat/ask_whatdoing;Kaj delaš?;
+chitchat/ask_isbot;Si robot?;
+chitchat/ask_ishuman;Si človek?;
+chitchat/ask_whatismyname;Kako mi je ime?;
+chitchat/ask_whoami;Kdo sem jaz?;
+chitchat/ask_whoisit;Kako ti je ime?;
+chitchat/ask_wherefrom;Kje živiš?;
+chitchat/ask_whatspossible;Kaj znaš?;
+chitchat/handleinsult;Žalitev;
+chitchat/nicetomeetyou;Lepo te je bilo spoznati;
+chitchat/tellajoke;Povej šalo;
+create_list;Ustvari seznam;
+create_reminder;Ustvari opomnik;
+currently_playing;Kaj se predvaja po TV?;
+currently_playing;Kaj je trenutno na {program};program
+date;Kateri dan je danes?;
+deny;Ne;
+great;Super!;
+greet;Živjo!;
+goodbye;Adijo!;
+help;Vreme pomoč;weather
+help;Opomniki pomoč;reminder
+help;Novice pomoč;news
+help;Pomoč;
+help;Spored pomoč;tv
+mood_great;Dobro sem;
+mood_unhappy;Slabo sem;
+lights_on;Prižgi luč;
+lights_on;Prižgi luč v {light_name};light_name
+lights_off;Ugasni luč;
+lights_off;Ugasni luč v {light_name};light_name
+latest_news;Zadnje novice;
+latest_news;{news_category} novice;news_category
+news_subscribe;Prijavi me na dnevne novice;
+news_unsubscribe;Odjavi me od dnevnih novic;
+program_schedule;Spored;
+program_schedule;Spored {day};day
+program_schedule;Spored za {program};program
+reminder_name;Ime opomnika: {reminder_name};reminder_name
+remove_list;Odstrani seznam {list_name};list_name
+remove_list;Odstrani seznam;
+remove_reminder;Odstrani opomnik;
+schedule_query;Spored;
+schedule_query;Spored za {category};category
+schedule_query;{day};day
+schedule_query;Na {program};program
+show_reminders;Prikaži opomnike;
+stop;Prekliči;
+traffic_conditions;Razmere na cestah;
+time;Koliko je ura?;
+thanks;Hvala;
+update_list;Uredi seznam {};list_name
+update_list;Uredi seznam;
+weather_current;Vreme;
+weather_current;Vreme {location};location
+weather_forecast;Vremenska napoved;
+weather_forecast;Vreme {date};date
+weather_forecast;Vreme {location};location
+enter_data;Želel sem odgovoriti na vprašanje;

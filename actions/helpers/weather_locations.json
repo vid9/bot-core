@@ -1,0 +1,2459 @@
+[
+  {
+    "name": "Žužemberk",
+    "coord": {
+      "lon": 14.92917,
+      "lat": 45.833889
+    }
+  },
+  {
+    "name": "Žirovnica",
+    "coord": {
+      "lon": 14.14,
+      "lat": 46.40472
+    }
+  },
+  {
+    "name": "Žiri",
+    "coord": {
+      "lon": 14.10722,
+      "lat": 46.042221
+    }
+  },
+  {
+    "name": "Zreče",
+    "coord": {
+      "lon": 15.36667,
+      "lat": 46.383331
+    }
+  },
+  {
+    "name": "Zgornje Jezersko",
+    "coord": {
+      "lon": 14.46667,
+      "lat": 46.383331
+    }
+  },
+  {
+    "name": "Zgornja Kungota",
+    "coord": {
+      "lon": 15.61556,
+      "lat": 46.639172
+    }
+  },
+  {
+    "name": "Žetale",
+    "coord": {
+      "lon": 15.79389,
+      "lat": 46.275002
+    }
+  },
+  {
+    "name": "Železniki",
+    "coord": {
+      "lon": 14.16667,
+      "lat": 46.23333
+    }
+  },
+  {
+    "name": "Zavrč",
+    "coord": {
+      "lon": 16.049721,
+      "lat": 46.39167
+    }
+  },
+  {
+    "name": "Zalog",
+    "coord": {
+      "lon": 14.19944,
+      "lat": 45.766941
+    }
+  },
+  {
+    "name": "Občina Žalec",
+    "coord": {
+      "lon": 15.1727,
+      "lat": 46.255081
+    }
+  },
+  {
+    "name": "Žalec",
+    "coord": {
+      "lon": 15.16482,
+      "lat": 46.251511
+    }
+  },
+  {
+    "name": "Zagorje ob Savi",
+    "coord": {
+      "lon": 14.96583,
+      "lat": 46.129742
+    }
+  },
+  {
+    "name": "Zagorje ob Savi",
+    "coord": {
+      "lon": 14.99694,
+      "lat": 46.13179
+    }
+  },
+  {
+    "name": "Žabnica",
+    "coord": {
+      "lon": 14.33306,
+      "lat": 46.198608
+    }
+  },
+  {
+    "name": "Vuzenica",
+    "coord": {
+      "lon": 15.16722,
+      "lat": 46.59639
+    }
+  },
+  {
+    "name": "Vrtojba",
+    "coord": {
+      "lon": 13.63417,
+      "lat": 45.912498
+    }
+  },
+  {
+    "name": "Vrhnika",
+    "coord": {
+      "lon": 14.29265,
+      "lat": 45.961399
+    }
+  },
+  {
+    "name": "Vrhnika",
+    "coord": {
+      "lon": 14.29556,
+      "lat": 45.96611
+    }
+  },
+  {
+    "name": "Vransko",
+    "coord": {
+      "lon": 14.95139,
+      "lat": 46.243889
+    }
+  },
+  {
+    "name": "Volčja Draga",
+    "coord": {
+      "lon": 13.6775,
+      "lat": 45.90694
+    }
+  },
+  {
+    "name": "Volavlje",
+    "coord": {
+      "lon": 14.71722,
+      "lat": 46.03389
+    }
+  },
+  {
+    "name": "Vojnik",
+    "coord": {
+      "lon": 15.30333,
+      "lat": 46.293331
+    }
+  },
+  {
+    "name": "Voglje",
+    "coord": {
+      "lon": 14.43861,
+      "lat": 46.215561
+    }
+  },
+  {
+    "name": "Vodice",
+    "coord": {
+      "lon": 14.49492,
+      "lat": 46.189869
+    }
+  },
+  {
+    "name": "Vnanje Gorice",
+    "coord": {
+      "lon": 14.42194,
+      "lat": 46.007221
+    }
+  },
+  {
+    "name": "Vitomarci",
+    "coord": {
+      "lon": 15.93944,
+      "lat": 46.5275
+    }
+  },
+  {
+    "name": "Vitanje",
+    "coord": {
+      "lon": 15.29583,
+      "lat": 46.381672
+    }
+  },
+  {
+    "name": "Vir pri Stični",
+    "coord": {
+      "lon": 14.81778,
+      "lat": 45.952499
+    }
+  },
+  {
+    "name": "Vipava",
+    "coord": {
+      "lon": 13.96306,
+      "lat": 45.846668
+    }
+  },
+  {
+    "name": "Videm",
+    "coord": {
+      "lon": 14.69417,
+      "lat": 45.849998
+    }
+  },
+  {
+    "name": "Veržej",
+    "coord": {
+      "lon": 16.165279,
+      "lat": 46.583611
+    }
+  },
+  {
+    "name": "Verd",
+    "coord": {
+      "lon": 14.30583,
+      "lat": 45.956669
+    }
+  },
+  {
+    "name": "Velike Lašče",
+    "coord": {
+      "lon": 14.63639,
+      "lat": 45.832218
+    }
+  },
+  {
+    "name": "Velika Polana",
+    "coord": {
+      "lon": 16.346939,
+      "lat": 46.571941
+    }
+  },
+  {
+    "name": "Turnišče",
+    "coord": {
+      "lon": 16.32028,
+      "lat": 46.627781
+    }
+  },
+  {
+    "name": "Trzin",
+    "coord": {
+      "lon": 14.56667,
+      "lat": 46.133331
+    }
+  },
+  {
+    "name": "Tržič",
+    "coord": {
+      "lon": 14.31046,
+      "lat": 46.363571
+    }
+  },
+  {
+    "name": "Trška Gora",
+    "coord": {
+      "lon": 15.2,
+      "lat": 45.833328
+    }
+  },
+  {
+    "name": "Trebnje",
+    "coord": {
+      "lon": 15.02167,
+      "lat": 45.904171
+    }
+  },
+  {
+    "name": "Trbovlje",
+    "coord": {
+      "lon": 15.04222,
+      "lat": 46.14167
+    }
+  },
+  {
+    "name": "Trbovlje",
+    "coord": {
+      "lon": 15.05333,
+      "lat": 46.154999
+    }
+  },
+  {
+    "name": "Topolšica",
+    "coord": {
+      "lon": 15.02157,
+      "lat": 46.40028
+    }
+  },
+  {
+    "name": "Topol pri Medvodah",
+    "coord": {
+      "lon": 14.38333,
+      "lat": 46.099998
+    }
+  },
+  {
+    "name": "Sveti Tomaž",
+    "coord": {
+      "lon": 16.083611,
+      "lat": 46.484169
+    }
+  },
+  {
+    "name": "Tolminski Lom",
+    "coord": {
+      "lon": 13.74722,
+      "lat": 46.128609
+    }
+  },
+  {
+    "name": "Občina Tolmin",
+    "coord": {
+      "lon": 13.73205,
+      "lat": 46.184052
+    }
+  },
+  {
+    "name": "Tolmin",
+    "coord": {
+      "lon": 13.73321,
+      "lat": 46.183041
+    }
+  },
+  {
+    "name": "Velenje",
+    "coord": {
+      "lon": 15.13333,
+      "lat": 46.366669
+    }
+  },
+  {
+    "name": "Velenje",
+    "coord": {
+      "lon": 15.11028,
+      "lat": 46.359169
+    }
+  },
+  {
+    "name": "Tišina",
+    "coord": {
+      "lon": 16.091669,
+      "lat": 46.658058
+    }
+  },
+  {
+    "name": "Temnica",
+    "coord": {
+      "lon": 13.6775,
+      "lat": 45.846668
+    }
+  },
+  {
+    "name": "Tabor",
+    "coord": {
+      "lon": 15.01833,
+      "lat": 46.236111
+    }
+  },
+  {
+    "name": "Sv. Ana v Slov. Goricah",
+    "coord": {
+      "lon": 15.84417,
+      "lat": 46.64917
+    }
+  },
+  {
+    "name": "Štore",
+    "coord": {
+      "lon": 15.31389,
+      "lat": 46.220829
+    }
+  },
+  {
+    "name": "Starše",
+    "coord": {
+      "lon": 15.76722,
+      "lat": 46.465832
+    }
+  },
+  {
+    "name": "Stara Vrhnika",
+    "coord": {
+      "lon": 14.28111,
+      "lat": 45.974171
+    }
+  },
+  {
+    "name": "Srednja Vas",
+    "coord": {
+      "lon": 15.10861,
+      "lat": 45.664169
+    }
+  },
+  {
+    "name": "Središče ob Dravi",
+    "coord": {
+      "lon": 16.268061,
+      "lat": 46.394169
+    }
+  },
+  {
+    "name": "Spodnji Duplek",
+    "coord": {
+      "lon": 15.74528,
+      "lat": 46.503059
+    }
+  },
+  {
+    "name": "Spodnje Hoče",
+    "coord": {
+      "lon": 15.65,
+      "lat": 46.5
+    }
+  },
+  {
+    "name": "Spodnja Idrija",
+    "coord": {
+      "lon": 14.02722,
+      "lat": 46.03194
+    }
+  },
+  {
+    "name": "Spodnja Hajdina",
+    "coord": {
+      "lon": 15.84694,
+      "lat": 46.40889
+    }
+  },
+  {
+    "name": "Spodnja Besnica",
+    "coord": {
+      "lon": 14.31667,
+      "lat": 46.26667
+    }
+  },
+  {
+    "name": "Sostro",
+    "coord": {
+      "lon": 14.61667,
+      "lat": 46.049999
+    }
+  },
+  {
+    "name": "Šoštanj",
+    "coord": {
+      "lon": 15.04861,
+      "lat": 46.380001
+    }
+  },
+  {
+    "name": "Solčava",
+    "coord": {
+      "lon": 14.69361,
+      "lat": 46.419441
+    }
+  },
+  {
+    "name": "Sodražica",
+    "coord": {
+      "lon": 14.63556,
+      "lat": 45.761108
+    }
+  },
+  {
+    "name": "Šmartno pri Litiji",
+    "coord": {
+      "lon": 14.84417,
+      "lat": 46.044441
+    }
+  },
+  {
+    "name": "Šmartno ob Paki",
+    "coord": {
+      "lon": 15.03333,
+      "lat": 46.333328
+    }
+  },
+  {
+    "name": "Šmarje pri Jelšah",
+    "coord": {
+      "lon": 15.51917,
+      "lat": 46.227219
+    }
+  },
+  {
+    "name": "Šmarca",
+    "coord": {
+      "lon": 14.59667,
+      "lat": 46.193329
+    }
+  },
+  {
+    "name": "Slovenske Konjice",
+    "coord": {
+      "lon": 15.45556,
+      "lat": 46.325001
+    }
+  },
+  {
+    "name": "Slovenske Konjice",
+    "coord": {
+      "lon": 15.42583,
+      "lat": 46.33667
+    }
+  },
+  {
+    "name": "Slovenska Bistrica",
+    "coord": {
+      "lon": 15.57444,
+      "lat": 46.39278
+    }
+  },
+  {
+    "name": "Slovenj Gradec",
+    "coord": {
+      "lon": 15.08361,
+      "lat": 46.488609
+    }
+  },
+  {
+    "name": "Slovenj Gradec",
+    "coord": {
+      "lon": 15.08056,
+      "lat": 46.510281
+    }
+  },
+  {
+    "name": "Republic of Slovenia",
+    "coord": {
+      "lon": 15.16667,
+      "lat": 46.25
+    }
+  },
+  {
+    "name": "Skoke",
+    "coord": {
+      "lon": 15.68333,
+      "lat": 46.48333
+    }
+  },
+  {
+    "name": "Škofljica",
+    "coord": {
+      "lon": 14.57667,
+      "lat": 45.98333
+    }
+  },
+  {
+    "name": "Občina Škofja Loka",
+    "coord": {
+      "lon": 14.28167,
+      "lat": 46.163059
+    }
+  },
+  {
+    "name": "Škofja Loka",
+    "coord": {
+      "lon": 14.30626,
+      "lat": 46.165508
+    }
+  },
+  {
+    "name": "Škocjan",
+    "coord": {
+      "lon": 15.29139,
+      "lat": 45.90667
+    }
+  },
+  {
+    "name": "Občina Sežana",
+    "coord": {
+      "lon": 13.88639,
+      "lat": 45.734718
+    }
+  },
+  {
+    "name": "Sežana",
+    "coord": {
+      "lon": 13.87333,
+      "lat": 45.70924
+    }
+  },
+  {
+    "name": "Sevnica",
+    "coord": {
+      "lon": 15.31556,
+      "lat": 46.007778
+    }
+  },
+  {
+    "name": "Šentrupert",
+    "coord": {
+      "lon": 15.09556,
+      "lat": 45.977779
+    }
+  },
+  {
+    "name": "Šentjur",
+    "coord": {
+      "lon": 15.3975,
+      "lat": 46.21722
+    }
+  },
+  {
+    "name": "Šentjernej",
+    "coord": {
+      "lon": 15.33611,
+      "lat": 45.84
+    }
+  },
+  {
+    "name": "Šentilj v Slov. Goricah",
+    "coord": {
+      "lon": 15.64806,
+      "lat": 46.681671
+    }
+  },
+  {
+    "name": "Senovo",
+    "coord": {
+      "lon": 15.47694,
+      "lat": 46.023609
+    }
+  },
+  {
+    "name": "Šenčur",
+    "coord": {
+      "lon": 14.41972,
+      "lat": 46.24556
+    }
+  },
+  {
+    "name": "Šempeter v Savinj. Dolini",
+    "coord": {
+      "lon": 15.12194,
+      "lat": 46.25639
+    }
+  },
+  {
+    "name": "Šempeter pri Gorici",
+    "coord": {
+      "lon": 13.64111,
+      "lat": 45.927502
+    }
+  },
+  {
+    "name": "Šempas",
+    "coord": {
+      "lon": 13.74361,
+      "lat": 45.930279
+    }
+  },
+  {
+    "name": "Semič",
+    "coord": {
+      "lon": 15.18222,
+      "lat": 45.646111
+    }
+  },
+  {
+    "name": "Sečovlje",
+    "coord": {
+      "lon": 13.62333,
+      "lat": 45.476669
+    }
+  },
+  {
+    "name": "Šalovci",
+    "coord": {
+      "lon": 16.298059,
+      "lat": 46.825001
+    }
+  },
+  {
+    "name": "Ruše",
+    "coord": {
+      "lon": 15.51583,
+      "lat": 46.53944
+    }
+  },
+  {
+    "name": "Rogoza",
+    "coord": {
+      "lon": 15.68333,
+      "lat": 46.5
+    }
+  },
+  {
+    "name": "Rogatec",
+    "coord": {
+      "lon": 15.70028,
+      "lat": 46.229439
+    }
+  },
+  {
+    "name": "Rogašovci",
+    "coord": {
+      "lon": 16.033331,
+      "lat": 46.799999
+    }
+  },
+  {
+    "name": "Rogaška Slatina",
+    "coord": {
+      "lon": 15.63972,
+      "lat": 46.237499
+    }
+  },
+  {
+    "name": "Rodine",
+    "coord": {
+      "lon": 14.18333,
+      "lat": 46.383331
+    }
+  },
+  {
+    "name": "Ročinj",
+    "coord": {
+      "lon": 13.67,
+      "lat": 46.112782
+    }
+  },
+  {
+    "name": "Rjavče",
+    "coord": {
+      "lon": 14.1,
+      "lat": 45.589722
+    }
+  },
+  {
+    "name": "Ribnica na Pohorju",
+    "coord": {
+      "lon": 15.27278,
+      "lat": 46.535
+    }
+  },
+  {
+    "name": "Ribnica",
+    "coord": {
+      "lon": 14.7275,
+      "lat": 45.738609
+    }
+  },
+  {
+    "name": "Renče",
+    "coord": {
+      "lon": 13.66861,
+      "lat": 45.889999
+    }
+  },
+  {
+    "name": "Rečica ob Savinji",
+    "coord": {
+      "lon": 14.91667,
+      "lat": 46.316669
+    }
+  },
+  {
+    "name": "Razvanje",
+    "coord": {
+      "lon": 15.63611,
+      "lat": 46.514439
+    }
+  },
+  {
+    "name": "Ravni",
+    "coord": {
+      "lon": 15.4,
+      "lat": 45.950001
+    }
+  },
+  {
+    "name": "Ravne na Koroškem",
+    "coord": {
+      "lon": 14.96917,
+      "lat": 46.54306
+    }
+  },
+  {
+    "name": "Ravne",
+    "coord": {
+      "lon": 15.04222,
+      "lat": 46.39167
+    }
+  },
+  {
+    "name": "Ravne",
+    "coord": {
+      "lon": 15.01278,
+      "lat": 45.962502
+    }
+  },
+  {
+    "name": "Rakičan",
+    "coord": {
+      "lon": 16.20417,
+      "lat": 46.651669
+    }
+  },
+  {
+    "name": "Rakek",
+    "coord": {
+      "lon": 14.31111,
+      "lat": 45.813332
+    }
+  },
+  {
+    "name": "Radovljica",
+    "coord": {
+      "lon": 14.19417,
+      "lat": 46.33778
+    }
+  },
+  {
+    "name": "Radovljica",
+    "coord": {
+      "lon": 14.17444,
+      "lat": 46.34444
+    }
+  },
+  {
+    "name": "Radomlje",
+    "coord": {
+      "lon": 14.61222,
+      "lat": 46.173611
+    }
+  },
+  {
+    "name": "Radlje ob Dravi",
+    "coord": {
+      "lon": 15.22639,
+      "lat": 46.61417
+    }
+  },
+  {
+    "name": "Radenci",
+    "coord": {
+      "lon": 16.037809,
+      "lat": 46.64201
+    }
+  },
+  {
+    "name": "Radeče",
+    "coord": {
+      "lon": 15.18389,
+      "lat": 46.068062
+    }
+  },
+  {
+    "name": "Rače",
+    "coord": {
+      "lon": 15.68139,
+      "lat": 46.451939
+    }
+  },
+  {
+    "name": "Puconci",
+    "coord": {
+      "lon": 16.156389,
+      "lat": 46.706669
+    }
+  },
+  {
+    "name": "Ptuj",
+    "coord": {
+      "lon": 15.87667,
+      "lat": 46.43417
+    }
+  },
+  {
+    "name": "Ptuj",
+    "coord": {
+      "lon": 15.87018,
+      "lat": 46.420052
+    }
+  },
+  {
+    "name": "Prvačina",
+    "coord": {
+      "lon": 13.71806,
+      "lat": 45.889999
+    }
+  },
+  {
+    "name": "Prevalje",
+    "coord": {
+      "lon": 14.92083,
+      "lat": 46.54694
+    }
+  },
+  {
+    "name": "Preddvor",
+    "coord": {
+      "lon": 14.42306,
+      "lat": 46.302502
+    }
+  },
+  {
+    "name": "Prebold",
+    "coord": {
+      "lon": 15.0925,
+      "lat": 46.236938
+    }
+  },
+  {
+    "name": "Pragersko",
+    "coord": {
+      "lon": 15.66,
+      "lat": 46.396671
+    }
+  },
+  {
+    "name": "Postojna",
+    "coord": {
+      "lon": 14.17083,
+      "lat": 45.785561
+    }
+  },
+  {
+    "name": "Postojna",
+    "coord": {
+      "lon": 14.21667,
+      "lat": 45.776939
+    }
+  },
+  {
+    "name": "Portorož",
+    "coord": {
+      "lon": 13.59206,
+      "lat": 45.51429
+    }
+  },
+  {
+    "name": "Polzela",
+    "coord": {
+      "lon": 15.06667,
+      "lat": 46.283329
+    }
+  },
+  {
+    "name": "Poljčane",
+    "coord": {
+      "lon": 15.57917,
+      "lat": 46.311939
+    }
+  },
+  {
+    "name": "Podvelka",
+    "coord": {
+      "lon": 15.33056,
+      "lat": 46.586941
+    }
+  },
+  {
+    "name": "Podmolnik",
+    "coord": {
+      "lon": 14.6,
+      "lat": 46.01667
+    }
+  },
+  {
+    "name": "Podlehnik",
+    "coord": {
+      "lon": 15.88,
+      "lat": 46.335281
+    }
+  },
+  {
+    "name": "Podhom",
+    "coord": {
+      "lon": 14.1,
+      "lat": 46.400002
+    }
+  },
+  {
+    "name": "Podčetrtek",
+    "coord": {
+      "lon": 15.59861,
+      "lat": 46.15694
+    }
+  },
+  {
+    "name": "Pivka",
+    "coord": {
+      "lon": 14.19588,
+      "lat": 45.682919
+    }
+  },
+  {
+    "name": "Piran",
+    "coord": {
+      "lon": 13.62694,
+      "lat": 45.48278
+    }
+  },
+  {
+    "name": "Piran",
+    "coord": {
+      "lon": 13.57056,
+      "lat": 45.527779
+    }
+  },
+  {
+    "name": "Pesnica pri Mariboru",
+    "coord": {
+      "lon": 15.67667,
+      "lat": 46.606941
+    }
+  },
+  {
+    "name": "Pekre",
+    "coord": {
+      "lon": 15.59556,
+      "lat": 46.547218
+    }
+  },
+  {
+    "name": "Pameče",
+    "coord": {
+      "lon": 15.07917,
+      "lat": 46.534168
+    }
+  },
+  {
+    "name": "Ormož",
+    "coord": {
+      "lon": 16.15444,
+      "lat": 46.411388
+    }
+  },
+  {
+    "name": "Oplotnica",
+    "coord": {
+      "lon": 15.44667,
+      "lat": 46.387779
+    }
+  },
+  {
+    "name": "Odranci",
+    "coord": {
+      "lon": 16.280279,
+      "lat": 46.58667
+    }
+  },
+  {
+    "name": "Mestna Občina Novo mesto",
+    "coord": {
+      "lon": 15.19833,
+      "lat": 45.785099
+    }
+  },
+  {
+    "name": "Novo Mesto",
+    "coord": {
+      "lon": 15.16886,
+      "lat": 45.80397
+    }
+  },
+  {
+    "name": "Nova Vas",
+    "coord": {
+      "lon": 14.50583,
+      "lat": 45.771671
+    }
+  },
+  {
+    "name": "Nova Gorica",
+    "coord": {
+      "lon": 13.72805,
+      "lat": 45.965199
+    }
+  },
+  {
+    "name": "Nova Gorica",
+    "coord": {
+      "lon": 13.64837,
+      "lat": 45.956039
+    }
+  },
+  {
+    "name": "Naklo",
+    "coord": {
+      "lon": 14.31722,
+      "lat": 46.272781
+    }
+  },
+  {
+    "name": "Muta",
+    "coord": {
+      "lon": 15.16611,
+      "lat": 46.611389
+    }
+  },
+  {
+    "name": "Murska Sobota",
+    "coord": {
+      "lon": 16.160561,
+      "lat": 46.65139
+    }
+  },
+  {
+    "name": "Murska Sobota",
+    "coord": {
+      "lon": 16.166389,
+      "lat": 46.662498
+    }
+  },
+  {
+    "name": "Mozirje",
+    "coord": {
+      "lon": 14.96333,
+      "lat": 46.339439
+    }
+  },
+  {
+    "name": "Mostec",
+    "coord": {
+      "lon": 15.63333,
+      "lat": 45.900002
+    }
+  },
+  {
+    "name": "Moravče",
+    "coord": {
+      "lon": 14.745,
+      "lat": 46.13694
+    }
+  },
+  {
+    "name": "Mokronog",
+    "coord": {
+      "lon": 15.14083,
+      "lat": 45.93417
+    }
+  },
+  {
+    "name": "Mojstrana",
+    "coord": {
+      "lon": 13.93694,
+      "lat": 46.461109
+    }
+  },
+  {
+    "name": "Mislinja",
+    "coord": {
+      "lon": 15.19556,
+      "lat": 46.441109
+    }
+  },
+  {
+    "name": "Mirna Peč",
+    "coord": {
+      "lon": 15.08333,
+      "lat": 45.860279
+    }
+  },
+  {
+    "name": "Mirna",
+    "coord": {
+      "lon": 15.06194,
+      "lat": 45.95528
+    }
+  },
+  {
+    "name": "Miren",
+    "coord": {
+      "lon": 13.6075,
+      "lat": 45.895561
+    }
+  },
+  {
+    "name": "Miklavž na Dravskem Polju",
+    "coord": {
+      "lon": 15.69722,
+      "lat": 46.505829
+    }
+  },
+  {
+    "name": "Mežica",
+    "coord": {
+      "lon": 14.85444,
+      "lat": 46.521389
+    }
+  },
+  {
+    "name": "Metlika",
+    "coord": {
+      "lon": 15.31417,
+      "lat": 45.647221
+    }
+  },
+  {
+    "name": "Merče",
+    "coord": {
+      "lon": 13.90028,
+      "lat": 45.700279
+    }
+  },
+  {
+    "name": "Mengeš",
+    "coord": {
+      "lon": 14.575,
+      "lat": 46.166939
+    }
+  },
+  {
+    "name": "Mekinje",
+    "coord": {
+      "lon": 14.61667,
+      "lat": 46.23333
+    }
+  },
+  {
+    "name": "Medvode",
+    "coord": {
+      "lon": 14.43333,
+      "lat": 46.133331
+    }
+  },
+  {
+    "name": "Markovci",
+    "coord": {
+      "lon": 15.95,
+      "lat": 46.383331
+    }
+  },
+  {
+    "name": "Maribor",
+    "coord": {
+      "lon": 15.64306,
+      "lat": 46.55611
+    }
+  },
+  {
+    "name": "Maribor",
+    "coord": {
+      "lon": 15.64667,
+      "lat": 46.554722
+    }
+  },
+  {
+    "name": "Makole",
+    "coord": {
+      "lon": 15.66722,
+      "lat": 46.317219
+    }
+  },
+  {
+    "name": "Majšperk",
+    "coord": {
+      "lon": 15.73361,
+      "lat": 46.351669
+    }
+  },
+  {
+    "name": "Lukovica pri Domžalah",
+    "coord": {
+      "lon": 14.7,
+      "lat": 46.166672
+    }
+  },
+  {
+    "name": "Luče",
+    "coord": {
+      "lon": 14.74667,
+      "lat": 46.35611
+    }
+  },
+  {
+    "name": "Lovrenc na Pohorju",
+    "coord": {
+      "lon": 15.39306,
+      "lat": 46.540562
+    }
+  },
+  {
+    "name": "Log pri Brezovici",
+    "coord": {
+      "lon": 14.36667,
+      "lat": 46.01667
+    }
+  },
+  {
+    "name": "Logatec",
+    "coord": {
+      "lon": 14.19583,
+      "lat": 45.921391
+    }
+  },
+  {
+    "name": "Ljutomer",
+    "coord": {
+      "lon": 16.1975,
+      "lat": 46.520828
+    }
+  },
+  {
+    "name": "Ljubljana",
+    "coord": {
+      "lon": 14.50513,
+      "lat": 46.051079
+    }
+  },
+  {
+    "name": "Litija",
+    "coord": {
+      "lon": 14.8225,
+      "lat": 46.058609
+    }
+  },
+  {
+    "name": "Lipovci",
+    "coord": {
+      "lon": 16.22806,
+      "lat": 46.62833
+    }
+  },
+  {
+    "name": "Limbuš",
+    "coord": {
+      "lon": 15.58361,
+      "lat": 46.553612
+    }
+  },
+  {
+    "name": "Lesce",
+    "coord": {
+      "lon": 14.15778,
+      "lat": 46.361111
+    }
+  },
+  {
+    "name": "Lendava",
+    "coord": {
+      "lon": 16.450911,
+      "lat": 46.564941
+    }
+  },
+  {
+    "name": "Lenart v Slov. Goricah",
+    "coord": {
+      "lon": 15.83139,
+      "lat": 46.576111
+    }
+  },
+  {
+    "name": "Laško",
+    "coord": {
+      "lon": 15.23555,
+      "lat": 46.154629
+    }
+  },
+  {
+    "name": "Kuzma",
+    "coord": {
+      "lon": 16.08333,
+      "lat": 46.836941
+    }
+  },
+  {
+    "name": "Občina Krško",
+    "coord": {
+      "lon": 15.46063,
+      "lat": 45.95137
+    }
+  },
+  {
+    "name": "Krško",
+    "coord": {
+      "lon": 15.49167,
+      "lat": 45.959148
+    }
+  },
+  {
+    "name": "Kromberk",
+    "coord": {
+      "lon": 13.66556,
+      "lat": 45.960831
+    }
+  },
+  {
+    "name": "Krog",
+    "coord": {
+      "lon": 16.14139,
+      "lat": 46.638062
+    }
+  },
+  {
+    "name": "Križevci pri Ljutomeru",
+    "coord": {
+      "lon": 16.138611,
+      "lat": 46.568329
+    }
+  },
+  {
+    "name": "Kranjska Gora",
+    "coord": {
+      "lon": 13.78944,
+      "lat": 46.483891
+    }
+  },
+  {
+    "name": "Kranj",
+    "coord": {
+      "lon": 14.35646,
+      "lat": 46.24691
+    }
+  },
+  {
+    "name": "Kranj",
+    "coord": {
+      "lon": 14.35561,
+      "lat": 46.238869
+    }
+  },
+  {
+    "name": "Kozje",
+    "coord": {
+      "lon": 15.56028,
+      "lat": 46.075001
+    }
+  },
+  {
+    "name": "Kozina",
+    "coord": {
+      "lon": 13.93556,
+      "lat": 45.610001
+    }
+  },
+  {
+    "name": "Kotlje",
+    "coord": {
+      "lon": 14.98694,
+      "lat": 46.521389
+    }
+  },
+  {
+    "name": "Kostanjevica na Krki",
+    "coord": {
+      "lon": 15.42222,
+      "lat": 45.846111
+    }
+  },
+  {
+    "name": "Koper",
+    "coord": {
+      "lon": 13.82667,
+      "lat": 45.51833
+    }
+  },
+  {
+    "name": "Koper",
+    "coord": {
+      "lon": 13.72944,
+      "lat": 45.54694
+    }
+  },
+  {
+    "name": "Komen",
+    "coord": {
+      "lon": 13.74833,
+      "lat": 45.815281
+    }
+  },
+  {
+    "name": "Kokrica",
+    "coord": {
+      "lon": 14.36111,
+      "lat": 46.270279
+    }
+  },
+  {
+    "name": "Občina Kočevje",
+    "coord": {
+      "lon": 14.90694,
+      "lat": 45.63028
+    }
+  },
+  {
+    "name": "Kočevje",
+    "coord": {
+      "lon": 14.86333,
+      "lat": 45.64333
+    }
+  },
+  {
+    "name": "Kobilje",
+    "coord": {
+      "lon": 16.397779,
+      "lat": 46.684719
+    }
+  },
+  {
+    "name": "Kobarid",
+    "coord": {
+      "lon": 13.57722,
+      "lat": 46.248058
+    }
+  },
+  {
+    "name": "Kidričevo",
+    "coord": {
+      "lon": 15.79111,
+      "lat": 46.40361
+    }
+  },
+  {
+    "name": "Kanal",
+    "coord": {
+      "lon": 13.63972,
+      "lat": 46.088612
+    }
+  },
+  {
+    "name": "Kamnik",
+    "coord": {
+      "lon": 14.61207,
+      "lat": 46.225868
+    }
+  },
+  {
+    "name": "Kamnica",
+    "coord": {
+      "lon": 15.61417,
+      "lat": 46.57444
+    }
+  },
+  {
+    "name": "Kal",
+    "coord": {
+      "lon": 15.11667,
+      "lat": 46.166672
+    }
+  },
+  {
+    "name": "Juršinci",
+    "coord": {
+      "lon": 15.97139,
+      "lat": 46.484718
+    }
+  },
+  {
+    "name": "Sveti Jurij ob Ščavnici",
+    "coord": {
+      "lon": 16.02347,
+      "lat": 46.5695
+    }
+  },
+  {
+    "name": "Ježa",
+    "coord": {
+      "lon": 14.54972,
+      "lat": 46.101669
+    }
+  },
+  {
+    "name": "Jesenice",
+    "coord": {
+      "lon": 14.07246,
+      "lat": 46.45253
+    }
+  },
+  {
+    "name": "Jesenice",
+    "coord": {
+      "lon": 14.06694,
+      "lat": 46.430561
+    }
+  },
+  {
+    "name": "Jareninski Vrh",
+    "coord": {
+      "lon": 15.68333,
+      "lat": 46.616669
+    }
+  },
+  {
+    "name": "Izola",
+    "coord": {
+      "lon": 13.65655,
+      "lat": 45.51123
+    }
+  },
+  {
+    "name": "Izola",
+    "coord": {
+      "lon": 13.66194,
+      "lat": 45.536942
+    }
+  },
+  {
+    "name": "Izlake",
+    "coord": {
+      "lon": 14.95,
+      "lat": 46.150002
+    }
+  },
+  {
+    "name": "Ivančna Gorica",
+    "coord": {
+      "lon": 14.80444,
+      "lat": 45.938332
+    }
+  },
+  {
+    "name": "Ilirska Bistrica",
+    "coord": {
+      "lon": 14.29056,
+      "lat": 45.567501
+    }
+  },
+  {
+    "name": "Ilirska Bistrica",
+    "coord": {
+      "lon": 14.24083,
+      "lat": 45.569721
+    }
+  },
+  {
+    "name": "Ig",
+    "coord": {
+      "lon": 14.52889,
+      "lat": 45.960281
+    }
+  },
+  {
+    "name": "Idrija",
+    "coord": {
+      "lon": 14.0,
+      "lat": 46.0
+    }
+  },
+  {
+    "name": "Idrija",
+    "coord": {
+      "lon": 14.03056,
+      "lat": 46.002781
+    }
+  },
+  {
+    "name": "Hrušica",
+    "coord": {
+      "lon": 14.01778,
+      "lat": 46.445
+    }
+  },
+  {
+    "name": "Hrib-Loški Potok",
+    "coord": {
+      "lon": 14.59111,
+      "lat": 45.701111
+    }
+  },
+  {
+    "name": "Hrastnik",
+    "coord": {
+      "lon": 15.09972,
+      "lat": 46.133331
+    }
+  },
+  {
+    "name": "Hrastnik",
+    "coord": {
+      "lon": 15.08139,
+      "lat": 46.146111
+    }
+  },
+  {
+    "name": "Horjul",
+    "coord": {
+      "lon": 14.29917,
+      "lat": 46.023609
+    }
+  },
+  {
+    "name": "Hodoš",
+    "coord": {
+      "lon": 16.334169,
+      "lat": 46.82333
+    }
+  },
+  {
+    "name": "Hočko Pohorje",
+    "coord": {
+      "lon": 15.57303,
+      "lat": 46.502651
+    }
+  },
+  {
+    "name": "Grosuplje",
+    "coord": {
+      "lon": 14.66528,
+      "lat": 45.93639
+    }
+  },
+  {
+    "name": "Grosuplje",
+    "coord": {
+      "lon": 14.65889,
+      "lat": 45.955559
+    }
+  },
+  {
+    "name": "Griže",
+    "coord": {
+      "lon": 15.15056,
+      "lat": 46.229439
+    }
+  },
+  {
+    "name": "Sv. Trojica v Slov. Goricah",
+    "coord": {
+      "lon": 15.87694,
+      "lat": 46.576672
+    }
+  },
+  {
+    "name": "Grad",
+    "coord": {
+      "lon": 16.1,
+      "lat": 46.799999
+    }
+  },
+  {
+    "name": "Gotovlje",
+    "coord": {
+      "lon": 15.16944,
+      "lat": 46.260281
+    }
+  },
+  {
+    "name": "Gornji Petrovci",
+    "coord": {
+      "lon": 16.2225,
+      "lat": 46.805279
+    }
+  },
+  {
+    "name": "Gornji Grad",
+    "coord": {
+      "lon": 14.80833,
+      "lat": 46.29528
+    }
+  },
+  {
+    "name": "Gornja Radgona",
+    "coord": {
+      "lon": 15.99222,
+      "lat": 46.673328
+    }
+  },
+  {
+    "name": "Gorišnica",
+    "coord": {
+      "lon": 16.013889,
+      "lat": 46.414719
+    }
+  },
+  {
+    "name": "Gorenji Logatec",
+    "coord": {
+      "lon": 14.19889,
+      "lat": 45.90778
+    }
+  },
+  {
+    "name": "Gorenja Vas",
+    "coord": {
+      "lon": 14.14806,
+      "lat": 46.10722
+    }
+  },
+  {
+    "name": "Straža",
+    "coord": {
+      "lon": 15.07278,
+      "lat": 45.779999
+    }
+  },
+  {
+    "name": "Golnik",
+    "coord": {
+      "lon": 14.33333,
+      "lat": 46.333328
+    }
+  },
+  {
+    "name": "Gančani",
+    "coord": {
+      "lon": 16.25111,
+      "lat": 46.6325
+    }
+  },
+  {
+    "name": "Dutovlje",
+    "coord": {
+      "lon": 13.83222,
+      "lat": 45.75806
+    }
+  },
+  {
+    "name": "Dravograd",
+    "coord": {
+      "lon": 15.01917,
+      "lat": 46.588058
+    }
+  },
+  {
+    "name": "Dragomer",
+    "coord": {
+      "lon": 14.38333,
+      "lat": 46.01667
+    }
+  },
+  {
+    "name": "Dornava",
+    "coord": {
+      "lon": 15.95361,
+      "lat": 46.436668
+    }
+  },
+  {
+    "name": "Občina Domžale",
+    "coord": {
+      "lon": 14.62277,
+      "lat": 46.142578
+    }
+  },
+  {
+    "name": "Domžale",
+    "coord": {
+      "lon": 14.59371,
+      "lat": 46.137741
+    }
+  },
+  {
+    "name": "Dol pri Ljubljani",
+    "coord": {
+      "lon": 14.60083,
+      "lat": 46.088612
+    }
+  },
+  {
+    "name": "Dolenje Karteljevo",
+    "coord": {
+      "lon": 15.15,
+      "lat": 45.866669
+    }
+  },
+  {
+    "name": "Dobrovo",
+    "coord": {
+      "lon": 13.52639,
+      "lat": 45.996391
+    }
+  },
+  {
+    "name": "Dobrovnik",
+    "coord": {
+      "lon": 16.352501,
+      "lat": 46.65139
+    }
+  },
+  {
+    "name": "Dobrova",
+    "coord": {
+      "lon": 14.41722,
+      "lat": 46.055
+    }
+  },
+  {
+    "name": "Dobrna",
+    "coord": {
+      "lon": 15.22639,
+      "lat": 46.337502
+    }
+  },
+  {
+    "name": "Dobrava pri Konjicah",
+    "coord": {
+      "lon": 15.41667,
+      "lat": 46.349998
+    }
+  },
+  {
+    "name": "Dobje pri Planini",
+    "coord": {
+      "lon": 15.40889,
+      "lat": 46.136669
+    }
+  },
+  {
+    "name": "Dob",
+    "coord": {
+      "lon": 14.62861,
+      "lat": 46.151939
+    }
+  },
+  {
+    "name": "Divača",
+    "coord": {
+      "lon": 13.97028,
+      "lat": 45.684719
+    }
+  },
+  {
+    "name": "Destrnik",
+    "coord": {
+      "lon": 15.875,
+      "lat": 46.500561
+    }
+  },
+  {
+    "name": "Deskle",
+    "coord": {
+      "lon": 13.62361,
+      "lat": 46.052502
+    }
+  },
+  {
+    "name": "Dekani",
+    "coord": {
+      "lon": 13.81361,
+      "lat": 45.549721
+    }
+  },
+  {
+    "name": "Črnuče",
+    "coord": {
+      "lon": 14.53333,
+      "lat": 46.099998
+    }
+  },
+  {
+    "name": "Črnomelj",
+    "coord": {
+      "lon": 15.18889,
+      "lat": 45.57111
+    }
+  },
+  {
+    "name": "Črna na Koroškem",
+    "coord": {
+      "lon": 14.85009,
+      "lat": 46.470451
+    }
+  },
+  {
+    "name": "Črenšovci",
+    "coord": {
+      "lon": 16.29056,
+      "lat": 46.57444
+    }
+  },
+  {
+    "name": "Černelavci",
+    "coord": {
+      "lon": 16.133329,
+      "lat": 46.666672
+    }
+  },
+  {
+    "name": "Cerkvenjak",
+    "coord": {
+      "lon": 15.94361,
+      "lat": 46.57056
+    }
+  },
+  {
+    "name": "Cerknica",
+    "coord": {
+      "lon": 14.3625,
+      "lat": 45.79306
+    }
+  },
+  {
+    "name": "Cerklje na Gorenjskem",
+    "coord": {
+      "lon": 14.48861,
+      "lat": 46.254169
+    }
+  },
+  {
+    "name": "Cerkljanski Vrh",
+    "coord": {
+      "lon": 14.0,
+      "lat": 46.099998
+    }
+  },
+  {
+    "name": "Celje",
+    "coord": {
+      "lon": 15.27028,
+      "lat": 46.25
+    }
+  },
+  {
+    "name": "Celje",
+    "coord": {
+      "lon": 15.26044,
+      "lat": 46.230919
+    }
+  },
+  {
+    "name": "Cankova",
+    "coord": {
+      "lon": 16.022499,
+      "lat": 46.720829
+    }
+  },
+  {
+    "name": "Britof",
+    "coord": {
+      "lon": 14.39037,
+      "lat": 46.260239
+    }
+  },
+  {
+    "name": "Britof",
+    "coord": {
+      "lon": 13.66667,
+      "lat": 46.0
+    }
+  },
+  {
+    "name": "Brezovica pri Ljubljani",
+    "coord": {
+      "lon": 14.4,
+      "lat": 46.033329
+    }
+  },
+  {
+    "name": "Brezje v Podbočju",
+    "coord": {
+      "lon": 15.5,
+      "lat": 45.833328
+    }
+  },
+  {
+    "name": "Občina Brežice",
+    "coord": {
+      "lon": 15.62806,
+      "lat": 45.92889
+    }
+  },
+  {
+    "name": "Brežice",
+    "coord": {
+      "lon": 15.59111,
+      "lat": 45.903332
+    }
+  },
+  {
+    "name": "Bresternica",
+    "coord": {
+      "lon": 15.575,
+      "lat": 46.569721
+    }
+  },
+  {
+    "name": "Breginj",
+    "coord": {
+      "lon": 13.42778,
+      "lat": 46.264721
+    }
+  },
+  {
+    "name": "Braslovče",
+    "coord": {
+      "lon": 15.03889,
+      "lat": 46.289719
+    }
+  },
+  {
+    "name": "Bovec",
+    "coord": {
+      "lon": 13.55278,
+      "lat": 46.337502
+    }
+  },
+  {
+    "name": "Borovnica",
+    "coord": {
+      "lon": 14.36306,
+      "lat": 45.915829
+    }
+  },
+  {
+    "name": "Bohinjska Bistrica",
+    "coord": {
+      "lon": 13.9535,
+      "lat": 46.27216
+    }
+  },
+  {
+    "name": "Bled",
+    "coord": {
+      "lon": 14.11361,
+      "lat": 46.369171
+    }
+  },
+  {
+    "name": "Bistrica ob Sotli",
+    "coord": {
+      "lon": 15.66417,
+      "lat": 46.058891
+    }
+  },
+  {
+    "name": "Bilje",
+    "coord": {
+      "lon": 13.63222,
+      "lat": 45.89444
+    }
+  },
+  {
+    "name": "Benedikt",
+    "coord": {
+      "lon": 15.88833,
+      "lat": 46.608608
+    }
+  },
+  {
+    "name": "Beltinci",
+    "coord": {
+      "lon": 16.240561,
+      "lat": 46.605282
+    }
+  },
+  {
+    "name": "Bakovci",
+    "coord": {
+      "lon": 16.15028,
+      "lat": 46.618889
+    }
+  },
+  {
+    "name": "Apače",
+    "coord": {
+      "lon": 15.91056,
+      "lat": 46.69722
+    }
+  },
+  {
+    "name": "Ankaran",
+    "coord": {
+      "lon": 13.78333,
+      "lat": 45.583328
+    }
+  },
+  {
+    "name": "Ajdovščina",
+    "coord": {
+      "lon": 13.90946,
+      "lat": 45.886009
+    }
+  },
+  {
+    "name": "Adlešiči",
+    "coord": {
+      "lon": 15.31667,
+      "lat": 45.533329
+    }
+  },
+  {
+    "name": "Razkrižje",
+    "coord": {
+      "lon": 16.281111,
+      "lat": 46.521671
+    }
+  },
+  {
+    "name": "Solkan",
+    "coord": {
+      "lon": 13.64944,
+      "lat": 45.97139
+    }
+  },
+  {
+    "name": "Žigoni",
+    "coord": {
+      "lon": 13.66778,
+      "lat": 45.879719
+    }
+  },
+  {
+    "name": "Podova",
+    "coord": {
+      "lon": 15.69806,
+      "lat": 46.436111
+    }
+  },
+  {
+    "name": "Zeče",
+    "coord": {
+      "lon": 15.395,
+      "lat": 46.355
+    }
+  },
+  {
+    "name": "Koroška Bela",
+    "coord": {
+      "lon": 14.10333,
+      "lat": 46.430279
+    }
+  },
+  {
+    "name": "Cerkno",
+    "coord": {
+      "lon": 13.98167,
+      "lat": 46.125561
+    }
+  },
+  {
+    "name": "Murovci",
+    "coord": {
+      "lon": 13.73056,
+      "lat": 46.0625
+    }
+  },
+  {
+    "name": "Logatec",
+    "coord": {
+      "lon": 14.22583,
+      "lat": 45.91444
+    }
+  },
+  {
+    "name": "Uhk",
+    "coord": {
+      "lon": 14.50972,
+      "lat": 46.170559
+    }
+  },
+  {
+    "name": "Ankaran",
+    "coord": {
+      "lon": 13.73611,
+      "lat": 45.578609
+    }
+  },
+  {
+    "name": "Pivka",
+    "coord": {
+      "lon": 14.23556,
+      "lat": 45.682781
+    }
+  },
+  {
+    "name": "Vipava",
+    "coord": {
+      "lon": 13.98444,
+      "lat": 45.823608
+    }
+  },
+  {
+    "name": "Miren-Kostanjevica",
+    "coord": {
+      "lon": 13.63931,
+      "lat": 45.851379
+    }
+  },
+  {
+    "name": "Kanal",
+    "coord": {
+      "lon": 13.64306,
+      "lat": 46.089722
+    }
+  },
+  {
+    "name": "Cerkno",
+    "coord": {
+      "lon": 13.97306,
+      "lat": 46.125
+    }
+  },
+  {
+    "name": "Občina Kobarid",
+    "coord": {
+      "lon": 13.54917,
+      "lat": 46.249168
+    }
+  },
+  {
+    "name": "Občina Bovec",
+    "coord": {
+      "lon": 13.60806,
+      "lat": 46.357498
+    }
+  },
+  {
+    "name": "Občina Bled",
+    "coord": {
+      "lon": 14.11005,
+      "lat": 46.368252
+    }
+  },
+  {
+    "name": "Naklo",
+    "coord": {
+      "lon": 14.28667,
+      "lat": 46.29361
+    }
+  },
+  {
+    "name": "Kranjska Gora",
+    "coord": {
+      "lon": 13.83861,
+      "lat": 46.460281
+    }
+  },
+  {
+    "name": "Občina Šenčur",
+    "coord": {
+      "lon": 14.42326,
+      "lat": 46.238079
+    }
+  },
+  {
+    "name": "Vodice",
+    "coord": {
+      "lon": 14.4925,
+      "lat": 46.173611
+    }
+  },
+  {
+    "name": "Medvode",
+    "coord": {
+      "lon": 14.40272,
+      "lat": 46.130489
+    }
+  },
+  {
+    "name": "Občina Semič",
+    "coord": {
+      "lon": 15.13472,
+      "lat": 45.65139
+    }
+  },
+  {
+    "name": "Pesnica",
+    "coord": {
+      "lon": 15.71278,
+      "lat": 46.625832
+    }
+  },
+  {
+    "name": "Občina Rače-Fram",
+    "coord": {
+      "lon": 15.63286,
+      "lat": 46.451721
+    }
+  },
+  {
+    "name": "Rogatec",
+    "coord": {
+      "lon": 15.74083,
+      "lat": 46.24194
+    }
+  },
+  {
+    "name": "Mestna Občina Ljubljana",
+    "coord": {
+      "lon": 14.50916,
+      "lat": 46.059181
+    }
+  },
+  {
+    "name": "Videm pri Ptuju",
+    "coord": {
+      "lon": 15.90639,
+      "lat": 46.36861
+    }
+  },
+  {
+    "name": "Zreče",
+    "coord": {
+      "lon": 15.37917,
+      "lat": 46.382221
+    }
+  },
+  {
+    "name": "Radizel",
+    "coord": {
+      "lon": 15.65583,
+      "lat": 46.474442
+    }
+  },
+  {
+    "name": "Selnica ob Dravi",
+    "coord": {
+      "lon": 15.495,
+      "lat": 46.549999
+    }
+  },
+  {
+    "name": "Lucija",
+    "coord": {
+      "lon": 13.6024,
+      "lat": 45.50526
+    }
+  },
+  {
+    "name": "Jagodje",
+    "coord": {
+      "lon": 13.655,
+      "lat": 45.532219
+    }
+  },
+  {
+    "name": "Občina Hoče-Slivnica",
+    "coord": {
+      "lon": 15.62378,
+      "lat": 46.491138
+    }
+  },
+  {
+    "name": "Kisovec",
+    "coord": {
+      "lon": 14.96295,
+      "lat": 46.139111
+    }
+  },
+  {
+    "name": "Občina Renče-Vogrsko",
+    "coord": {
+      "lon": 13.67564,
+      "lat": 45.8936
+    }
+  },
+  {
+    "name": "Cirkulane",
+    "coord": {
+      "lon": 15.99517,
+      "lat": 46.345291
+    }
+  },
+  {
+    "name": "Šmarjeske Toplice",
+    "coord": {
+      "lon": 15.22308,
+      "lat": 45.861961
+    }
+  }
+]
