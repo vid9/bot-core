@@ -160,6 +160,3 @@ def format_schedule_with_program(items):
 # get_schedule_time_for_query("TV SLO 1", "Dnevnik", 6)
 # get_currently_playing("TV SLO 1")
 # get_schedule_for_program("TV SLO 1", 3)
-
-
-
