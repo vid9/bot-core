@@ -44,6 +44,7 @@ def tokenize(text) -> List[str]:
     stanza_tokens = []
     for i in doc.sentences:
         stanza_tokens += i.tokens
+
     lemmas = []
     for t in stanza_tokens:
         lemmas.append(t.words[0].lemma if len(t.words) == 1 else None)
@@ -1018,13 +1019,12 @@ class ValidateListUpdateForm(FormValidationAction):
             domain: DomainDict,
     ) -> Dict[Text, Any]:
         list_name = tracker.get_slot("list_name")
-        # if list_name:
-        #     dispatcher.utter_message(f"Urejaš seznam {list_name}. Povej kaj želiš dodati ali odstraniti?")
-        #     return {"list_name": list_name}
-        if not list_name:
-            list_name = tracker.latest_message.get("text")
+        if list_name:
+            dispatcher.utter_message(f"Urejaš seznam {list_name}. Povej kaj želiš dodati ali odstraniti?")
+            return {"list_name": list_name}
+        list_name = tracker.latest_message.get("text")
         if list_helper.get_list(list_name, tracker.sender_id):
-            dispatcher.utter_message(f"Urejaš seznam {list_name}. Napiši ime elementa, ki ga želiš dodati oziroma odstraniti.")
+            dispatcher.utter_message(f"Urejaš seznam {list_name}. Povej kaj želiš dodati ali odstraniti?")
             return {"list_name": list_name}
         else:
             dispatcher.utter_message(f"Nisem našel seznama z imenom {list_name}.")
