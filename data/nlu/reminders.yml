@@ -15,6 +15,7 @@ nlu:
     - Ustvari nov opomnik
     - Nov opomnik
     - Še en opomnik
+    - Zvečer me opomni, da je danes materinski dan
 - intent: help
   examples: |
     - kako lahko ustvarim nov [opomnik](reminder)
