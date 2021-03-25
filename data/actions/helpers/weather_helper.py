@@ -2,7 +2,7 @@
 import datetime as dt
 
 import requests
-import data.actions.helpers.logic_helper as lh
+import actions.helpers.logic_helper as lh
 from bs4 import BeautifulSoup
 
 import os
