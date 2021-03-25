@@ -22,6 +22,7 @@ jobs:
       uses: RasaHQ/rasa-action-server-gha@main
       # Full list of parameters: https://github.com/RasaHQ/action-server-gha/tree/master#input-arguments
       with:
+        actions_directory: 'data/actions/'
         docker_image_name: 'vid99/bot_action_server'
         requirements_file: 'requirements.txt'
         docker_registry_login: ${{ secrets.DOCKER_HUB_LOGIN }}
