@@ -892,11 +892,6 @@ class UpdateUserLists(Action):
             self, dispatcher, tracker: Tracker, domain: Dict[Text, Any]
     ) -> List[Dict[Text, Any]]:
         list_name = tracker.get_slot("list_name")
-        # user_lists = tracker.get_slot("user_lists")
-        # if not user_lists:
-        #     user_lists = []
-        # if list_name not in user_lists:
-        #     user_lists.append(list_name)
         message = format_list(list_name)
         dispatcher.utter_message(message)
         return [SlotSet("list_item", None)]
