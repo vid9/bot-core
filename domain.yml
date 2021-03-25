@@ -14,7 +14,7 @@ intents:
 - create_reminder:
     use_entities: true
 - currently_playing:
-    use_entities: true
+    use_entities: [day, program]
 - deny:
     use_entities: true
 - enter_data:
@@ -71,6 +71,7 @@ intents:
     use_entities: true
 - update_list:
     use_entities: true
+- update_reminder
 - weather_forecast:
     use_entities: true
 - weather_current:
@@ -83,6 +84,7 @@ entities:
 - date_number
 - light_name
 - list
+- list_name
 - light_on
 - light_off
 - location
@@ -127,6 +129,16 @@ slots:
     auto_fill: true
     influence_conversation: true
   joke_guess:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  light_on:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  light_off:
     type: rasa.shared.core.slots.TextSlot
     initial_value: null
     auto_fill: true

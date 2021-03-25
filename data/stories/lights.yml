@@ -46,7 +46,7 @@ stories:
 
   - story: lights on story, ask for room
     steps:
-      - intent: light
+      - intent: lights
         entities:
           - light_on: prižgi
       - action: utter_light_on_name
@@ -63,7 +63,7 @@ stories:
   - story: Lights not implemented, user does not need anything else
     steps:
       - intent: lights
-      - entities:
+        entities:
           - light_on: prižgi
       - action: utter_light_on_name
       - intent: enter_data
@@ -71,8 +71,8 @@ stories:
           - light_name: kleti
       - action: action_lights_interaction
       - slot_was_set:
-          - light_off: null
-          - light_on: null
+        - light_off: null
+        - light_on: null
       - intent: affirm
       - action: utter_lights_not_implemented
       - intent: deny

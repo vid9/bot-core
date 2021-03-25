@@ -1,8 +1,6 @@
 language: sl
 pipeline:
-- name: custom_component.stanzatokenizer.StanzaTokenizer
-  lang: sl
-  cache_dir: custom_component/stanza_resources
+- name: custom_components.classla_tokenizer.ClasslaTokenizer
 - name: RegexFeaturizer
 - name: LexicalSyntacticFeaturizer
   features:
@@ -25,7 +23,7 @@ pipeline:
   min_ngram: 1
   max_ngram: 4
 - name: DIETClassifier
-  epochs: 200
+  epochs: 100
 - name: EntitySynonymMapper
 - name: ResponseSelector
   epochs: 100

@@ -1019,12 +1019,13 @@ class ValidateListUpdateForm(FormValidationAction):
             domain: DomainDict,
     ) -> Dict[Text, Any]:
         list_name = tracker.get_slot("list_name")
-        if list_name:
-            dispatcher.utter_message(f"Urejaš seznam {list_name}. Povej kaj želiš dodati ali odstraniti?")
-            return {"list_name": list_name}
-        list_name = tracker.latest_message.get("text")
+        # if list_name:
+        #     dispatcher.utter_message(f"Urejaš seznam {list_name}. Povej kaj želiš dodati ali odstraniti?")
+        #     return {"list_name": list_name}
+        if not list_name:
+            list_name = tracker.latest_message.get("text")
         if list_helper.get_list(list_name, tracker.sender_id):
-            dispatcher.utter_message(f"Urejaš seznam {list_name}. Povej kaj želiš dodati ali odstraniti?")
+            dispatcher.utter_message(f"Urejaš seznam {list_name}. Napiši ime elementa, ki ga želiš dodati oziroma odstraniti.")
             return {"list_name": list_name}
         else:
             dispatcher.utter_message(f"Nisem našel seznama z imenom {list_name}.")

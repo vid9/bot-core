@@ -14,7 +14,7 @@ class ClasslaTokenizer(Tokenizer):
         """Construct a new tokenizer using the classla framework."""
 
         super().__init__(component_config)
-        classla.download("sl", force=True)
+        #classla.download("sl", force=True)
         self.nlp = classla.Pipeline("sl", type="standard", processors="tokenize,pos,lemma")
 
     def tokenize(self, message: Message, attribute: Text) -> List[Token]:
