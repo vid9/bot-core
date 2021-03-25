@@ -943,7 +943,6 @@ class RemoveList(Action):
     async def run(
             self, dispatcher, tracker: Tracker, domain: Dict[Text, Any]
     ) -> List[Dict[Text, Any]]:
-        # Todo add to fallback
         list_name = tracker.get_slot("list_name")
         list_id = list_helper.remove_list(list_name, tracker.sender_id)
         if list_id:
