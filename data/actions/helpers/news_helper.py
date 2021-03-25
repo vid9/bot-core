@@ -1,5 +1,5 @@
 import re
-import actions.database as database
+import data.actions.database as database
 
 
 def get_latest_news():
