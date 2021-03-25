@@ -1,7 +1,7 @@
 import datetime as dt
 import re
 
-import data.actions.database as database
+import actions.database as database
 
 
 def program_name_valid(program_name):
@@ -155,11 +155,9 @@ def format_schedule_with_program(items):
         elements.append(list_element)
     return elements
 
+
 # get_program_schedule_for_category("TV SLO 1", "Informativni", 6)
 # print(format_schedule(get_universal_schedule_for_category("film".capitalize(), 4)))
 # get_schedule_time_for_query("TV SLO 1", "Dnevnik", 6)
 # get_currently_playing("TV SLO 1")
 # get_schedule_for_program("TV SLO 1", 3)
-
-
-

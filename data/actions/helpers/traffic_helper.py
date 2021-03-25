@@ -1,6 +1,6 @@
 import re
 
-from data.actions import database
+from actions import database
 
 
 def get_latest_traffic():
