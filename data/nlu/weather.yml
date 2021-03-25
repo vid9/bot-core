@@ -38,6 +38,8 @@ nlu:
     - vreme [jutri](day) [Ljubljana](location)
     - Kdaj bo [danes](day) sončni zahod?
     - kakšno bo vreme [danes](day)
+    - Vremenska napoved za vikend
+    - ali potrebujem dežnik
 - intent: weather_current
   examples: |
     - Kakšno vreme je v [Ljubljani](location)

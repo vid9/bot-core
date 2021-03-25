@@ -116,6 +116,7 @@ nlu:
     - [Pop tv](program)
     - [litija](location)
     - [SLO1](program)
+    - Mestna občina [Velenje](location)
 - synonym: sreda
   examples: |
     - sredo

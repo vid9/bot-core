@@ -35,7 +35,7 @@ nlu:
     - Kaj je na sporedu?
     - Spored
     - Kaj bo po TV?
-    - Kaj bo na [televiziji](day)
+    - Kaj bo na televiziji
     - [Danes](day) na TV?
     - TV spored
     - TV spored [SLO1]{"entity": "program", "value": "TV SLO 1"}

@@ -152,6 +152,7 @@ nlu:
     - Dober vecer
     - Ahoj
     - O
+    - heeej
 - intent: goodbye
   examples: |
     - adijo
@@ -273,6 +274,7 @@ nlu:
     - kako lahko upravljam [sezname](list)?
     - pomoč [seznami](list)
     - katere kategorije poznaš?
+    - kako lahko vidim kaj je v [novicah](news)
 - intent: tellajoke
   examples: |
     - povej šalo
@@ -289,6 +291,7 @@ nlu:
     - Se eno
     - Imaš kako šalo
     - Poznaš kak vic?
+    - Ali poznaš še kakšno šalo
 - synonym: danes
   examples: |
     - današnji

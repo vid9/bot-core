@@ -149,3 +149,7 @@ nlu:
     - Res si zabaven
     - Res si smešen
     - Kok si smešen
+- intent: update_reminder
+  examples: |
+    - Popravi opomnik
+    - želim popraviti uro svojega opomnika

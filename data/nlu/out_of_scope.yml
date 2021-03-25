@@ -9,3 +9,8 @@ nlu:
     - Kdaj gre avtobus iz Ajdddovščine v [Ljubljano](location)?
     - Karantena v Slovenij
     - Kje so odprte gostilne
+    - kdo je predsednik republike [Slovenije](news_category)
+    - koren od 16
+    - kosinus od pi
+    - koliko je cos(pi)?ž
+    - sqrt(16)
