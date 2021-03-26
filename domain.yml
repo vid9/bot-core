@@ -14,7 +14,9 @@ intents:
 - create_reminder:
     use_entities: true
 - currently_playing:
-    use_entities: [day, program]
+    use_entities:
+    - day
+    - program
 - deny:
     use_entities: true
 - enter_data:
@@ -71,7 +73,8 @@ intents:
     use_entities: true
 - update_list:
     use_entities: true
-- update_reminder
+- update_reminder:
+    use_entities: true
 - weather_forecast:
     use_entities: true
 - weather_current:
@@ -257,9 +260,9 @@ responses:
   - text: Ti je to pomagalo? 🙂
   - text: Je kaj pomagalo?
   utter_light_on_name:
-    - text: Katero luč želiš prižgati?
+  - text: Katero luč želiš prižgati?
   utter_light_off_name:
-    - text: Katero luč želiš ugasniti?
+  - text: Katero luč želiš ugasniti?
   utter_list_not_removed:
   - text: Ok, ne bom izbrisal seznama ˝{list_name}˝.
   utter_default:
@@ -361,7 +364,7 @@ responses:
   - quick_replies:
     - payload: /create_reminder
       title: Ustvari nov opomnik
-    text: Nov opomnik lahko ustvariš kadarkoli v zgolj nekaj stavkih. Najprej napiši, da bi rad ustvaril nov opomnik.
+    text: Nov opomnik lahko ustvariš v zgolj nekaj stavkih. Izbrati moraš ime opomnika, datum (1. 1.) in uro (12:34). Kadar bo trenutni čas enak času opomnika, ti bom poslal sporočilo.
   utter_help_tv:
   - quick_replies:
     - payload: '/currently_playing{{"program": "TV SLO 1"}}'

@@ -273,6 +273,7 @@ nlu:
     - pomoč [seznami](list)
     - katere kategorije poznaš?
     - kako lahko vidim kaj je v [novicah](news)
+    - Kje bom prejel svoj [opomnik](reminder)
 - intent: tellajoke
   examples: |
     - povej šalo
