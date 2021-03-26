@@ -44,6 +44,7 @@ nlu:
     - spored [tv slo 2](program) [jutri](day)
     - Kdaj bo [dnevnik](program) na sporedu?
     - Kaj bo [danes](day) ob [20h](time_number) na [Planet](program)
+    - Kaj je [nocoj](day) na Pop TV?
 - intent: schedule_query
   examples: |
     - kateri [filmi]{"entity": "category", "value": "film"} so [danes](day) na sporedu?

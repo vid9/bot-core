@@ -1,235 +1,260 @@
 version: "2.0"
 stories:
-  - story: chitchat builder
-    steps:
-      - intent: greet
-      - action: utter_greet
-      - intent: chitchat
-      - action: utter_chitchat
-  - story: chitchat howdoing sad mood
-    steps:
-      - intent: greet
-      - action: utter_greet
-      - intent: chitchat
-      - action: utter_chitchat
-      - intent: mood_unhappy
-      - action: utter_cheer_up
-      - action: utter_did_that_help
-      - intent: deny
-      - action: utter_how_can_help
-      - intent: chitchat
-      - action: utter_chitchat
-  - story: chitchat howdoing happy mood
-    steps:
-      - intent: greet
-      - action: utter_greet
-      - intent: chitchat
-      - action: utter_chitchat
-      - intent: mood_unhappy
-      - action: utter_cheer_up
-      - action: utter_did_that_help
-      - intent: affirm
-      - action: utter_how_can_help
-      - intent: out_of_scope
-      - action: utter_out_of_scope
-  - story: chitchat is bot
-    steps:
-      - intent: chitchat
-      - action: utter_chitchat
-  - story: chitchat is bot
-    steps:
-      - intent: greet
-      - action: utter_greet
-      - intent: chitchat
-      - action: utter_chitchat
-  - story: chitchat builder + is bot
-    steps:
-      - intent: chitchat
-      - action: utter_chitchat
-      - intent: chitchat
-      - action: utter_chitchat
-  - story: chitchat is bot/builder
-    steps:
-      - intent: chitchat
-      - action: utter_chitchat
-      - intent: chitchat
-      - action: utter_chitchat
-  - story: chitchat what possible + weather
-    steps:
-      - intent: chitchat
-      - action: utter_chitchat
-      - intent: weather_current
-      - action: utter_ask_location
-      - intent: enter_data
-        entities:
-          - location: Nova Gorica
-      - action: action_weather_current
-  - story: chitchat what possible + date
-    steps:
-      - intent: greet
-      - action: utter_greet
-      - intent: chitchat
-      - action: utter_chitchat
-      - intent: date
-      - action: action_date
-      - intent: thanks
-      - action: utter_thanks
-  - story: chitchat what possible + time
-    steps:
-      - intent: greet
-      - action: utter_greet
-      - intent: chitchat
-      - action: utter_chitchat
-      - intent: time
-      - action: action_time
-  - story: chitchat what possible + out of scope
-    steps:
-      - intent: greet
-      - action: utter_greet
-      - intent: chitchat
-      - action: utter_chitchat
-      - intent: out_of_scope
-      - action: utter_out_of_scope
-  - story: chitchat greet and nice to meet
-    steps:
-      - intent: greet
-      - action: utter_greet
-      - intent: chitchat
-      - action: utter_chitchat
-  - story: interactive_story_2
-    steps:
-      - intent: chitchat
-      - action: utter_chitchat
-      - intent: chitchat
-      - action: utter_chitchat
-      - intent: chitchat
-      - action: utter_chitchat
-      - intent: time
-      - action: action_time
-      - intent: date
-        entities:
-          - day: danes
-      - slot_was_set:
-          - day: danes
-      - action: action_date
-      - intent: goodbye
-      - action: utter_goodbye
-  - story: Story from Conversation ID 0554580888d749b084257ef241048b80
-    steps:
-      - intent: create_reminder
-      - action: reminder_form
-      - active_loop: reminder_form
-      - slot_was_set:
-          - requested_slot: reminder_name
-      - intent: affirm
-      - action: reminder_form
-      - slot_was_set:
-          - reminder_name: jagoda
-      - slot_was_set:
-          - requested_slot: reminder_date
-      - intent: enter_data
-        entities:
-          - program: '5'
-          - location: min
-      - slot_was_set:
-          - location: min
-      - slot_was_set:
-          - program: '5'
-      - action: action_weather_forecast
-      - intent: enter_data
-        entities:
-          - time_number: 10h
-      - slot_was_set:
-          - time_number: 10h
-      - action: action_lights_interaction
-  - story: list help
-    steps:
-      - intent: help
-        entities:
-          - list: seznam
-      - action: utter_help_lists
-  - story: Help news and help lists
-    steps:
-      - intent: help
-        entities:
-          - news: novice
-      - action: utter_help_news
-      - intent: help
-        entities:
-          - list: seznami
-      - action: utter_help_lists
-  - story: Prekini urejanje seznama
-    steps:
-      - intent: update_list
-      - action: list_update_form
-      - active_loop: list_update_form
-      - slot_was_set:
-          - requested_slot: list_name
-      - intent: deny
-      - active_loop: null
-      - action: utter_anything_else
-  - story: No light action provided
-    steps:
-      - action: action_lights_interaction
-      - slot_was_set:
-          - light_on: null
-          - light_off: null
-      - intent: affirm
-      - action: utter_lights_not_implemented
-  - story: User doesnt have any lists and wants to create new list
-    steps:
-      - intent: show_list
-      - action: action_show_all_lists
-      - slot_was_set:
-          - list_name: null
-      - intent: affirm
-      - action: list_form
-      - active_loop: list_form
-  - story: User doesnt have any lists doesnt want to continue
-    steps:
-      - intent: show_list
-      - action: action_show_all_lists
-      - slot_was_set:
-          - list_name: null
-      - intent: deny
-      - action: utter_anything_else
-  - story: TV schedule ask for program and day
-    steps:
-      - intent: program_schedule
-      - action: utter_ask_program
-      - intent: enter_data
-        entities:
-          - program: TV SLO 1
-      - slot_was_set:
-          - program: TV SLO 1
-      - action: utter_ask_day_tv
-      - intent: enter_data
-        entities:
-          - day: danes
-      - slot_was_set:
-          - day: danes
-      - action: action_tv_schedule
-  - story: User wants to know schedule, time provided
-    steps:
-      - intent: program_schedule
-        entities:
-          - day: danes
-          - time_number: 20h
-          - program: Planet
-      - slot_was_set:
-          - day: danes
-      - slot_was_set:
-          - program: Planet
-      - slot_was_set:
-          - time_number: 20h
-      - action: action_tv_schedule
-  - story: User does not want to remove list
-    steps:
-      - intent: remove_list
-      - action: action_remove_list_confirmation
-      - slot_was_set:
-          - list_name: kemiki
-      - intent: deny
-      - action: utter_list_not_removed
-      - slot_was_set:
-          - list_name: null
+- story: chitchat builder
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: chitchat
+  - action: utter_chitchat
+- story: chitchat howdoing sad mood
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_how_can_help
+  - intent: chitchat
+  - action: utter_chitchat
+- story: chitchat howdoing happy mood
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_how_can_help
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+- story: chitchat is bot
+  steps:
+  - intent: chitchat
+  - action: utter_chitchat
+- story: chitchat is bot
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: chitchat
+  - action: utter_chitchat
+- story: chitchat builder + is bot
+  steps:
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: chitchat
+  - action: utter_chitchat
+- story: chitchat is bot/builder
+  steps:
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: chitchat
+  - action: utter_chitchat
+- story: chitchat what possible + weather
+  steps:
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: weather_current
+  - action: utter_ask_location
+  - intent: enter_data
+    entities:
+    - location: Nova Gorica
+  - action: action_weather_current
+- story: chitchat what possible + date
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: date
+  - action: action_date
+  - intent: thanks
+  - action: utter_thanks
+- story: chitchat what possible + time
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: time
+  - action: action_time
+- story: chitchat what possible + out of scope
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+- story: chitchat greet and nice to meet
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: chitchat
+  - action: utter_chitchat
+- story: interactive_story_2
+  steps:
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: time
+  - action: action_time
+  - intent: date
+    entities:
+    - day: danes
+  - slot_was_set:
+    - day: danes
+  - action: action_date
+  - intent: goodbye
+  - action: utter_goodbye
+- story: Story from Conversation ID 0554580888d749b084257ef241048b80
+  steps:
+  - intent: create_reminder
+  - action: reminder_form
+  - active_loop: reminder_form
+  - slot_was_set:
+    - requested_slot: reminder_name
+  - intent: affirm
+  - action: reminder_form
+  - slot_was_set:
+    - reminder_name: jagoda
+  - slot_was_set:
+    - requested_slot: reminder_date
+  - intent: enter_data
+    entities:
+    - program: '5'
+    - location: min
+  - slot_was_set:
+    - location: min
+  - slot_was_set:
+    - program: '5'
+  - action: action_weather_forecast
+  - intent: enter_data
+    entities:
+    - time_number: 10h
+  - slot_was_set:
+    - time_number: 10h
+  - action: action_lights_interaction
+- story: list help
+  steps:
+  - intent: help
+    entities:
+    - list: seznam
+  - action: utter_help_lists
+- story: Help news and help lists
+  steps:
+  - intent: help
+    entities:
+    - news: novice
+  - action: utter_help_news
+  - intent: help
+    entities:
+    - list: seznami
+  - action: utter_help_lists
+- story: Prekini urejanje seznama
+  steps:
+  - intent: update_list
+  - action: list_update_form
+  - active_loop: list_update_form
+  - slot_was_set:
+    - requested_slot: list_name
+  - intent: deny
+  - active_loop: null
+  - action: utter_anything_else
+- story: No light action provided
+  steps:
+  - action: action_lights_interaction
+  - slot_was_set:
+    - light_on: null
+  - slot_was_set:
+    - light_off: null
+  - intent: affirm
+  - action: utter_lights_not_implemented
+- story: User doesnt have any lists and wants to create new list
+  steps:
+  - intent: show_list
+  - action: action_show_all_lists
+  - slot_was_set:
+    - list_name: null
+  - intent: affirm
+  - action: list_form
+  - active_loop: list_form
+- story: User doesnt have any lists doesnt want to continue
+  steps:
+  - intent: show_list
+  - action: action_show_all_lists
+  - slot_was_set:
+    - list_name: null
+  - intent: deny
+  - action: utter_anything_else
+- story: TV schedule ask for program and day
+  steps:
+  - intent: program_schedule
+  - action: utter_ask_program
+  - intent: enter_data
+    entities:
+    - program: TV SLO 1
+  - slot_was_set:
+    - program: TV SLO 1
+  - action: utter_ask_day_tv
+  - intent: enter_data
+    entities:
+    - day: danes
+  - slot_was_set:
+    - day: danes
+  - action: action_tv_schedule
+- story: User wants to know schedule, time provided
+  steps:
+  - intent: program_schedule
+    entities:
+    - day: danes
+    - time_number: 20h
+    - program: Planet
+  - slot_was_set:
+    - day: danes
+  - slot_was_set:
+    - program: Planet
+  - slot_was_set:
+    - time_number: 20h
+  - action: action_tv_schedule
+- story: User does not want to remove list
+  steps:
+  - intent: remove_list
+  - action: action_remove_list_confirmation
+  - slot_was_set:
+    - list_name: kemiki
+  - intent: deny
+  - action: utter_list_not_removed
+  - slot_was_set:
+    - list_name: null
+- story: Spored za drug program
+  steps:
+  - intent: program_schedule
+  - action: utter_ask_program
+  - intent: enter_data
+    entities:
+    - program: Golica TV
+  - slot_was_set:
+    - program: Golica TV
+  - action: utter_ask_day_tv
+  - intent: enter_data
+    entities:
+    - day: jutri
+  - slot_was_set:
+    - day: jutri
+  - action: action_tv_schedule
+  - slot_was_set:
+    - program: null
+  - intent: affirm
+  - action: utter_ask_program
+  - intent: enter_data
+    entities:
+    - program: Kanal A
+  - action: action_tv_schedule
