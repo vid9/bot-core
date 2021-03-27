@@ -94,6 +94,7 @@ entities:
 - time_number
 - tv
 - reminder
+- reminder_name
 - weather
 slots:
   category:

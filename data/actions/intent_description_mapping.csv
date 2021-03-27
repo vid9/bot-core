@@ -46,6 +46,7 @@ program_schedule;Spored za {program};program
 reminder_name;Ime opomnika: {reminder_name};reminder_name
 remove_list;Odstrani seznam {list_name};list_name
 remove_list;Odstrani seznam;
+remove_reminder;Odstrani opomnik {reminder_name};reminder_name
 remove_reminder;Odstrani opomnik;
 schedule_query;Spored;
 schedule_query;Spored za {category};category
@@ -61,6 +62,6 @@ update_list;Uredi seznam;
 weather_current;Vreme;
 weather_current;Vreme {location};location
 weather_forecast;Vremenska napoved;
-weather_forecast;Vreme {date};date
+weather_forecast;Vreme {day};day
 weather_forecast;Vreme {location};location
 enter_data;Želel sem odgovoriti na vprašanje;
