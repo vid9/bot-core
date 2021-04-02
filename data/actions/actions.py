@@ -15,6 +15,7 @@ import dateparser
 from rasa_sdk.types import DomainDict
 
 from actions.helpers import reminder_helper as rh, weather_helper as wh, news_helper as nh, tv_helper as tvh, traffic_helper as th, list_helper, logic_helper as lh
+# from helpers import reminder_helper as rh, weather_helper as wh, news_helper as nh, tv_helper as tvh, traffic_helper as th, list_helper, logic_helper as lh
 
 from rasa_sdk import Action, Tracker, FormValidationAction
 from rasa_sdk.events import ReminderCancelled, ReminderScheduled, UserUtteranceReverted, ConversationPaused, SlotSet, \
@@ -22,6 +23,7 @@ from rasa_sdk.events import ReminderCancelled, ReminderScheduled, UserUtteranceR
 from rasa_sdk.executor import CollectingDispatcher
 
 INTENT_DESCRIPTION_MAPPING_PATH = "actions/intent_description_mapping.csv"
+# INTENT_DESCRIPTION_MAPPING_PATH = "intent_description_mapping.csv"
 
 locale.setlocale(category=locale.LC_ALL, locale="sl_SI.UTF-8")
 
@@ -33,7 +35,7 @@ def tokenize(text) -> List[str]:
     if pipelineCache:
         doc = pipelineCache(text)
     else:
-        classla.download('sl', force=True)
+        # classla.download('sl', force=True)
         pipelineCache = classla.Pipeline("sl", type="standard", processors="tokenize,pos,lemma")
         doc = pipelineCache(text)
     stanza_tokens = []
@@ -116,6 +118,8 @@ class ActionDefaultAskAffirmation(Action):
         else:
             utterances = self.intent_mappings[default_utterance_query].button.tolist()
             button_title = utterances[0] if len(utterances) > 0 else intent
+        if button_title is None:
+            return "Nekaj drugega"
         return button_title.format(**entities)
 
     def run(
@@ -267,6 +271,9 @@ class ActionWeatherForecast(Action):
         location = lemmas[1]
         # Get current weather for extracted location """
         weather_obj = wh.get_forecast_weather(location, int(date_number))
+        if weather_obj["type"] == "error":
+            dispatcher.utter_message(weather_obj["description"])
+            return []
         forecast_day = dt.datetime.today() + dt.timedelta(days=int(date_number))
         elements = wh.format_weather_forecast(weather_obj)
         if tracker.get_latest_input_channel() == 'facebook':
@@ -306,7 +313,9 @@ class ActionWeatherCurrent(Action):
         #
         # # Get current weather for extracted location
         weather_obj = wh.get_current_weather(location)
-
+        if weather_obj["type"] == "error":
+            dispatcher.utter_message(weather_obj["description"])
+            return []
         elements = wh.format_weather_current(weather_obj)
         if tracker.get_latest_input_channel() == 'facebook':
             dispatcher.utter_message(text=f"Trenutno vremenske razmere v kraju {weather_obj['name']}.", elements=elements)

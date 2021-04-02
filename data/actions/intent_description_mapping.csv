@@ -54,9 +54,10 @@ schedule_query;{day};day
 schedule_query;Na {program};program
 show_reminders;Prikaži opomnike;
 stop;Prekliči;
-traffic_conditions;Razmere na cestah;
+tellajoke;Povej šalo;
 time;Koliko je ura?;
 thanks;Hvala;
+traffic_conditions;Razmere na cestah;
 update_list;Uredi seznam {};list_name
 update_list;Uredi seznam;
 weather_current;Vreme;
