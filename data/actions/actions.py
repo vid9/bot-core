@@ -164,6 +164,8 @@ class ActionDefaultAskAffirmation(Action):
         buttons = []
         for intent in first_intent_names:
             button_title = self.get_button_title(intent, entities)
+            print(intent, entities)
+            print(button_title)
             if "/" in intent:
                 # here we use the button title as the payload as well, because you
                 # can't force a response selector sub intent, so we need NLU to parse
