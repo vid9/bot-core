@@ -118,8 +118,6 @@ class ActionDefaultAskAffirmation(Action):
         else:
             utterances = self.intent_mappings[default_utterance_query].button.tolist()
             button_title = utterances[0] if len(utterances) > 0 else intent
-        if button_title is None:
-            return "Nekaj drugega"
         return button_title.format(**entities)
 
     def run(
@@ -151,6 +149,9 @@ class ActionDefaultAskAffirmation(Action):
             .get("full_retrieval_intent")
             for intent in intent_ranking
         ]
+        if first_intent_names[0] is None:
+            dispatcher.utter_message(response="utter_default")
+            return [UserUtteranceReverted()]
 
         message_title = (
             "Oprosti, nisem prepričan, če sem pravilno razumel kaj mi želiš povedati 🤔 Si hotel reči..."
@@ -164,8 +165,6 @@ class ActionDefaultAskAffirmation(Action):
         buttons = []
         for intent in first_intent_names:
             button_title = self.get_button_title(intent, entities)
-            print(intent, entities)
-            print(button_title)
             if "/" in intent:
                 # here we use the button title as the payload as well, because you
                 # can't force a response selector sub intent, so we need NLU to parse
