@@ -39,11 +39,11 @@ nlu:
     - Kdaj bo [danes](day) sončni zahod?
     - kakšno bo vreme [danes](day)
     - Vremenska napoved za vikend
-    - ali potrebujem dežnik
     - Zanima me vremeenska napoved za [Velenje](location) v prihajajočem vikendu
     - Kakšno bo vreme v [Velenju](location) ta teden?
 - intent: weather_current
   examples: |
+    - ali potrebujem dežnik
     - Kakšno vreme je v [Ljubljani](location)
     - kakšno je vreme [danes](day) v [Vipavi](location)
     - zanima me kakšno vreme je zunaj
@@ -70,5 +70,7 @@ nlu:
     - Koliko je stopinj?
     - Ali dežuje
     - Ali pada dež
-    - Kakšno je vreme ?
+    - Kakšno je vreme?
     - Kakšno vreme je zdaj?
+    - A zdaj zunaj dežuje?
+    - kakšno je vreme zunaj?

@@ -16,6 +16,8 @@ nlu:
     - Nov opomnik
     - Še en opomnik
     - Zvečer me opomni, da je danes materinski dan
+    - rad bi nastavil nov opomnik
+    - ustvari še en opomnik
 - intent: help
   examples: |
     - kako lahko ustvarim nov [opomnik](reminder)
@@ -34,6 +36,7 @@ nlu:
     - Izbriši vse opomnike
     - izbriši opomnik
     - Izbriši opomnike
+    - prekliči zadnji opomnik
 - intent: show_reminders
   examples: |
     - prikaži opomnike
@@ -51,3 +54,5 @@ nlu:
     - Pokaži prosim vse moje opomnike
     - Seznam opomnikov
     - čez koliko minut bo zvonil moj opomnik
+    - Prikaži vse moje opomnike
+    - Vsi moji opomniki

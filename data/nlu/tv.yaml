@@ -14,6 +14,7 @@ nlu:
     - Kaj se trenutno predvaja po tv?
     - Kaj je trenutno na [TV SLO 1](program)
     - Kaj je trenutno po [pop tv](program)?
+    - Kaj se trenutno predvaja po tv
 - intent: program_schedule
   examples: |
     - spored [slovenija 1]{"entity": "program", "value": "TV SLO 1"}

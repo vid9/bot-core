@@ -7,7 +7,6 @@ nlu:
     - [danes](day)
     - [Logatec](location)
     - [Jesenice](location)
-    - zanima me napoved za [Kranjsko Goro]{"entity": "location", "value": "Kranjska Gora"}
     - [Murska Sobota](location)
     - [Ptuj](location)
     - [Kanal](location)
@@ -117,6 +116,11 @@ nlu:
     - [litija](location)
     - [SLO1](program)
     - Mestna občina [Velenje](location)
+- intent: weather_forecast
+  examples: |
+    - zanima me napoved za [Kranjsko Goro]{"entity": "location", "value": "Kranjska Gora"}
+    - Kakšno bo vreme čez vikend?
+    - Kdaj bo danes zašlo sonce?
 - synonym: sreda
   examples: |
     - sredo

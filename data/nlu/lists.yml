@@ -9,7 +9,6 @@ nlu:
     - nov seznam z imenom opravila
     - ustvari seznam todo
     - dodaj seznam
-    - kako lahko naredim nov seznam
     - a lahko naredim nov seznam
     - nardi nov seznam
     - ustvari seznam
@@ -18,8 +17,11 @@ nlu:
     - Ustvari seznam
 - intent: help
   examples: |
+    - kako lahko naredim nov [seznam](list)
     - Znaš narediti [seznam](list) opravil?
     - kako lahko uredim [seznam](list)?
+    - katere kategorije [novic](news) poznaš?
+    - katere [programe](tv) poznaš
 - intent: update_list
   examples: |
     - uredi seznam
@@ -31,6 +33,8 @@ nlu:
     - dodaj nove elemente na seznam
     - rad bi uredil seznam
     - želim dodati nove stvari na seznam
+    - Dodaj na seznam
+    - uredi zadnji seznam
 - intent: remove_list
   examples: |
     - izbriši seznam

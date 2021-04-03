@@ -65,6 +65,11 @@ nlu:
     - nočem ustvariti opomnika
     - nočem narediti opomnika
     - nočem nadaljevati
+    - nič več
+    - ne, nočem tega
+    - ne izbrisati
+    - ne, nočem
+    - ne, to mi ni všeč
 - intent: stop
   examples: |
     - stop
@@ -81,6 +86,8 @@ nlu:
     - zaključi
     - konec
     - zapri
+    - Končaj
+    - stop, ustavi to
 - intent: mood_great
   examples: |
     - zelo dobro
@@ -110,6 +117,7 @@ nlu:
     - Jaz sem slabo
     - Žalostna sem
     - :(
+    - nisem dobro
 - intent: thanks
   examples: |
     - hvala
@@ -120,6 +128,8 @@ nlu:
     - ok, hvala
     - Hvala
     - Ni potrebe hvala
+    - hvala ker si mi pomagal
+    - hvala ti za pomoč
 - intent: greet
   examples: |
     - dober dan
@@ -199,6 +209,7 @@ nlu:
     - trenutni čas
     - Koliko je ura?
     - Koliko je ura
+    - Koliko ja zdaj ura?
 - intent: lights
   examples: |
     - [odpri](light_on) luč v [kopalnici](light_name)
@@ -239,6 +250,7 @@ nlu:
     - Promet
     - promet
     - prometne novice
+    - so kje na cesti zastoji?
 - intent: help
   examples: |
     - kaj mi lahko poveš o [vremenu](weather)?
@@ -254,7 +266,6 @@ nlu:
     - pomagaj mi narediti [opomnik](reminder)?
     - pomoč
     - kako lahko ustvarim [opomnik](reminder)?
-    - zakaj ne morem narediti [opomnika](reminder)
     - kako se ustvari [opomnik](reminder)?
     - [opomniki](reminder) pomoč
     - pomoč [novice](news)
