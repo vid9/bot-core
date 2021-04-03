@@ -295,7 +295,7 @@ responses:
   - text: ☺
   - text: Fantastično! 🙌
   - text: 😁
-    - text: Enkratno! 🎉
+  - text: Enkratno! 🎉
   - text: 😄
   - text: 😃
   utter_ok:
