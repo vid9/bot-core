@@ -27,8 +27,6 @@ intents:
     use_entities: true
 - goodbye:
     use_entities: true
-- great:
-    use_entities: true
 - greet:
     use_entities: true
 - latest_news:
@@ -275,15 +273,6 @@ responses:
   utter_have_a_nice_day:
   - text: Ok, želim ti lep dan še naprej! 🙂
   - text: Ok, tu bom, če me boš potreboval.
-  utter_happy:
-  - text: Super, sem zelo vesel!
-  - text: 🙂
-  utter_happy_emoji:
-  - text: 🙂
-  - text: ☺
-  - text: 😁
-  - text: 😄
-  - text: 😃
   utter_lights_not_implemented:
   - text: Žal trenutno še ne znam dodati novih luči. Ti lahko kako drugače pomagam?
   utter_thanks:
@@ -301,9 +290,14 @@ responses:
   - text: Z veseljem!
   - text: Ni za kaj!
   utter_great:
+  - text: 🙂
   - text: Odlično! 👍
+  - text: ☺
   - text: Fantastično! 🙌
-  - text: Enkratno! 🎉
+  - text: 😁
+    - text: Enkratno! 🎉
+  - text: 😄
+  - text: 😃
   utter_ok:
   - text: 👍
   - text: Dobro.

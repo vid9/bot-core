@@ -54,8 +54,8 @@ stories:
       - slot_was_set:
           - reminder_time: 12:02
       - action: action_set_reminder
-      - intent: great
-      - action: utter_happy_emoji
+      - intent: mood_great
+      - action: utter_great
 
   - story: User wants to see his reminders
     steps:

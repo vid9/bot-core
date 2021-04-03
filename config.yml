@@ -36,7 +36,7 @@ pipeline:
 policies:
 - name: TEDPolicy
   epochs: 100
-  max_history: 5
+  max_history: 10
 - name: AugmentedMemoizationPolicy
   max_history: 5
 - name: RulePolicy

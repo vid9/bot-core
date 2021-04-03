@@ -13,7 +13,7 @@ stories:
       - intent: greet
       - action: utter_greet
       - intent: mood_great
-      - action: utter_happy
+      - action: utter_great
       - intent: date
       - action: action_date
 
@@ -29,7 +29,7 @@ stories:
       - intent: greet
       - action: utter_greet
       - intent: mood_great
-      - action: utter_happy
+      - action: utter_great
       - intent: time
       - action: action_time
 
@@ -54,7 +54,7 @@ stories:
       - intent: greet
       - action: utter_greet
       - intent: mood_great
-      - action: utter_happy
+      - action: utter_great
 
   - story: sad path 1
     steps:
@@ -64,7 +64,7 @@ stories:
       - action: utter_cheer_up
       - action: utter_did_that_help
       - intent: affirm
-      - action: utter_happy
+      - action: utter_great
 
   - story: sad path 2
     steps:
@@ -81,7 +81,7 @@ stories:
       - intent: greet
       - action: utter_greet
       - intent: mood_great
-      - action: utter_happy
+      - action: utter_great
       - intent: goodbye
       - action: utter_goodbye
 
@@ -93,7 +93,7 @@ stories:
       - action: utter_cheer_up
       - action: utter_did_that_help
       - intent: affirm
-      - action: utter_happy
+      - action: utter_great
 
   - story: sad path happy ending
     steps:
@@ -127,7 +127,7 @@ stories:
       - action: utter_cheer_up
       - action: utter_did_that_help
       - intent: affirm
-      - action: utter_happy
+      - action: utter_great
 
   - story: help
     steps:
@@ -145,11 +145,6 @@ stories:
       - action: utter_greet
       - intent: traffic_conditions
       - action: action_traffic
-
-  - story: User says great
-    steps:
-      - intent: great
-      - action: utter_happy_emoji
 
   - story: Tell a joke
     steps:
