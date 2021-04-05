@@ -27,19 +27,6 @@ nlu:
     - Ok
     - Ja
     - da želim
-- intent: great
-  examples: |
-    - Fajn
-    - super
-    - odlično
-    - to je dobro
-    - lepo
-    - ful dobro
-    - izjemno
-    - super!
-    - Odlično!
-    - Bravo
-    - to je pa lepo slišat
 - intent: deny
   examples: |
     - ne
@@ -100,6 +87,17 @@ nlu:
     - Hahaha
     - :)
     - dobro sem
+    - Fajn
+    - super
+    - odlično
+    - to je dobro
+    - lepo
+    - ful dobro
+    - izjemno
+    - super!
+    - Odlično!
+    - Bravo
+    - to je pa lepo slišat
 - intent: mood_unhappy
   examples: |
     - slabo
