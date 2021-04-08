@@ -24,6 +24,11 @@ pipeline:
   analyzer: char_wb
   min_ngram: 1
   max_ngram: 4
+- name: RegexEntityExtractor
+  case_sensitive: false
+  use_lookup_tables: true
+  use_regexes: true
+  use_word_boundaries: true
 - name: DIETClassifier
   epochs: 200
 - name: EntitySynonymMapper
