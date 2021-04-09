@@ -1,7 +1,7 @@
 beautifulsoup4==4.9.3
 certifi==2020.12.5
 chardet==4.0.0
-classla==0.0.8
+classla==1.0.1
 dateparser==1.0.0
 freeze==3.0
 idna==2.10
