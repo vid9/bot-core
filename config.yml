@@ -1,8 +1,9 @@
 language: sl
 pipeline:
-- name: custom_component.stanzatokenizer.StanzaTokenizer
-  lang: sl
-  cache_dir: custom_component/stanza_resources
+#- name: custom_component.stanzatokenizer.StanzaTokenizer
+#  lang: sl
+#  cache_dir: custom_component/stanza_resources
+- name: custom_components.classla_tokenizer.ClasslaTokenizer
 - name: RegexFeaturizer
 - name: LexicalSyntacticFeaturizer
   features:
