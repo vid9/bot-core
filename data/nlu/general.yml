@@ -158,6 +158,7 @@ nlu:
     - Dober vecer
     - Ahoj
     - heeej
+    - O
 - intent: goodbye
   examples: |
     - adijo

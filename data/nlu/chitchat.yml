@@ -101,6 +101,7 @@ nlu:
     - kdo si?
     - kako ti je že ime?
     - kako te kličejo prijatelji?
+    - Kako te lahko kličem?
 - intent: chitchat/ask_wherefrom
   examples: |
     - iz kje prihajaš?
