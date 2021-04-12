@@ -15,8 +15,8 @@ intents:
     use_entities: true
 - currently_playing:
     use_entities:
-    - day
     - program
+    - day
 - deny:
     use_entities: true
 - enter_data:
@@ -235,11 +235,11 @@ responses:
   utter_ask_reminder_form_reminder_date:
   - text: Kateri dan naj te opozorim? 📅
   - text: Kateri dan?
-  - text: Ok, kdaj želiš, da te spomnim? 📅
+  - text: OK, kdaj želiš, da te spomnim? 📅
   utter_ask_reminder_form_reminder_time:
   - text: Ob kateri uri? ⌚
   utter_ask_reminder_form_reminder_name:
-  - text: Ok, kako naj ga poimenujem?
+  - text: OK, kako naj ga poimenujem?
   - text: Kakšno ime mu želiš dati?
   utter_ask_remove_other_list:
   - text: Želiš izbrisati drug seznam?
@@ -274,7 +274,7 @@ responses:
   - text: Ok, želim ti lep dan še naprej! 🙂
   - text: Ok, tu bom, če me boš potreboval.
   utter_lights_not_implemented:
-  - text: Žal trenutno še ne znam dodati novih luči. Ti lahko kako drugače pomagam?
+  - text: Žal trenutno še ne znam dodati novih luči. Ti lahko pomagam kako drugače?
   utter_thanks:
   - text: Ni problema, sem vesel, da sem ti lahko pomagal!
   - text: Ni zakaj, ti lahko še kako pomagam?
@@ -343,7 +343,7 @@ responses:
       title: Znanost in tehnologija
     - payload: /latest_news{{"news_category":"lokalne-novice"}}
       title: Lokalne novice
-    text: Lahko ti poiščem aktualne novice iz različnih področij. Če želiš se lahko prijaviš na vsakodnevno obveščanje o novicah.
+    text: Lahko ti poiščem aktualne novice z različnih področij. Če želiš, se lahko prijaviš na vsakodnevno obveščanje o novicah.
   utter_help:
   - quick_replies:
     - payload: /help{{"weather":"vreme"}}
@@ -359,7 +359,7 @@ responses:
   - quick_replies:
     - payload: /create_reminder
       title: Ustvari nov opomnik
-    text: Nov opomnik lahko ustvariš v zgolj nekaj stavkih. Izbrati moraš ime opomnika, datum (1. 1.) in uro (12:34). Kadar bo trenutni čas enak času opomnika, ti bom poslal sporočilo.
+    text: Nov opomnik lahko ustvariš v zgolj nekaj stavkih. Izbrati moraš ime opomnika, datum (npr. 1. 1.) in uro (npr. 12:34). Ko bo trenutni čas enak času opomnika, ti bom poslal sporočilo.
   utter_help_tv:
   - quick_replies:
     - payload: '/currently_playing{{"program": "TV SLO 1"}}'
@@ -370,16 +370,16 @@ responses:
       title: Filmi na POP TV
     - payload: '/schedule_query{{"program": "FOX", "day": "danes", "category": "nadaljevanke"}}'
       title: Nadaljevanke na FOX
-    text: Vprašaš me lahko o tem kaj se trenutno predvaja po televiziji ali pa kaj bo na sporedu v naslednjih dneh. Iščeš lahko tudi po različnih kategorijah (https://tv-spored.siol.net/kategorije).
+    text: Vprašaš me lahko o tem, kaj se trenutno predvaja po televiziji ali pa kaj bo na sporedu v naslednjih dneh. Iščeš lahko tudi po različnih kategorijah (https://tv-spored.siol.net/kategorije).
   utter_sad:
-  - text: Škoda 😟
+  - text: Škoda. 😟
   - text: 🙁
   - text: 😥
   utter_restart_with_button:
   - buttons:
     - payload: /restart
       title: Ponovni zagon
-    text: Če želiš začeti popolnoma od začetka pritisni na spodnji gumb.
+    text: Če želiš začeti popolnoma od začetka, pritisni na spodnji gumb.
   utter_help_lists:
   - quick_replies:
     - payload: /create_list
@@ -390,7 +390,7 @@ responses:
       title: Uredi seznam
     - payload: /remove_list
       title: Izbriši seznam
-    text: Ustvariš lahko različne sezname in na njih dodajaš elemente. V primeru, da hočeš videti katere elemente že imaš na seznamu, me lahko to vprašaš. Seznam lahko urejaš z uporabo besed ˝dodaj˝ ali ˝odstrani˝ in imenom elementa, ki ga želiš dodati ali odstraniti.
+    text: Ustvariš lahko različne sezname in na njih dodajaš elemente. Če želiš videti katere elemente že imaš na seznamu, me lahko to vprašaš. Seznam lahko urejaš z uporabo besed ˝dodaj˝ ali ˝odstrani˝ in imenom elementa, ki ga želiš dodati ali odstraniti.
 actions:
 - action_ask_joke_guess
 - action_current_news

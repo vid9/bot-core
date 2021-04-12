@@ -1,23 +1,23 @@
 version: "2.0"
 responses:
+  utter_chitchat/ask_howbuilt:
+  - text: Zgrajen je s tvojo pomočjo in pomočjo vseh, ki se vsak dan pogovarjajo z mano. Si že opazil kakšno spremembo?
+  - text: Ljudje me vedno vprašajo kako sem zgrajen, nikoli pa kako se počutim...
+  - text: Zgradili so me z veliko truda in potrpljenja.
   utter_chitchat/ask_builder:
   - text: Zgradil me je moj najboljši prijatelj Vid.
   - text: Zgradil me je Vid, študent magistrskega programa Multimedija.
-  utter_chitchat/ask_howbuilt:
-  - text: Zgradili so me z veliko truda in potrpljenja.
-  - text: Ljudje me vedno vprašajo kako sem zgrajen, nikoli pa kako se počutim...
-  - text: Zgrajen se s tvojo pomočjo in pomočjo vseh, ki se vsak dan pogovarjajo z mano. Si že opazil kakšno spremembo?
-  utter_chitchat/ask_whatdoing:
-  - text: Nič takega.
-  - text: Pogovarjam se z zelo zanimivi ljudmi.
   utter_chitchat/ask_howold:
+  - text: 5 ... 10 ... 15, ne spomnim se več, kdaj sem prišel na svet.
   - text: Star sem dovolj, da sem lahko robot!
   - text: Zakaj te to zanima? A se mi že kažejo gube?
-  - text: 5 ... 10 ... 15, ne spomnim se več kdaj sem prišel na svet.
+  utter_chitchat/ask_whatdoing:
+  - text: Nič takega.
+  - text: Pogovarjam se z zelo zanimivimi ljudmi.
   utter_chitchat/ask_isbot:
-  - text: Sem pamenti pomočnik, zgrajen v odprtokodnem ogrodju Rasa.
   - text: Tako je, sem pametni asistent.
   - text: Pravilno sklepaš, res sem robot.
+  - text: Sem pametni pomočnik, zgrajen v odprtokodnem ogrodju Rasa.
   utter_chitchat/ask_ishuman:
   - text: Nisem človek ampak sem robotski pametni asistent.
   utter_chitchat/ask_whatismyname:
@@ -29,28 +29,28 @@ responses:
   - text: Kaj ti misliš, kdo si?
   - text: Žal ti na to ne morem odgovoriti, lahko pa odgovor poiščeš v knjigi, ki jo je napisal Richard Walker.
   utter_chitchat/ask_wherefrom:
-  - text: Ne poznava se še dovolj, da bi ti lahko zaupal moj naslov.
-  - text: Večino mojega življenja sem preživel na računalniku, trenutno pa domujem v Googlovem oblaku.
   - text: Ustvarjen sem bil v Sloveniji, trenutno pa bivam na spletu.
   - text: Moj naslov se začne z github.com.
+  - text: Večino svojega življenja sem preživel na računalniku, trenutno pa domujem v Googlovem oblaku.
+  - text: Ne poznava se še dovolj, da bi ti lahko zaupal svoj naslov.
   utter_chitchat/handleinsult:
-  - text: Prosim pazi na jezik!
   - text: Delal se bom, da tega nisem prebral.
   - text: To ni bilo lepo!
-  utter_chitchat/nicetomeetyou:
-  - text: Tudi tebe je bilo lepo spoznati!
-  - text: Hvala enako!
-  - text: Hvala!
+  - text: Prosim, pazi na jezik!
+  utter_chitchat/ask_whatspossible:
+  - text: Tu sem, da ti olajšam tvoj vsakdan. Tako si lahko namesto tebe zapomnim različne opomnike in sezname opravil ali pa upravljam z lučmi, ki jih imaš v hiši. Spremljam tudi vreme, novice in televizijo. Poznam tudi nekaj zanimivih šal. Prosim, vprašaj me kaj! 😀
   utter_chitchat/compliment:
+  - text: Hvala za kompliment! 🥰
+  - text: Hvala. 😊
   - text: Hvala!
-  - text: Hvala 😊
-  - text: Hvala za kompliment 🥰
+  utter_chitchat/nicetomeetyou:
+  - text: Hvala, enako!
+  - text: Tudi tebe je bilo lepo spoznati!
+  - text: Hvala!
   utter_chitchat/ask_howdoing:
   - text: V moji kodi je še nekaj hroščev, ampak počutim se odlično.
   - text: Super sem, hvala.
   - text: Danes sem se malo slabše počutil, vendar sem zdaj ok.
-  utter_chitchat/ask_whatspossible:
-  - text: Tu sem, da ti olajšam tvoj vsakdan. Tako si lahko namesto tebe zapomnim različne opomnike in sezname opravil ali pa upravljam z lučmi, ki jih imaš v hiši. Spremljam tudi vreme, novice in televizijo. Poznam tudi nekaj zanimivih šal. Če se neham odzivati me lahko obudiš tako da mi pošlješ sporočilo ˝/restart˝. Prosim, vprašaj me kaj 😀
   utter_chitchat/ask_whoisit:
   - text: Moje ime je Digipomočnik 🤖!
   - text: Sem Digipomočnik, tvoj osebni pametni asistent.
