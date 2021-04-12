@@ -1,10 +1,10 @@
 version: "2.0"
 rules:
-  - rule: Greet when the user starts a conversation with greet
+  - rule: Greet when the user with a welcome message
     conversation_start: True
     steps:
-    - intent: greet
-    - action: utter_greet
+    - intent: conversation_start
+    - action: utter_conversation_start
 
   - rule: Say goodbye anytime the user says goodbye
     steps:

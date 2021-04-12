@@ -9,6 +9,7 @@ intents:
     use_entities: true
 - chitchat:
     use_entities: []
+- conversation_start
 - create_list:
     use_entities: true
 - create_reminder:
@@ -255,6 +256,8 @@ responses:
     text: 'Mislim, da te bo to razveselilo:'
   - image: https://i.imgur.com/xyPtn4m.jpg
     text: 'Mislim, da te bo to razveselilo:'
+  utter_conversation_start:
+    - text: Zdravo, moje ime je Digipomočnik. Sem pametni pomočnik za upravljanje pametnega doma. Namesto tebe si lahko zapomnim različne opomnike in sezname opravil. Polega tega spremljam tudi vreme, novice in televizijo. Kako ti lahko pomagam?  🙂
   utter_did_that_help:
   - text: Ti je to pomagalo? 🙂
   - text: Je kaj pomagalo?
