@@ -755,7 +755,9 @@ class TvCurrentlyPlaying(Action):
 
         if res:
             elements = tvh.format_schedule(res)
+            print(elements)
             if tracker.get_latest_input_channel() == 'facebook':
+                dispatcher.utter_message(elements=elements)
                 dispatcher.utter_message(text=f"Trenutno na programu {program_name}", elements=elements)
             else:
                 dispatcher.utter_message(text=f"Trenutno na programu {program_name}")
@@ -987,9 +989,9 @@ class ValidateListUpdateForm(FormValidationAction):
             return {"list_item": "end"}
         name = tracker.latest_message.get("text")
         current_items = tracker.get_slot("list_items")
-        items = current_items
-        if not current_items:
-            items = []
+        # items = current_items
+        # if not current_items:
+        #     items = []
         list_name = list_helper.get_list(tracker.get_slot("list_name"), tracker.sender_id)
         if not list_name or list_name is None:
             dispatcher.utter_message("Seznam, ki ga želiš urediti, ne obstaja!")
@@ -997,24 +999,27 @@ class ValidateListUpdateForm(FormValidationAction):
         else:
             list_name = list_name[0][1]
             list_id = list_name[0][0]
-        if current_items is str:
-            items = [current_items]
+        # if current_items is str:
+        #     items = [current_items]
         if re.search('odstrani ', name, re.IGNORECASE) or re.search('izbriši ', name, re.IGNORECASE):
             name = re.sub(r'odstrani ', '', name, flags=re.IGNORECASE)
             name = re.sub(r'izbriši ', '', name, flags=re.IGNORECASE)
 
-            if list_name:
-                list_helper.remove_from_list(list_name, name)
+            res = list_helper.remove_from_list(list_name, name)
+            if res:
                 dispatcher.utter_message(f"Odstranil sem ˝{name}˝. Še kaj drugega?")
-                items.remove(name)
-                return {"list_item": None, "list_items": items}
+                # items.remove(name)
+                # return {"list_item": None, "list_items": items}
+                return {"list_item": None, "list_items": None}
             else:
                 dispatcher.utter_message(f"Elementa ˝{name}˝ ni na seznamu.")
-                return {"list_item": None, "list_items": items}
+                return {"list_item": None, "list_items": None}
+
         item = add_list_item(name, tracker.get_slot("list_name"), tracker.sender_id)
-        items.append(item)
+        # items.append(item)
         dispatcher.utter_message(f"Dodal sem ˝{item}˝. Še kaj drugega?")
-        return {"list_item": None, "list_items": items}
+        return {"list_item": None, "list_items": None}
+        # return {"list_item": None, "list_items": items}
 
     def validate_list_name(
             self,
