@@ -14,8 +14,8 @@ import classla
 import dateparser
 from rasa_sdk.types import DomainDict
 
-# from actions.helpers import reminder_helper as rh, weather_helper as wh, news_helper as nh, tv_helper as tvh, traffic_helper as th, list_helper, logic_helper as lh
-from helpers import reminder_helper as rh, weather_helper as wh, news_helper as nh, tv_helper as tvh, traffic_helper as th, list_helper, logic_helper as lh
+from actions.helpers import reminder_helper as rh, weather_helper as wh, news_helper as nh, tv_helper as tvh, traffic_helper as th, list_helper, logic_helper as lh
+# from helpers import reminder_helper as rh, weather_helper as wh, news_helper as nh, tv_helper as tvh, traffic_helper as th, list_helper, logic_helper as lh
 
 from rasa_sdk import Action, Tracker, FormValidationAction
 from rasa_sdk.events import ReminderCancelled, ReminderScheduled, UserUtteranceReverted, ConversationPaused, SlotSet, \
@@ -757,7 +757,7 @@ class TvCurrentlyPlaying(Action):
             elements = tvh.format_schedule(res)
             print(elements)
             if tracker.get_latest_input_channel() == 'facebook':
-                # dispatcher.utter_message(text=elements,elements=elements)
+                dispatcher.utter_message(text=elements,elements=elements)
                 dispatcher.utter_message(text=f"Trenutno na programu {program_name}", elements=elements)
             else:
                 dispatcher.utter_message(text=f"Trenutno na programu {program_name}")
@@ -817,7 +817,7 @@ class TvSchedule(Action):
                     dispatcher.utter_message(elements=elements[prev:curr])
                 else:
                     dispatcher.utter_message(attachment=create_carousel(elements[prev:curr]))
-                # dispatcher.utter_message(text=elements, elements=elements)
+                dispatcher.utter_message(text=elements, elements=elements)
 
                 prev += 10
             if tracker.get_latest_input_channel() == 'facebook':
