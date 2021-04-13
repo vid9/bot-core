@@ -24,7 +24,6 @@ nlu:
 - intent: remove_reminder
   examples: |
     - Izbriši opomnik
-    - ne me spomniti
     - izbriši opomnike
     - izbriši zadnji opomnik
     - prekliči opomnik
