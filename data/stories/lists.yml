@@ -108,7 +108,26 @@ stories:
       - intent: deny
       - action: utter_ok
 
-  - story: User interrupts the list but wants to continue
+  - story: Cancel list_form (name)
+    steps:
+      - action: list_form
+      - active_loop: list_form
+      - slot_was_set:
+          - requested_slot: list_name
+      - intent: stop
+      - action: utter_ask_continue
+      - or:
+        - intent: deny
+        - intent: stop
+      - action: action_deactivate_loop
+      - active_loop: null
+      - slot_was_set:
+          - requested_slot: null
+      - action: utter_anything_else
+      - intent: deny
+      - action: utter_ok
+
+  - story: Continue list_form (name)
     steps:
       - action: list_form
       - active_loop: list_form
@@ -119,18 +138,7 @@ stories:
       - intent: affirm
       - action: list_form
 
-  - story: User interrupts list_form
-    steps:
-      - action: list_form
-      - active_loop: list_form
-      - slot_was_set:
-          - requested_slot: list_name
-      - intent: stop
-      - action: utter_ask_continue
-      - intent: deny
-      - active_loop: null
-
-  - story: User stops list_form
+  - story: Cancel list_form (list_item)
     steps:
       - intent: create_list
       - action: action_reset_list_slots
@@ -140,15 +148,73 @@ stories:
       - active_loop: list_form
       - slot_was_set:
         - requested_slot: list_name
+      - intent: show_list
+      - action: list_form
+      - slot_was_set:
+        - list_name: seznam
+      - slot_was_set:
+        - requested_slot: list_item
       - intent: stop
       - action: utter_ask_continue
+      - or:
+          - intent: deny
+          - intent: stop
+      - action: action_deactivate_loop
+      - active_loop: null
+      - slot_was_set:
+          - requested_slot: null
+      - action: utter_anything_else
+      - intent: deny
+      - action: utter_ok
 
-  - story: User stops list_update_form
+  - story: Continue list_form (list_item)
     steps:
-      - intent: update_list
+      - intent: create_list
+      - action: action_reset_list_slots
+      - slot_was_set:
+          - list_name: null
+      - action: list_form
+      - active_loop: list_form
+      - slot_was_set:
+          - requested_slot: list_name
+      - intent: show_list
+      - action: list_form
+      - slot_was_set:
+          - list_name: seznam
+      - slot_was_set:
+          - requested_slot: list_item
+      - intent: stop
+      - action: utter_ask_continue
+      - intent: affirm
+      - action: list_form
+
+
+  - story: Cancel list_update_form (name)
+    steps:
       - action: list_update_form
       - active_loop: list_update_form
       - slot_was_set:
           - requested_slot: list_name
       - intent: stop
       - action: utter_ask_continue
+      - or:
+        - intent: deny
+        - intent: stop
+      - action: action_deactivate_loop
+      - active_loop: null
+      - slot_was_set:
+          - requested_slot: null
+      - action: utter_anything_else
+      - intent: deny
+      - action: utter_ok
+
+  - story: Continue list_update_form (name)
+    steps:
+      - action: list_update_form
+      - active_loop: list_update_form
+      - slot_was_set:
+          - requested_slot: list_name
+      - intent: stop
+      - action: utter_ask_continue
+      - intent: affirm
+      - action: list_form

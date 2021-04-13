@@ -33,7 +33,7 @@ def tokenize(text) -> List[str]:
     if pipelineCache:
         doc = pipelineCache(text)
     else:
-        classla.download('sl', force=True)
+        # classla.download('sl', force=True)
         pipelineCache = classla.Pipeline("sl", type="standard", processors="tokenize,pos,lemma")
         doc = pipelineCache(text)
     stanza_tokens = []

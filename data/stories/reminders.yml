@@ -125,32 +125,113 @@ stories:
 #      - slot_was_set:
 #          - reminder_time: null
 
-  - story: Try to cancel reminder (name), but then continue
+  - story: Cancel reminder_form (name)
     steps:
-      - intent: create_reminder
       - action: reminder_form
+      - active_loop: reminder_form
+      - slot_was_set:
+        - requested_slot: reminder_name
+      - intent: stop
+      - action: utter_ask_continue
+      - or:
+        - intent: stop
+        - intent: deny
+      - action: action_deactivate_loop
+      - active_loop: null
+      - slot_was_set:
+        - requested_slot: null
+      - action: action_reset_reminder_slots
+      - slot_was_set:
+        - reminder_name: null
+      - slot_was_set:
+        - reminder_date: null
+      - slot_was_set:
+        - reminder_time: null
+      - action: utter_anything_else
+
+  - story: Continue reminder_form (name)
+    steps:
       - active_loop: reminder_form
       - slot_was_set:
           - requested_slot: reminder_name
       - intent: stop
       - action: utter_ask_continue
+      - intent: affirm
+      - action: reminder_form
+      - active_loop: reminder_form
+      - slot_was_set:
+          - requested_slot: reminder_name
 
-  - story: Try to cancel reminder (date), but then continue
+  - story: Cancel reminder_form (date)
     steps:
-      - intent: create_reminder
       - action: reminder_form
       - active_loop: reminder_form
       - slot_was_set:
           - requested_slot: reminder_date
       - intent: stop
       - action: utter_ask_continue
+      - or:
+        - intent: stop
+        - intent: deny
+      - action: action_deactivate_loop
+      - active_loop: null
+      - slot_was_set:
+        - requested_slot: null
+      - action: action_reset_reminder_slots
+      - slot_was_set:
+        - reminder_name: null
+      - slot_was_set:
+        - reminder_date: null
+      - slot_was_set:
+        - reminder_time: null
+      - action: utter_anything_else
 
-  - story: Try to cancel reminder (time), but then continue
+  - story: Continue reminder_form (date)
     steps:
-      - intent: create_reminder
+      - active_loop: reminder_form
+      - slot_was_set:
+          - requested_slot: reminder_date
+      - intent: stop
+      - action: utter_ask_continue
+      - intent: affirm
+      - action: reminder_form
+      - active_loop: reminder_form
+      - slot_was_set:
+          - requested_slot: reminder_date
+
+  - story: Cancel reminder_form (time)
+    steps:
       - action: reminder_form
       - active_loop: reminder_form
       - slot_was_set:
           - requested_slot: reminder_time
       - intent: stop
       - action: utter_ask_continue
+      - or:
+          - intent: stop
+          - intent: deny
+      - action: action_deactivate_loop
+      - active_loop: null
+      - slot_was_set:
+          - requested_slot: null
+      - action: action_reset_reminder_slots
+      - slot_was_set:
+          - reminder_name: null
+      - slot_was_set:
+          - reminder_date: null
+      - slot_was_set:
+          - reminder_time: null
+      - action: utter_anything_else
+
+  - story: Continue reminder_form (time)
+    steps:
+      - active_loop: reminder_form
+      - slot_was_set:
+          - requested_slot: reminder_time
+      - intent: stop
+      - action: utter_ask_continue
+      - intent: affirm
+      - action: reminder_form
+      - active_loop: reminder_form
+      - slot_was_set:
+          - requested_slot: reminder_time
