@@ -109,6 +109,7 @@ def format_schedule(items):
     elements = []
 
     for show in items:
+        # image = re.sub(r'\btps://', 'https://', 'banana')
         title = show[2]
         if show[3]:
             title += f" ({show[3]})"
@@ -116,7 +117,7 @@ def format_schedule(items):
         list_element = {"title": re.sub(r'("[\s\w]*)"([\s\w]*")', r"\1\'\2", title),
                         "subtitle": f"{show[0].strftime('%H:%M')} - {show[1].strftime('%H:%M')}\n\n"
                                     f"{description}",
-                        "image_url": show[6][2:],
+                        "image_url": show[6],
                         "default_action": {
                             "type": "web_url",
                             "url": show[5],
@@ -142,7 +143,7 @@ def format_schedule_with_program(items):
         list_element = {"title": re.sub(r'("[\s\w]*)"([\s\w]*")', r"\1\'\2", title),
                         "subtitle": f"{show[7]}: {show[0].strftime('%H:%M')} - {show[1].strftime('%H:%M')}\n\n"
                                     f"{description}",
-                        "image_url": show[6][2:],
+                        "image_url": show[6],
                         "default_action": {
                             "type": "web_url",
                             "url": show[5],

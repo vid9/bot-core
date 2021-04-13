@@ -756,7 +756,6 @@ class TvCurrentlyPlaying(Action):
         if res:
             elements = tvh.format_schedule(res)
             if tracker.get_latest_input_channel() == 'facebook':
-                dispatcher.utter_message(text=json.dumps(elements))
                 dispatcher.utter_message(text=f"Trenutno na programu {program_name}", elements=elements)
             else:
                 dispatcher.utter_message(text=f"Trenutno na programu {program_name}")
