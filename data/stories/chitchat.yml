@@ -270,3 +270,71 @@ stories:
   - slot_was_set:
     - list_name: hrana
   - action: action_show_list_items
+- story: Story from Conversation ID d96fb341759544ebb4f5aed752620357
+  steps:
+  - intent: create_list
+  - action: action_reset_list_slots
+  - slot_was_set:
+    - list_name: null
+  - action: list_form
+  - active_loop: list_form
+  - slot_was_set:
+    - requested_slot: list_name
+  - slot_was_set:
+    - list_name: test
+  - slot_was_set:
+    - requested_slot: list_item
+  - slot_was_set:
+    - list_item: end
+  - slot_was_set:
+    - requested_slot: null
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_ok
+  - action: action_update_user_lists
+  - slot_was_set:
+    - list_item: null
+  - intent: remove_list
+  - action: action_remove_list_confirmation
+  - slot_was_set:
+    - list_name: null
+  - intent: remove_list
+    entities:
+    - list_name: test
+  - slot_was_set:
+    - list_name: test
+  - action: action_remove_list
+  - slot_was_set:
+    - list_name: null
+- story: Remove list
+  steps:
+  - action: action_show_list_items
+  - slot_was_set:
+    - list_name: Pospravi po hiši
+  - intent: remove_list
+  - action: action_remove_list_confirmation
+  - slot_was_set:
+    - list_name: null
+  - intent: remove_list
+  - action: action_remove_list_confirmation
+  - slot_was_set:
+    - list_name: Pospravi po hiši
+  - intent: affirm
+  - action: action_remove_list
+- story: Dont remove list
+  steps:
+  - action: action_show_list_items
+  - slot_was_set:
+    - list_name: Pospravi po hiši
+  - intent: remove_list
+  - action: action_remove_list_confirmation
+  - slot_was_set:
+    - list_name: null
+  - intent: remove_list
+  - action: action_remove_list_confirmation
+  - slot_was_set:
+    - list_name: Pospravi po hiši
+  - intent: deny
+  - action: utter_ok
+  - action: utter_anything_else
