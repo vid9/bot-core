@@ -129,12 +129,12 @@ stories:
           - weather: vremenska napoved
       - action: utter_help_weather
 
-  - story: Trenutno vreme in napoved
-    steps:
-      - intent: weather_forecast
-        entities:
-          - location: Ljubljana
-          - day: jutri
-      - action: action_weather_forecast
-      - user: "Kaj pa zdaj?"
-      - action: action_weather_current
+#  - story: Trenutno vreme in napoved
+#    steps:
+#      - intent: weather_forecast
+#        entities:
+#          - location: Ljubljana
+#          - day: jutri
+#      - action: action_weather_forecast
+#      - user: "Kaj pa zdaj?"
+#      - action: action_weather_current
