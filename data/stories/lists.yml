@@ -129,20 +129,26 @@ stories:
       - action: utter_ask_continue
       - intent: deny
       - active_loop: null
-      - action: utter_anything_else
-      - intent: deny
-      - action: utter_ok
 
-  - story: User interrupts list_form
+  - story: User stops list_form
     steps:
+      - intent: create_list
+      - action: action_reset_list_slots
+      - slot_was_set:
+        - list_name: null
       - action: list_form
       - active_loop: list_form
+      - slot_was_set:
+        - requested_slot: list_name
+      - intent: stop
+      - action: utter_ask_continue
+
+  - story: User stops list_update_form
+    steps:
+      - intent: update_list
+      - action: list_update_form
+      - active_loop: list_update_form
       - slot_was_set:
           - requested_slot: list_name
       - intent: stop
       - action: utter_ask_continue
-      - intent: deny
-      - active_loop: null
-      - action: utter_anything_else
-      - intent: affirm
-      - action: utter_how_can_help

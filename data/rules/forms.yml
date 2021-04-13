@@ -88,63 +88,82 @@ rules:
           - requested_slot: null
       - action: utter_ok
       - action: action_update_user_lists
+      - action: utter_anything_else
 
-#  - rule: User wants to cancel reminder form, ask him if he wants to continue
-#    condition:
-#      - active_loop: reminder_form
-#    steps:
-#      - intent: stop
-#      - action: utter_ask_continue
-#
-#  - rule: User doesnt want to continue
-#    condition:
-#      - active_loop: reminder_form
-#    steps:
-#      - action: utter_ask_continue
-#      - or:
-#          - intent: stop
-#          - intent: deny
-#      - action: list_form
-#      - active_loop: null
-#      - slot_was_set:
-#          - requested_slot: null
-#      - action: action_reset_reminder_slots
-#
-#  - rule: User wants to continue
-#    condition:
-#      - active_loop: reminder_form
-#    steps:
-#      - action: utter_ask_continue
-#      - intent: affirm
-#      - action: reminder_form
-#      - slot_was_set:
-#          - requested_slot: null
+  - rule: User cancels reminder_form
+    condition:
+      - active_loop: reminder_form
+    steps:
+      - action: utter_ask_continue
+      - or:
+        - intent: stop
+        - intent: deny
+      - action: reminder_form
+      - active_loop: null
+      - slot_was_set:
+          - requested_slot: null
+      - action: action_reset_reminder_slots
+      - action: utter_anything_else
 
-#  - rule: User wants to continue in reminder form
-#    condition:
-#      - active_loop: list_form
-#    steps:
-#      - intent: stop
-#      - action: utter_ask_continue
-#      - intent: affirm
-#      - action: reminder_form
-#      - slot_was_set:
-#          - requested_slot: null
+  - rule: User wants to continue reminder_form
+    condition:
+      - active_loop: reminder_form
+    steps:
+      - action: utter_ask_continue
+      - intent: affirm
+      - action: reminder_form
+      - slot_was_set:
+          - requested_slot: null
+      - action: reminder_form
 
+  - rule: User wants to continue in list_form
+    condition:
+      - active_loop: list_form
+    steps:
+      - action: utter_ask_continue
+      - intent: affirm
+      - action: list_form
+      - slot_was_set:
+          - requested_slot: null
 
-#
+  - rule: User doesnt want to continue list_form
+    condition:
+      - active_loop: list_form
+    steps:
+      - action: utter_ask_continue
+      - or:
+        - intent: stop
+        - intent: deny
+      - action: list_form
+      - active_loop: null
+      - slot_was_set:
+          - requested_slot: null
+      - action: utter_anything_else
 
-#
-#  - rule: Cancel reminder update form
-#    condition:
-#      - active_loop: list_update_form
-#    steps:
-#      - intent: stop
-#      - action: list_update_form
-#      - active_loop: null
-#      - slot_was_set:
-#          - requested_slot: null
-#      - action: action_reset_list_slots
-#      - slot_was_set:
-#          - list_name: null
+  - rule: User wants to continue in list_update_form
+    condition:
+      - active_loop: list_update_form
+    steps:
+      - action: utter_ask_continue
+      - intent: affirm
+      - action: list_update_form
+      - slot_was_set:
+          - requested_slot: null
+      - action: list_update_form
 
+  - rule: Cancel list update form
+    condition:
+      - active_loop: list_update_form
+    steps:
+      - action: utter_ask_continue
+      - or:
+        - intent: stop
+        - intent: deny
+      - action: list_update_form
+      - active_loop: null
+      - slot_was_set:
+          - requested_slot: null
+      - action: action_reset_list_slots
+      - slot_was_set:
+          - list_name: null
+      - action: utter_anything_else

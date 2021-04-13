@@ -162,3 +162,14 @@ stories:
       - slot_was_set:
           - punchline: null
 
+  - story: User doesnt need anything else
+    steps:
+      - action: utter_anything_else
+      - intent: deny
+      - action: utter_ok
+
+  - story: User wants something else
+    steps:
+      - action: utter_anything_else
+      - intent: affirm
+      - action: utter_how_can_help

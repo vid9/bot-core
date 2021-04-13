@@ -103,7 +103,29 @@ stories:
       - intent: deny
       - action: utter_have_a_nice_day
 
-  - story: Cancel reminder
+#  - story: Cancel reminder
+#    steps:
+#      - intent: create_reminder
+#      - action: reminder_form
+#      - active_loop: reminder_form
+#      - slot_was_set:
+#          - requested_slot: reminder_name
+#      - intent: stop
+#      - action: utter_ask_continue
+#      - or:
+#        - intent: deny
+#        - intent: stop
+#      - action: action_deactivate_loop
+#      - active_loop: null
+#      - action: action_reset_reminder_slots
+#      - slot_was_set:
+#          - reminder_name: null
+#      - slot_was_set:
+#          - reminder_date: null
+#      - slot_was_set:
+#          - reminder_time: null
+
+  - story: Try to cancel reminder (name), but then continue
     steps:
       - intent: create_reminder
       - action: reminder_form
@@ -112,34 +134,8 @@ stories:
           - requested_slot: reminder_name
       - intent: stop
       - action: utter_ask_continue
-      - or:
-        - intent: deny
-        - intent: stop
-      - action: action_deactivate_loop
-      - active_loop: null
-      - action: action_reset_reminder_slots
-      - slot_was_set:
-          - reminder_name: null
-      - slot_was_set:
-          - reminder_date: null
-      - slot_was_set:
-          - reminder_time: null
 
-  - story: Try to cancel reminder, but then continue
-    steps:
-      - intent: create_reminder
-      - action: reminder_form
-      - active_loop: reminder_form
-      - slot_was_set:
-          - requested_slot: reminder_name
-      - intent: stop
-      - action: utter_ask_continue
-      - intent: affirm
-      - slot_was_set:
-          - reminder_name: null
-      - action: reminder_form
-
-  - story: Try to cancel reminder, but then continue
+  - story: Try to cancel reminder (date), but then continue
     steps:
       - intent: create_reminder
       - action: reminder_form
@@ -148,12 +144,8 @@ stories:
           - requested_slot: reminder_date
       - intent: stop
       - action: utter_ask_continue
-      - intent: affirm
-      - slot_was_set:
-          - reminder_date: null
-      - action: reminder_form
 
-  - story: Try to cancel reminder, but then continue
+  - story: Try to cancel reminder (time), but then continue
     steps:
       - intent: create_reminder
       - action: reminder_form
@@ -162,7 +154,3 @@ stories:
           - requested_slot: reminder_time
       - intent: stop
       - action: utter_ask_continue
-      - intent: affirm
-      - slot_was_set:
-          - reminder_time: null
-      - action: reminder_form
