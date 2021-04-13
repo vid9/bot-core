@@ -956,9 +956,9 @@ class RemoveList(Action):
         # Todo add to fallback
         list_name = tracker.get_slot("list_name")
         list_id = list_helper.remove_list(list_name, tracker.sender_id)
-        if list_id:
+        if list_id is not None:
             dispatcher.utter_message(f"Ok, izbrisal sem seznam z imenom ˝{list_name}˝.")
-            list_helper.remove_list_items(list_id, tracker.sender_id)
+            list_helper.remove_list_items(list_id[0][0], tracker.sender_id)
             # user_lists = tracker.get_slot("user_lists").remove(list_name)
             return [SlotSet("list_name", None)]
         else:

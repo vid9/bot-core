@@ -29,7 +29,6 @@ def remove_list(name, user_id):
     )
     return database.execute_query(sql, data)
 
-
 def add_to_list(list_id, item, user_id):
     item = re.sub('dodaj ', '', item, flags=re.IGNORECASE)
     sql = (
