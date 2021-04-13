@@ -113,16 +113,16 @@ def format_schedule(items):
         if show[3]:
             title += f" ({show[3]})"
         description = re.sub(r'("[\s\w]*)"([\s\w]*")', r"\1\'\2", show[4])
-        list_element = {"title": re.sub(r'("[\s\w]*)"([\s\w]*")', r"\1\'\2", title),
-                        "subtitle": f"{show[0].strftime('%H:%M')} - {show[1].strftime('%H:%M')}\n\n"
+        list_element = {'title': re.sub(r'("[\s\w]*)"([\s\w]*")', r"\1\'\2", title),
+                        'subtitle': f"{show[0].strftime('%H:%M')} - {show[1].strftime('%H:%M')}\n\n"
                                     f"{description}",
-                        "image_url": show[6][2:],
-                        "default_action": {
+                        'image_url': show[6][2:],
+                        'default_action': {
                             "type": "web_url",
                             "url": show[5],
                             "messenger_extensions": False,
                             "webview_height_ratio": "full"},
-                        "buttons": [{
+                        'buttons': [{
                             "title": "Preberi več",
                             "type": "web_url",
                             "url": show[5],
@@ -139,16 +139,16 @@ def format_schedule_with_program(items):
         if show[3]:
             title += f" ({show[3]})"
         description = re.sub(r'("[\s\w]*)"([\s\w]*")', r"\1\'\2", show[4])
-        list_element = {"title": re.sub(r'("[\s\w]*)"([\s\w]*")', r"\1\'\2", title),
-                        "subtitle": f"{show[7]}: {show[0].strftime('%H:%M')} - {show[1].strftime('%H:%M')}\n\n"
+        list_element = {'title': re.sub(r'("[\s\w]*)"([\s\w]*")', r"\1\'\2", title),
+                        'subtitle': f"{show[7]}: {show[0].strftime('%H:%M')} - {show[1].strftime('%H:%M')}\n\n"
                                     f"{description}",
-                        "image_url": show[6][2:],
-                        "default_action": {
+                        'image_url': show[6][2:],
+                        'default_action': {
                             "type": "web_url",
                             "url": show[5],
                             "messenger_extensions": False,
                             "webview_height_ratio": "full"},
-                        "buttons": [{
+                        'buttons': [{
                             "title": "Preberi več",
                             "type": "web_url",
                             "url": show[5],
