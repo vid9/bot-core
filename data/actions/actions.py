@@ -206,6 +206,8 @@ class ActionLights(Action):
         for i in tracker.latest_message['entities']:
             if i['entity'] == "light_name":
                 light_name = i['value']
+        if not light_name:
+            dispatcher.utter_message("Prišlo je do napake. Lahko prosim preoblikuješ stavek?")
         light_name = get_light_name(light_name)
         if intent_on:
             if not light_name:
@@ -305,6 +307,8 @@ class ActionWeatherCurrent(Action):
     ) -> List[Dict[Text, Any]]:
         print(tracker.get_slot("location"))
         location = tracker.get_slot("location")
+        if not location:
+            dispatcher.utter_message("Prišlo je do napake. Lahko prosim preoblikuješ stavek?")
         if len(location.split(' ')) == 1:
             location = tokenize(location)[0]
 
