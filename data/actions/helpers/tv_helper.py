@@ -1,8 +1,8 @@
 import datetime as dt
 import re
 
-import database as database
-# import actions.database as database
+# import database as database
+import actions.database as database
 
 
 def program_name_valid(program_name):
