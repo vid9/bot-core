@@ -19,7 +19,7 @@ from actions.helpers import reminder_helper as rh, weather_helper as wh, news_he
 
 from rasa_sdk import Action, Tracker, FormValidationAction
 from rasa_sdk.events import ReminderCancelled, ReminderScheduled, UserUtteranceReverted, ConversationPaused, SlotSet, \
-    EventType, ActiveLoop
+    EventType, ActiveLoop, FollowupAction
 from rasa_sdk.executor import CollectingDispatcher
 
 INTENT_DESCRIPTION_MAPPING_PATH = "actions/intent_description_mapping.csv"
@@ -924,8 +924,8 @@ class CheckListExits(Action):
         user_string = tracker.latest_message.get("text")
         user_lists = list_helper.get_all_user_lists(tracker.sender_id)
         if not user_lists:
-            dispatcher.utter_message("Trenutno nimaš nobenega seznama. Želiš ustvariti nov seznam?")
-            return []
+            dispatcher.utter_message("Trenutno nimaš nobenega seznama.")
+            return [FollowupAction(name='utter_new_list')]
         current_lists = [i[0] for i in user_lists]
         for list_name in current_lists:
             if list_name in user_string:
