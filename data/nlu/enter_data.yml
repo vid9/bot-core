@@ -116,17 +116,16 @@ nlu:
     - [litija](location)
     - [SLO1](program)
     - Mestna občina [Velenje](location)
+    - [piran](location)
 - intent: weather_forecast
   examples: |
     - zanima me napoved za [Kranjsko Goro]{"entity": "location", "value": "Kranjska Gora"}
     - Kakšno bo vreme čez vikend?
     - Kdaj bo danes zašlo sonce?
+    - kakšno bo vreme v [nedeljo]{"entity": "day", "value": "nedelja"} v [piranu](location)
 - synonym: sreda
   examples: |
     - sredo
-- synonym: Kranjska Gora
-  examples: |
-    - Kranjsko Goro
 - synonym: dnevna soba
   examples: |
     - dnevni
@@ -144,3 +143,6 @@ nlu:
 - synonym: TV Golica
   examples: |
     - Golica
+- synonym: Kranjska Gora
+  examples: |
+    - Kranjsko Goro

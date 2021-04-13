@@ -258,3 +258,15 @@ stories:
     entities:
     - program: Kanal A
   - action: action_tv_schedule
+- story: Show list items
+  steps:
+  - intent: show_list
+  - action: action_show_all_lists
+  - slot_was_set:
+    - list_name: null
+  - intent: show_list
+    entities:
+    - list_name: hrana
+  - slot_was_set:
+    - list_name: hrana
+  - action: action_show_list_items

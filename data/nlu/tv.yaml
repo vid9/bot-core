@@ -46,6 +46,7 @@ nlu:
     - Kdaj bo [dnevnik](program) na sporedu?
     - Kaj bo [danes](day) ob [20h](time_number) na [Planet](program)
     - Kaj je [nocoj](day) na [Pop TV](program)?
+    - kaj bo [jutri](day) na programu [planet](program)[planet](program) tv?
 - intent: schedule_query
   examples: |
     - kateri [filmi]{"entity": "category", "value": "film"} so [danes](day) na sporedu?
@@ -64,6 +65,7 @@ nlu:
     - [Informativne oddaje]{"entity": "category", "value": "informativni"} na [planet tv](program) [sobota](day)
     - Kateri [filmi]{"entity": "category", "value": "film"} bodo [jutri](day) na [tv slo 2](program)?
     - kakšni [filmi]{"entity": "category", "value": "film"} so na sporedu ta teden?
+    - kateri [filmi]{"entity": "category", "value": "film"} bodo [jutri](day) na [programu](tv) [planet](program)[planet](program) tv?
 - synonym: TV SLO 2
   examples: |
     - dvojki
