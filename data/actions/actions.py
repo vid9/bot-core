@@ -757,7 +757,7 @@ class TvCurrentlyPlaying(Action):
             elements = tvh.format_schedule(res)
             print(elements)
             if tracker.get_latest_input_channel() == 'facebook':
-                dispatcher.utter_message(text=elements,elements=elements)
+                # dispatcher.utter_message(text=elements,elements=elements)
                 dispatcher.utter_message(text=f"Trenutno na programu {program_name}", elements=elements)
             else:
                 dispatcher.utter_message(text=f"Trenutno na programu {program_name}")
@@ -817,7 +817,7 @@ class TvSchedule(Action):
                     dispatcher.utter_message(elements=elements[prev:curr])
                 else:
                     dispatcher.utter_message(attachment=create_carousel(elements[prev:curr]))
-                dispatcher.utter_message(text=elements, elements=elements)
+                # dispatcher.utter_message(text=elements, elements=elements)
 
                 prev += 10
             if tracker.get_latest_input_channel() == 'facebook':

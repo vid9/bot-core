@@ -1,5 +1,5 @@
-# import database as database
-import actions.database as database
+import database as database
+# import actions.database as database
 import re
 
 
