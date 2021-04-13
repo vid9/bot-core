@@ -756,7 +756,7 @@ class TvCurrentlyPlaying(Action):
         if res:
             elements = tvh.format_schedule(res)
             if tracker.get_latest_input_channel() == 'facebook':
-                dispatcher.utter_message(text=json.dump(elements),elements=elements)
+                dispatcher.utter_message(text=json.dumps(elements))
                 dispatcher.utter_message(text=f"Trenutno na programu {program_name}", elements=elements)
             else:
                 dispatcher.utter_message(text=f"Trenutno na programu {program_name}")
@@ -955,6 +955,7 @@ class RemoveList(Action):
         list_id = list_helper.remove_list(list_name, tracker.sender_id)
         if list_id:
             dispatcher.utter_message(f"Ok, izbrisal sem seznam z imenom ˝{list_name}˝.")
+            list_helper.remove_list_items(list_id, tracker.sender_id)
             # user_lists = tracker.get_slot("user_lists").remove(list_name)
             return [SlotSet("list_name", None)]
         else:
@@ -1003,6 +1004,7 @@ class ValidateListUpdateForm(FormValidationAction):
             name = re.sub(r'odstrani ', '', name, flags=re.IGNORECASE)
             name = re.sub(r'izbriši ', '', name, flags=re.IGNORECASE)
             res = list_helper.remove_from_list(list_id, name)
+            dispatcher.utter_message(text=f"{list_id, name}")
             if res:
                 dispatcher.utter_message(f"Odstranil sem ˝{name}˝. Še kaj drugega?")
                 items.remove(name)
