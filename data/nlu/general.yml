@@ -56,6 +56,8 @@ nlu:
     - ne izbrisati
     - ne, nočem
     - ne, to mi ni všeč
+    - ne želim novega opomnika
+    - ne ustvari
 - intent: stop
   examples: |
     - stop
@@ -254,6 +256,7 @@ nlu:
     - a je zaprta cesta A1?
     - želim podrobnosti o prometu
     - mi lahko daš nekaj prometnih informacij
+    - Potreboval bi prometne informacije
 - intent: help
   examples: |
     - kaj mi lahko poveš o [vremenu](weather)?

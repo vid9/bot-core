@@ -39,6 +39,11 @@ nlu:
     - izbriši opomnik
     - Izbriši opomnike
     - prekliči zadnji opomnik
+    - razveljavi opomnik az 15. 4
+    - prekliči opomnik za [15. 4.](date_number) 2021
+    - zbriši opomnik z imenom koledar
+    - rada bi izbrisala opomnik v koledarju za [15.04.](date_number)[15.04.2021](date_number)
+    - izbriši trenutni opomnik za [15.04.2021](date_number)[15.04.](date_number)2021
 - intent: show_reminders
   examples: |
     - prikaži opomnike
@@ -58,3 +63,4 @@ nlu:
     - čez koliko minut bo zvonil moj opomnik
     - Prikaži vse moje opomnike
     - Vsi moji opomniki
+    - prikaži opomnik

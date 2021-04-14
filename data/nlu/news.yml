@@ -44,6 +44,7 @@ nlu:
     - kaj pa [včerajšnje](day) [športne](news_category) novice
     - novice v kategoriji [šport]{"entity": "news_category", "value": "sport"}
     - mi lahko poveš nekaj novic iz [športa](news_category)
+    - Kaj je novega v [športu]{"entity": "news_category", "value": "sport"}?
 - intent: news_subscribe
   examples: |
     - želim se naročiti na dnevne novice
@@ -60,6 +61,7 @@ nlu:
     - rada bi se naročila na dnevno prejemanje obvestil na novice
     - želim vsak dan prejeti obvestilo za dnevne novice
     - želela bi dobivati dnevne novice
+    - Prijavi me na dnevna obvestila o novicah
 - intent: news_unsubscribe
   examples: |
     - želim se odjaviti od dnevnih novic

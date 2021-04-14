@@ -15,6 +15,7 @@ nlu:
     - rad bi ustvaril seznam
     - ustvaari seznam
     - Ustvari seznam
+    - napravi seznam
 - intent: help
   examples: |
     - kako lahko naredim nov [seznam](list)
@@ -36,6 +37,8 @@ nlu:
     - Dodaj na seznam
     - uredi zadnji seznam
     - dodaj še borovnice na seznam 5
+    - na seznam sadje dodaj borovnice
+    - uredi seznam, ki vsebuje jabolke, banane, kokos
 - intent: remove_list
   examples: |
     - izbriši seznam
