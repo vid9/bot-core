@@ -97,6 +97,7 @@ stories:
     - action: utter_new_list
     - intent: affirm
     - action: list_form
+    - active_loop: list_form
 
   - story: User doesnt have a list to remove and does not want to create a new one
     steps:
