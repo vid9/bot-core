@@ -338,3 +338,9 @@ stories:
   - intent: deny
   - action: utter_ok
   - action: utter_anything_else
+- story: Remove list simple
+  steps:
+  - action: action_remove_list_confirmation
+  - intent: remove_list
+  - intent: affirm
+  - action: action_remove_list
