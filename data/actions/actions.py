@@ -856,14 +856,14 @@ class TvSearchQuery(Action):
             response = tvh.get_universal_schedule_for_category(category, day_absolute)
             if not response or response is None:
                 dispatcher.utter_message(f"Za kategorijo ˝{category}˝ nisem našel nobenih rezultatov.")
-                return [SlotSet("category", None), SlotSet("program_name", None)]
+                return [SlotSet("category", None)]
             elements = tvh.format_schedule_with_program(response)
             response_text = f"Spored za kategorijo ˝{category}˝"
         else:
             response = tvh.get_program_schedule_for_category(program_name, category, day_absolute)
             if not response or response is None:
                 dispatcher.utter_message(f"Za kategorijo ˝{category}˝ nisem našel nobenih rezultatov.")
-                return [SlotSet("category", None), SlotSet("program_name", None)]
+                return [SlotSet("category", None)]
             elements = tvh.format_schedule(response)
             response_text = f"Spored za kategorijo ˝{category}˝ na programu {program_name}"
 
