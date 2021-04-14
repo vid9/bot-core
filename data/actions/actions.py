@@ -36,7 +36,7 @@ def tokenize(text) -> List[str]:
         doc = pipelineCache(text)
     else:
         # classla.download('sl', confirm_if_exists=True, force=True)
-        pipelineCache = classla.Pipeline("sl", dir="~/app/custom_component/classla_resources", processors="tokenize,pos,lemma")
+        pipelineCache = classla.Pipeline("sl", dir="/app/classla_resources", processors="tokenize,pos,lemma")
         # pipelineCache = classla.Pipeline("sl", processors="tokenize,pos,lemma")
         doc = pipelineCache(text)
     stanza_tokens = []
@@ -314,6 +314,7 @@ class ActionWeatherCurrent(Action):
         if location is None:
             dispatcher.utter_message("Nisem dobro razumel kraja. Lahko prosim preoblikuješ stavek?")
         if len(location.split()) == 1:
+            dispatcher.utter_message(" ".join(tokenize(location)))
             location = tokenize(location)[0]
 
         # if location == "Slovenija" or location == "slovenija":
