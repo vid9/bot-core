@@ -27,8 +27,8 @@ INTENT_DESCRIPTION_MAPPING_PATH = "actions/intent_description_mapping.csv"
 
 locale.setlocale(category=locale.LC_ALL, locale="sl_SI.UTF-8")
 
-# pipelineCache = []
-pipelineCache = classla.Pipeline("sl", processors="tokenize,pos,lemma")
+pipelineCache = []
+# pipelineCache = classla.Pipeline("sl", processors="tokenize,pos,lemma")
 
 
 def tokenize(text) -> List[str]:
@@ -38,8 +38,7 @@ def tokenize(text) -> List[str]:
     else:
         # classla.download('sl')
         pipelineCache = classla.Pipeline("sl", processors="tokenize,pos,lemma")
-        # pipelineCache = classla.Pipeline("sl", processor
-        # s="tokenize,pos,lemma")
+        # pipelineCache = classla.Pipeline("sl", processor# s="tokenize,pos,lemma")
         doc = pipelineCache(text)
     stanza_tokens = []
     for i in doc.sentences:
