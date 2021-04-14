@@ -117,12 +117,14 @@ nlu:
     - [SLO1](program)
     - Mestna občina [Velenje](location)
     - [piran](location)
+    - Tole tukaj, v moji [sobi](light_name)
 - intent: weather_forecast
   examples: |
     - zanima me napoved za [Kranjsko Goro]{"entity": "location", "value": "Kranjska Gora"}
     - Kakšno bo vreme čez vikend?
     - Kdaj bo danes zašlo sonce?
     - kakšno bo vreme v [nedeljo]{"entity": "day", "value": "nedelja"} v [piranu](location)
+    - kakšna je napoved za [nedeljo]{"entity": "day", "value": "nedelja"}
 - synonym: sreda
   examples: |
     - sredo

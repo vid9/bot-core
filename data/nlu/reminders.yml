@@ -19,6 +19,8 @@ nlu:
     - rad bi nastavil nov opomnik
     - ustvari še en opomnik
     - nastavi mi [opomnik](reminder) za sestanek za [jutri](day) ob [17](time_number)
+    - Naredi prosim opomnik za [jutri](day)
+    - dej nared prosim en opomnik za [jutri](day)
 - intent: help
   examples: |
     - kako lahko ustvarim nov [opomnik](reminder)

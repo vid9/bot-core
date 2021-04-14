@@ -25,6 +25,7 @@ nlu:
     - koliko let imaš?
     - povej mi koliko si star
     - kdaj imaš rojstni dan?
+    - koliko si star?
 - intent: chitchat/ask_howdoing
   examples: |
     - Super, pa ti?

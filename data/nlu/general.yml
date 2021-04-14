@@ -27,6 +27,7 @@ nlu:
     - Ok
     - Ja
     - da želim
+    - to je to
 - intent: deny
   examples: |
     - ne
@@ -233,6 +234,8 @@ nlu:
     - [Zapri](light_off) luč
     - [Zapri](light_off) luč v [kleti](light_name)
     - [Zapreš](light_off) luč?
+    - [Vgasni](light_off) luč v moji [sobi](light_name)
+    - [ugasni](light_off) luč v tej [sobi](light_name)
 - intent: traffic_conditions
   examples: |
     - kakšno je stanje na cestah?

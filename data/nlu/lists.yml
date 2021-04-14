@@ -46,6 +46,7 @@ nlu:
     - prosim odstrani seznam
     - odstrani seznam
     - Izbriši seznam
+    - izbriši seznam 5
 - intent: show_list
   examples: |
     - prikaži sezname
