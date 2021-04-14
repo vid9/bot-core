@@ -78,7 +78,7 @@ nlu:
     - kateri [filmi]{"entity": "category", "value": "film"} bodo [jutri](day) na programu [planet](program) tv?
     - [Filmi]{"entity": "category", "value": "film"} [jutri](day) na [pop tv](program)
     - [Nadaljevanke]{"entity": "category", "value": "nadaljevanka"} na [kanalu a]{"entity": "program", "value": "Kanal A"}
-    - Kateri [filmi]{"entity": "category", "value": "film"} bodo [danes](day) na [HBO](program)[HBO](program)?
+    - Kateri [filmi]{"entity": "category", "value": "film"} bodo [danes](day) na [HBO](program)?
 - synonym: TV SLO 2
   examples: |
     - dvojki

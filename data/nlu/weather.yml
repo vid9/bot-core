@@ -41,6 +41,16 @@ nlu:
     - Vremenska napoved za vikend
     - Zanima me vremeenska napoved za [Velenje](location) v prihajajočem vikendu
     - Kakšno bo vreme v [Velenju](location) ta teden?
+    - zanima me napoved za [Kranjsko Goro]{"entity": "location", "value": "Kranjska Gora"}
+    - Kakšno bo vreme čez vikend?
+    - Kdaj bo danes zašlo sonce?
+    - kakšno bo vreme v [nedeljo]{"entity": "day", "value": "nedelja"} v [piranu](location)
+    - kakšna je napoved za [nedeljo]{"entity": "day", "value": "nedelja"}
+    - Kakšno bo vreme v [nedeljo]{"entity": "day", "value": "nedelja"} v [Mariboru](location)?
+    - Kakšna je vremenska napoved za [Ljubljano](location) v [nedeljo]{"entity": "day", "value": "nedelja"}
+    - vreme ob 14.00 v [Ljubljani](location)
+    - Kakšna je vremenska napoved za [Ljubljano](location)?
+    - vremenska napoved [Ljubljana](location) [danes](day)
 - intent: weather_current
   examples: |
     - ali potrebujem dežnik
@@ -85,4 +95,4 @@ nlu:
     - Kakšno vreme je v [Kranjski Gori](location)?
     - trenutno vreme v [Ljubljani](location)
     - Kakšno vreme je trenutno v [Ljubljani](location)?
-    - vreme [Kranjska Gora](location)[Kranjska Gora](location)
+    - vreme [Kranjska Gora](location)

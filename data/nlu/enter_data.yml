@@ -120,18 +120,6 @@ nlu:
     - Tole tukaj, v moji [sobi](light_name)
     - [DANES](day)
     - [tv slo1](program) program
-- intent: weather_forecast
-  examples: |
-    - zanima me napoved za [Kranjsko Goro]{"entity": "location", "value": "Kranjska Gora"}
-    - Kakšno bo vreme čez vikend?
-    - Kdaj bo danes zašlo sonce?
-    - kakšno bo vreme v [nedeljo]{"entity": "day", "value": "nedelja"} v [piranu](location)
-    - kakšna je napoved za [nedeljo]{"entity": "day", "value": "nedelja"}
-    - Kakšno bo vreme v [nedeljo]{"entity": "day", "value": "nedelja"} v [Mariboru](location)?
-    - Kakšna je vremenska napoved za [Ljubljano](location) v [nedeljo]{"entity": "day", "value": "nedelja"}
-    - vreme ob 14.00 v [Ljubljani](location)
-    - Kakšna je vremenska napoved za [Ljubljano](location)?
-    - vremenska napoved [Ljubljana](location)[Ljubljana](location) [danes](day)
 - synonym: sreda
   examples: |
     - sredo
