@@ -184,8 +184,9 @@ class ActionDefaultAskAffirmation(Action):
 
 def get_light_name(light_name):
     try:
-        if len(light_name.split(' ')) == 1:
+        if len(light_name.split()) == 1:
             return tokenize(light_name)[0]
+        return light_name
     except IndexError as e:
         return light_name
 
@@ -259,10 +260,14 @@ class ActionWeatherForecast(Action):
             if i['entity'] == "day":
                 date_day = i['value']
         location = tracker.get_slot("location")
+        if location is None:
+            dispatcher.utter_message("Nisem dobro razumel lokacije. Lahko prosim preoblikuješ stavek?")
+        if len(location.split()) == 1:
+            location = tokenize(location)[0]
         if date_day is None:
             date_day = "danes"
-        lemmas = tokenize(f"{date_day} {location}")
-        date_number = lh.get_day_number(lemmas[0])
+        # lemmas = tokenize(f"{date_day} {location}")
+        date_number = lh.get_day_number(tokenize(date_day)[0])
         if type(date_number) is not int:
             dispatcher.utter_message(
                 "Prosim zapiši dan z besedo. Na primer ˝danes˝ ali pa ˝ponedeljek˝.")
@@ -271,7 +276,6 @@ class ActionWeatherForecast(Action):
             dispatcher.utter_message(
                 "Trenutno lahko poiščem vremensko napoved samo za sedem dni naprej. Za kateri dan te zanima napoved?")
             return []
-        location = lemmas[1]
         # Get current weather for extracted location """
         weather_obj = wh.get_forecast_weather(location, int(date_number))
         if weather_obj["type"] == "error":
@@ -305,11 +309,10 @@ class ActionWeatherCurrent(Action):
             tracker: Tracker,
             domain: Dict[Text, Any],
     ) -> List[Dict[Text, Any]]:
-        print(tracker.get_slot("location"))
         location = tracker.get_slot("location")
-        if not location:
-            dispatcher.utter_message("Prišlo je do napake. Lahko prosim preoblikuješ stavek?")
-        if len(location.split(' ')) == 1:
+        if location is None:
+            dispatcher.utter_message("Nisem dobro razumel kraja. Lahko prosim preoblikuješ stavek?")
+        if len(location.split()) == 1:
             location = tokenize(location)[0]
 
         # if location == "Slovenija" or location == "slovenija":
