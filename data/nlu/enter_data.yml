@@ -119,6 +119,7 @@ nlu:
     - [piran](location)
     - Tole tukaj, v moji [sobi](light_name)
     - [DANES](day)
+    - [tv slo1](program) program
 - intent: weather_forecast
   examples: |
     - zanima me napoved za [Kranjsko Goro]{"entity": "location", "value": "Kranjska Gora"}
@@ -127,6 +128,8 @@ nlu:
     - kakšno bo vreme v [nedeljo]{"entity": "day", "value": "nedelja"} v [piranu](location)
     - kakšna je napoved za [nedeljo]{"entity": "day", "value": "nedelja"}
     - Kakšno bo vreme v [nedeljo]{"entity": "day", "value": "nedelja"} v [Mariboru](location)?
+    - Kakšna je vremenska napoved za [Ljubljano](location) v [nedeljo]{"entity": "day", "value": "nedelja"}
+    - vreme ob 14.00 v [Ljubljani](location)
 - synonym: sreda
   examples: |
     - sredo
@@ -144,6 +147,7 @@ nlu:
     - Slovenija 1
     - tvslo1
     - SLO1
+    - tv slo1
 - synonym: TV Golica
   examples: |
     - Golica

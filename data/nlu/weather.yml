@@ -76,3 +76,5 @@ nlu:
     - kakšno je vreme zunaj?
     - kakšno je vreme v [ljubljani](location)
     - kakšno je trenutno vreme?
+    - kakšno je vreme v sedanjem trenutku v [Ljubljani](location)
+    - kakšno je vreme v [Ljubljani](location)
