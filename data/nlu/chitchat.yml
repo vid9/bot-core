@@ -131,6 +131,7 @@ nlu:
     - kakšne zmožnosti imaš?
     - Zanima me kaj znaš?
     - Kaj znaš
+    - Kaj je tvoja naloga?
 - intent: chitchat/handleinsult
   examples: |
     - Rit

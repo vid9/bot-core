@@ -257,6 +257,11 @@ nlu:
     - želim podrobnosti o prometu
     - mi lahko daš nekaj prometnih informacij
     - Potreboval bi prometne informacije
+    - Ali so ceste po Sloveniji prevozne?
+    - Ali so na cesti med Vipavo in Ljubljano kakšni prometni zastoji?
+    - Kako poteka promet med Vipavo in Ljubljano?
+    - Ali je cesta proti Ljubljani brez prometnih zastojev?
+    - Ali je cestna zapora na regionalni cesti proti Ljubljani?
 - intent: help
   examples: |
     - kaj mi lahko poveš o [vremenu](weather)?

@@ -69,6 +69,10 @@ nlu:
     - kateri [filmi]{"entity": "category", "value": "film"} bodo [danes](day) na sporedu na tv [slo1]{"entity": "program", "value": "TV SLO 1"}
     - kaj pa [filmi]{"entity": "category", "value": "film"} [danes](day) za [slo1]{"entity": "program", "value": "TV SLO 1"}
     - Kateri [film](category) bo [danes](day) na [TV SLO 1](program)[TV SLO 1](program)?
+    - Kateri [filmi]{"entity": "category", "value": "film"} so na sporedu na [TV SLO 1](program)
+    - kakšen program [filmov](category) je [danes](day) na [tv slo1](program)
+    - [filmi]{"entity": "category", "value": "film"} na [tv slo 1](program)
+    - [filmi]{"entity": "category", "value": "film"} na [tv slo 2](program)
 - synonym: TV SLO 2
   examples: |
     - dvojki
@@ -80,6 +84,7 @@ nlu:
   examples: |
     - filmi
     - filme
+    - filmov
 - synonym: informativni
   examples: |
     - informativne oddaje

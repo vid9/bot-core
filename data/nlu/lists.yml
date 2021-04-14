@@ -50,6 +50,8 @@ nlu:
     - odstrani seznam
     - Izbriši seznam
     - izbriši seznam 5
+    - odstrani seznam seznam
+    - odstrani moji seznami
 - intent: show_list
   examples: |
     - prikaži sezname
@@ -70,3 +72,4 @@ nlu:
     - moji seznami
     - Odpri seznam
     - naštej vse sezname
+    - seznami

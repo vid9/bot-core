@@ -130,6 +130,7 @@ nlu:
     - Kakšno bo vreme v [nedeljo]{"entity": "day", "value": "nedelja"} v [Mariboru](location)?
     - Kakšna je vremenska napoved za [Ljubljano](location) v [nedeljo]{"entity": "day", "value": "nedelja"}
     - vreme ob 14.00 v [Ljubljani](location)
+    - Kakšna je vremenska napoved za [Ljubljano](location)?
 - synonym: sreda
   examples: |
     - sredo
