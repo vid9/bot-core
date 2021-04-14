@@ -3,7 +3,6 @@ certifi==2020.12.5
 chardet==4.0.0
 classla==1.0.1
 dateparser==1.0.0
-freeze==3.0
 idna==2.10
 numpy==1.20.1
 pandas==1.2.3
