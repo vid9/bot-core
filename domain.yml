@@ -28,9 +28,9 @@ intents:
 - EXTERNAL_reminder:
     use_entities: true
 - goodbye:
-    use_entities: true
+    use_entities: []
 - greet:
-    use_entities: true
+    use_entities: []
 - latest_news:
     use_entities: true
 - lights:
@@ -42,9 +42,9 @@ intents:
 - help:
     use_entities: true
 - news_subscribe:
-    use_entities: true
+    use_entities: []
 - news_unsubscribe:
-    use_entities: true
+    use_entities: []
 - nlu_fallback:
     use_entities: true
 - out_of_scope:
@@ -62,15 +62,15 @@ intents:
 - show_reminders:
     use_entities: true
 - stop:
-    use_entities: true
+    use_entities: []
 - tellajoke:
     use_entities: true
 - thanks:
     use_entities: true
 - time:
-    use_entities: true
+    use_entities: []
 - traffic_conditions:
-    use_entities: true
+    use_entities: []
 - update_list:
     use_entities: true
 - update_reminder:
