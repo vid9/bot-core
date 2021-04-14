@@ -18,6 +18,7 @@ nlu:
     - Zvečer me opomni, da je danes materinski dan
     - rad bi nastavil nov opomnik
     - ustvari še en opomnik
+    - nastavi mi [opomnik](reminder) za sestanek za [jutri](day) ob [17](time_number)
 - intent: help
   examples: |
     - kako lahko ustvarim nov [opomnik](reminder)
