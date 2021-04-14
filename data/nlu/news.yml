@@ -62,6 +62,7 @@ nlu:
     - želim vsak dan prejeti obvestilo za dnevne novice
     - želela bi dobivati dnevne novice
     - Prijavi me na dnevna obvestila o novicah
+    - prijava na dnevna obvestila o novicah
 - intent: news_unsubscribe
   examples: |
     - želim se odjaviti od dnevnih novic
