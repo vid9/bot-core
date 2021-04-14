@@ -9,15 +9,16 @@ intents:
     use_entities: true
 - chitchat:
     use_entities: []
-- conversation_start
+- conversation_start:
+    use_entities: true
 - create_list:
     use_entities: true
 - create_reminder:
     use_entities: true
 - currently_playing:
     use_entities:
-    - program
     - day
+    - program
 - deny:
     use_entities: true
 - enter_data:
@@ -257,7 +258,7 @@ responses:
   - image: https://i.imgur.com/xyPtn4m.jpg
     text: 'Mislim, da te bo to razveselilo:'
   utter_conversation_start:
-    - text: Zdravo, moje ime je Digipomočnik. Sem pametni pomočnik za upravljanje pametnega doma. Namesto tebe si lahko zapomnim različne opomnike in sezname opravil. Polega tega spremljam tudi vreme, novice in televizijo. Kako ti lahko pomagam?  🙂
+  - text: Zdravo, moje ime je Digipomočnik. Sem pametni pomočnik za upravljanje pametnega doma. Namesto tebe si lahko zapomnim različne opomnike in sezname opravil. Polega tega spremljam tudi vreme, novice in televizijo. Kako ti lahko pomagam?  🙂
   utter_did_that_help:
   - text: Ti je to pomagalo? 🙂
   - text: Je kaj pomagalo?
@@ -394,6 +395,8 @@ responses:
     - payload: /remove_list
       title: Izbriši seznam
     text: Ustvariš lahko različne sezname in na njih dodajaš elemente. Če želiš videti katere elemente že imaš na seznamu, me lahko to vprašaš. Seznam lahko urejaš z uporabo besed ˝dodaj˝ ali ˝odstrani˝ in imenom elementa, ki ga želiš dodati ali odstraniti.
+  utter_new_list:
+  - text: Želiš ustvariti nov seznam?
 actions:
 - action_ask_joke_guess
 - action_current_news
