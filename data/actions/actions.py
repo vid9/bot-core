@@ -1211,7 +1211,7 @@ def remove_list_buttons_facebook(lists):
         quick_reply.append({
             "content_type": "text",
             "title": name,
-            "payload": f"/remove_list{entities}",
+            "payload": f"/remove_list{json.dumps(entities)}",
         })
     return quick_reply
 
