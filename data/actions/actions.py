@@ -35,9 +35,9 @@ def tokenize(text) -> List[str]:
     if pipelineCache:
         doc = pipelineCache(text)
     else:
-        classla.download('sl')
-        pipelineCache = classla.Pipeline("sl", dir="custom_component/classla_resources", processors="tokenize,pos,lemma")
-        pipelineCache = classla.Pipeline("sl", processors="tokenize,pos,lemma")
+        # classla.download('sl', confirm_if_exists=True, force=True)
+        pipelineCache = classla.Pipeline("sl", dir="~/app/custom_component/classla_resources", processors="tokenize,pos,lemma")
+        # pipelineCache = classla.Pipeline("sl", processors="tokenize,pos,lemma")
         doc = pipelineCache(text)
     stanza_tokens = []
     for i in doc.sentences:
