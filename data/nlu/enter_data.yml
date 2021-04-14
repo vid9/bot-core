@@ -131,6 +131,7 @@ nlu:
     - Kakšna je vremenska napoved za [Ljubljano](location) v [nedeljo]{"entity": "day", "value": "nedelja"}
     - vreme ob 14.00 v [Ljubljani](location)
     - Kakšna je vremenska napoved za [Ljubljano](location)?
+    - vremenska napoved [Ljubljana](location)[Ljubljana](location) [danes](day)
 - synonym: sreda
   examples: |
     - sredo
@@ -155,3 +156,5 @@ nlu:
 - synonym: Kranjska Gora
   examples: |
     - Kranjsko Goro
+    - Kranjski gori
+    - Kranjski Gori

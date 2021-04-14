@@ -238,6 +238,7 @@ nlu:
     - [Zapreš](light_off) luč?
     - [Vgasni](light_off) luč v moji [sobi](light_name)
     - [ugasni](light_off) luč v tej [sobi](light_name)
+    - [prižgi](light_on) luč v [kuhinji](light_name)
 - intent: traffic_conditions
   examples: |
     - kakšno je stanje na cestah?

@@ -15,6 +15,7 @@ nlu:
     - Kaj je trenutno na [TV SLO 1](program)
     - Kaj je trenutno po [pop tv](program)?
     - Kaj se trenutno predvaja po tv
+    - Kaj je trenutno na programu [Planet](program)[Planet](program)?
 - intent: program_schedule
   examples: |
     - spored [slovenija 1]{"entity": "program", "value": "TV SLO 1"}
@@ -47,6 +48,7 @@ nlu:
     - Kaj bo [danes](day) ob [20h](time_number) na [Planet](program)
     - Kaj je [nocoj](day) na [Pop TV](program)?
     - kaj bo [jutri](day) na programu [planet](program)[planet](program) tv?
+    - kaj bo [jutri](day) na programu [planet](program) tv?
 - intent: schedule_query
   examples: |
     - kateri [filmi]{"entity": "category", "value": "film"} so [danes](day) na sporedu?
@@ -73,6 +75,10 @@ nlu:
     - kakšen program [filmov](category) je [danes](day) na [tv slo1](program)
     - [filmi]{"entity": "category", "value": "film"} na [tv slo 1](program)
     - [filmi]{"entity": "category", "value": "film"} na [tv slo 2](program)
+    - kateri [filmi]{"entity": "category", "value": "film"} bodo [jutri](day) na programu [planet](program) tv?
+    - [Filmi]{"entity": "category", "value": "film"} [jutri](day) na [pop tv](program)[pop tv](program)
+    - [Nadaljevanke]{"entity": "category", "value": "nadaljevanka"} na [kanalu a]{"entity": "program", "value": "Kanal A"}
+    - Kateri [filmi]{"entity": "category", "value": "film"} bodo [danes](day) na [HBO](program)[HBO](program)?
 - synonym: TV SLO 2
   examples: |
     - dvojki

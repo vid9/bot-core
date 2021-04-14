@@ -80,3 +80,9 @@ nlu:
     - kakšno je vreme v [Ljubljani](location)
     - Kakšno je trenutno vreme v [Ljubljani](location)
     - Kakšno je trenutno vreme v [Kranjski gori](location)?
+    - Vreme [Novo mesto](location)
+    - vreme [ljubljana](location)[ljubljana](location)
+    - Kakšno vreme je v [Kranjski Gori](location)?
+    - trenutno vreme v [Ljubljani](location)
+    - Kakšno vreme je trenutno v [Ljubljani](location)?
+    - vreme [Kranjska Gora](location)[Kranjska Gora](location)

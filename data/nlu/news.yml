@@ -72,6 +72,7 @@ nlu:
     - odjava od novic
     - nehaj mi pošiljati novice
     - odjavi se od dnevnih novic
+    - odjavi se od novic
 - synonym: slovenija
   examples: |
     - Sloveniji
