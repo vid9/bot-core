@@ -12,9 +12,14 @@ intents:
 - conversation_start:
     use_entities: true
 - create_list:
-    use_entities: true
+    use_entities:
+      - list_name
 - create_reminder:
-    use_entities: true
+    use_entities:
+      - day
+      - time_number
+      - date_number
+      - reminder_name
 - currently_playing:
     use_entities:
     - day
@@ -32,15 +37,24 @@ intents:
 - greet:
     use_entities: []
 - latest_news:
-    use_entities: true
+    use_entities:
+      - news_category
 - lights:
-    use_entities: true
+    use_entities:
+      - light_name
+      - light_on
+      - light_off
 - mood_great:
-    use_entities: true
+    use_entities: []
 - mood_unhappy:
-    use_entities: true
+    use_entities: []
 - help:
-    use_entities: true
+    use_entities:
+      - tv
+      - news
+      - reminder
+      - weather
+      - list
 - news_subscribe:
     use_entities: []
 - news_unsubscribe:
@@ -48,39 +62,53 @@ intents:
 - nlu_fallback:
     use_entities: true
 - out_of_scope:
-    use_entities: true
+    use_entities: []
 - program_schedule:
-    use_entities: true
+    use_entities:
+      - day
+      - program
 - remove_list:
-    use_entities: true
+    use_entities:
+      - list_name
 - remove_reminder:
-    use_entities: true
+    use_entities:
+      - reminder_name
 - schedule_query:
-    use_entities: true
+    use_entities:
+      - category
+      - day
+      - program
 - show_list:
-    use_entities: true
+    use_entities:
+      - list_name
 - show_reminders:
-    use_entities: true
+    use_entities:
+      - reminder_name
 - stop:
     use_entities: []
 - tellajoke:
-    use_entities: true
+    use_entities: []
 - thanks:
-    use_entities: true
+    use_entities: []
 - time:
     use_entities: []
 - traffic_conditions:
     use_entities: []
 - update_list:
-    use_entities: true
-- update_reminder:
-    use_entities: true
+    use_entities:
+      - list_name
+#- update_reminder:
+#    use_entities: true
 - weather_forecast:
-    use_entities: true
+    use_entities:
+      - day
+      - location
 - weather_current:
-    use_entities: true
+    use_entities:
+      - location
 - date:
-    use_entities: true
+    use_entities:
+      - day
 entities:
 - category
 - day
