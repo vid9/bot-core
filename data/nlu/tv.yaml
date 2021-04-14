@@ -66,6 +66,8 @@ nlu:
     - Kateri [filmi]{"entity": "category", "value": "film"} bodo [jutri](day) na [tv slo 2](program)?
     - kakšni [filmi]{"entity": "category", "value": "film"} so na sporedu ta teden?
     - kateri [filmi]{"entity": "category", "value": "film"} bodo [jutri](day) na [programu](tv) [planet](program)[planet](program) tv?
+    - kateri [filmi]{"entity": "category", "value": "film"} bodo [danes](day) na sporedu na tv [slo1]{"entity": "program", "value": "TV SLO 1"}
+    - kaj pa [filmi]{"entity": "category", "value": "film"} [danes](day) za [slo1]{"entity": "program", "value": "TV SLO 1"}
 - synonym: TV SLO 2
   examples: |
     - dvojki

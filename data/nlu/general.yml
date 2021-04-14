@@ -250,6 +250,7 @@ nlu:
     - kaj pa stanje na avtocesti?
     - a je zaprta cesta A1?
     - želim podrobnosti o prometu
+    - mi lahko daš nekaj prometnih informacij
 - intent: help
   examples: |
     - kaj mi lahko poveš o [vremenu](weather)?

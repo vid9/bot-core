@@ -35,6 +35,7 @@ nlu:
     - želim dodati nove stvari na seznam
     - Dodaj na seznam
     - uredi zadnji seznam
+    - dodaj še borovnice na seznam 5
 - intent: remove_list
   examples: |
     - izbriši seznam
