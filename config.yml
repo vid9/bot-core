@@ -31,7 +31,7 @@ pipeline:
   epochs: 200
 - name: EntitySynonymMapper
 - name: ResponseSelector
-  epochs: 200
+  epochs: 100
   retrieval_intent: chitchat
   scale_loss: false
 - name: FallbackClassifier
