@@ -72,7 +72,7 @@ def remove_list_items(list_id, user_id):
 
 def get_list(list_name, user_id):
     sql = (
-        "SELECT * FROM list "
+        "SELECT id,name FROM list "
         "WHERE user_id = %s AND "
         "name ILIKE %s;"
     )

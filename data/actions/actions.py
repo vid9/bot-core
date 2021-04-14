@@ -1007,8 +1007,8 @@ class ValidateListUpdateForm(FormValidationAction):
             name = re.sub(r'odstrani ', '', name, flags=re.IGNORECASE)
             name = re.sub(r'izbriši ', '', name, flags=re.IGNORECASE)
             res = list_helper.remove_from_list(list_id, name)
-            dispatcher.utter_message(text=f"{list_id, name}")
-            if res:
+            # dispatcher.utter_message(text=f"{list_id} {name}")
+            if res is not None:
                 dispatcher.utter_message(f"Odstranil sem ˝{name}˝. Še kaj drugega?")
                 items.remove(name)
                 return {"list_item": None, "list_items": items}
