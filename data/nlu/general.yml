@@ -78,6 +78,7 @@ nlu:
     - stop, ustavi to
     - Stop.
     - Končaj.
+    - Prekini.
 - intent: mood_great
   examples: |
     - zelo dobro

@@ -48,6 +48,7 @@ nlu:
     - današnje novice v [športu]{"entity": "news_category", "value": "sport"}
     - [športne](news_category) novice
     - Zanimajo me novice iz [špotra](news_category)
+    - [Športne]{"entity": "news_category", "value": "sport"} novice.
 - intent: news_subscribe
   examples: |
     - želim se naročiti na dnevne novice
