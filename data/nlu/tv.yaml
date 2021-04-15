@@ -53,6 +53,7 @@ nlu:
     - Kakšen je spored za [Slovenija 2](program) [jutri](day)?
     - kakšen bo program [tvslo2](program) [jutri](day)
     - Kaj bo [jutri](day) na [TV Slovenija 2](program)?
+    - Kaj bo [jutri](day) na [TV Slovenija 1](program)?
 - intent: schedule_query
   examples: |
     - kateri [filmi]{"entity": "category", "value": "film"} so [danes](day) na sporedu?
