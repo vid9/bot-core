@@ -98,3 +98,4 @@ nlu:
     - Kakšno vreme je trenutno v [Ljubljani](location)?
     - vreme [Kranjska Gora](location)
     - Zanima me vreme v [Ljubljani](location)
+    - Ali v [Ljubljani](location) sije sonce?

@@ -49,6 +49,7 @@ nlu:
     - [športne](news_category) novice
     - Zanimajo me novice iz [špotra](news_category)
     - [Športne]{"entity": "news_category", "value": "sport"} novice.
+    - Prosim obveščaj me o novicah
 - intent: news_subscribe
   examples: |
     - želim se naročiti na dnevne novice
@@ -68,6 +69,8 @@ nlu:
     - Prijavi me na dnevna obvestila o novicah
     - prijava na dnevna obvestila o novicah
     - Prosim da mi pošiljaš dnevna obvestila o novicah
+    - Ali se lahko prijavim na dnevna obvestila
+    - prijavi me na dnevna obvestila o novicah
 - intent: news_unsubscribe
   examples: |
     - želim se odjaviti od dnevnih novic
@@ -76,6 +79,7 @@ nlu:
     - nehaj mi pošiljati novice
     - odjavi se od dnevnih novic
     - odjavi se od novic
+    - odjavi se od spletnih novic
 - synonym: slovenija
   examples: |
     - Sloveniji

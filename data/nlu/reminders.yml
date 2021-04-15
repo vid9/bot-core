@@ -24,6 +24,9 @@ nlu:
     - Ustvari nov opomnik kuhana jajčka [danes](day) [18:33](time_number)
     - Opomni me na kuhana jajška čez osem minut
     - Nastavi opomnik za sestanek [jutri](day) ob [14:00](time_number)
+    - Želim ustvariti opomnik
+    - Ali lahko ustvarim opomnik
+    - rad bi nastavil opomnik
 - intent: help
   examples: |
     - kako lahko ustvarim nov [opomnik](reminder)

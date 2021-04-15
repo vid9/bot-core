@@ -51,6 +51,7 @@ nlu:
     - kdaj bo [dnevnik]{"entity": "program", "value": "informativni"} na [tv slo 1](program)
     - Kakšen je spored za [TV Slovenija 2](program)?
     - Kakšen je spored za [Slovenija 2](program) [jutri](day)?
+    - kakšen bo program [tvslo2](program) [jutri](day)
 - intent: schedule_query
   examples: |
     - kateri [filmi]{"entity": "category", "value": "film"} so [danes](day) na sporedu?
@@ -91,6 +92,7 @@ nlu:
     - dvojki
     - TV Slovenija 2
     - Slovenija 2
+    - tvslo2
 - synonym: Kanal A
   examples: |
     - kanalu a
