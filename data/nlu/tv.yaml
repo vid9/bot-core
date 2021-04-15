@@ -90,6 +90,7 @@ nlu:
     - [filmi](category) [slo 1](program) [jutri](day)
     - [filmi]{"entity": "category", "value": "film"} [slo1]{"entity": "program", "value": "TV SLO 1"} [jutri](day)
     - Kateri [filmi]{"entity": "category", "value": "film"} bodo [jutri](day) na [TV SLO 1](program)?
+    - [Filmi]{"entity": "category", "value": "film"} [danes](day) na [Planet](program) TV
 - synonym: TV SLO 2
   examples: |
     - dvojki

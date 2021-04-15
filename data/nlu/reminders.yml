@@ -54,6 +54,7 @@ nlu:
     - Prosim odstrani prvi opomnik
     - Odstrani opomnik Sestanek 1
     - Izbriši opomnik Sestanek 1
+    - Izbriši zadnji opomnik
 - intent: show_reminders
   examples: |
     - prikaži opomnike
