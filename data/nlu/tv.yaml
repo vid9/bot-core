@@ -84,6 +84,8 @@ nlu:
     - [dnevnik]{"entity": "program", "value": "informativni"} na [tv slo 1](program)
     - Kateri [filmi]{"entity": "category", "value": "film"} so na sporedu [jutri](day) na [TV slo 2](program)?
     - [SLO1]{"entity": "program", "value": "TV SLO 1"}, [jutri](day), [filmi]{"entity": "category", "value": "film"}
+    - [filmi](category) [slo 1](program) [jutri](day)
+    - [filmi]{"entity": "category", "value": "film"} [slo1]{"entity": "program", "value": "TV SLO 1"} [jutri](day)
 - synonym: TV SLO 2
   examples: |
     - dvojki

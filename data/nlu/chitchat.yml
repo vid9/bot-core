@@ -105,6 +105,7 @@ nlu:
     - kako te kličejo prijatelji?
     - Kako te lahko kličem?
     - kako se kličes?
+    - povej mi kdo si
 - intent: chitchat/ask_wherefrom
   examples: |
     - iz kje prihajaš?
@@ -155,8 +156,3 @@ nlu:
     - Res si smešen
     - Kok si smešen
     - Res si car
-#- intent: update_reminder
-#  examples: |
-#    - Popravi opomnik
-#    - želim popraviti uro svojega opomnika
-#    - uredi mi opomnik

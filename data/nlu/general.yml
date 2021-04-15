@@ -129,6 +129,7 @@ nlu:
     - Ni potrebe hvala
     - hvala ker si mi pomagal
     - hvala ti za pomoč
+    - Nobeden, hvala
 - intent: greet
   examples: |
     - dober dan
@@ -266,6 +267,7 @@ nlu:
     - Kako poteka promet med Vipavo in Ljubljano?
     - Ali je cesta proti Ljubljani brez prometnih zastojev?
     - Ali je cestna zapora na regionalni cesti proti Ljubljani?
+    - Zanimajo me informacije o prometu
 - intent: help
   examples: |
     - kaj mi lahko poveš o [vremenu](weather)?
@@ -301,6 +303,8 @@ nlu:
     - kako lahko vidim kaj je v [novicah](news)
     - Kje bom prejel svoj [opomnik](reminder)
     - Mi lahko pomagaš s seznamom [programov](tv)?
+    - Zanima me več o [novicah](news)
+    - pri čem vse mi lahko pomagaš?
 - intent: tellajoke
   examples: |
     - povej šalo

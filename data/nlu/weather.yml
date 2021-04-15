@@ -51,6 +51,7 @@ nlu:
     - vreme ob 14.00 v [Ljubljani](location)
     - Kakšna je vremenska napoved za [Ljubljano](location)?
     - vremenska napoved [Ljubljana](location) [danes](day)
+    - Zanima me vreme v [Ljubljani](location) v [nedeljo]{"entity": "day", "value": "nedelja"}
 - intent: weather_current
   examples: |
     - ali potrebujem dežnik
@@ -96,3 +97,4 @@ nlu:
     - trenutno vreme v [Ljubljani](location)
     - Kakšno vreme je trenutno v [Ljubljani](location)?
     - vreme [Kranjska Gora](location)
+    - Zanima me vreme v [Ljubljani](location)
