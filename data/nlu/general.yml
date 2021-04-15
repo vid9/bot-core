@@ -336,6 +336,7 @@ nlu:
     - Poznaš kak vic?
     - Ali poznaš še kakšno šalo
     - Povej šalo.
+    - Mi poveš vic?
 - synonym: danes
   examples: |
     - današnji

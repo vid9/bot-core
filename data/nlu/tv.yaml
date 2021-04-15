@@ -91,12 +91,14 @@ nlu:
     - [filmi]{"entity": "category", "value": "film"} [slo1]{"entity": "program", "value": "TV SLO 1"} [jutri](day)
     - Kateri [filmi]{"entity": "category", "value": "film"} bodo [jutri](day) na [TV SLO 1](program)?
     - [Filmi]{"entity": "category", "value": "film"} [danes](day) na [Planet](program) TV
+    - [Filmi]{"entity": "category", "value": "film"} [danes](day) na [TVSLO2](program)
 - synonym: TV SLO 2
   examples: |
     - dvojki
     - TV Slovenija 2
     - Slovenija 2
     - tvslo2
+    - TVSLO2
 - synonym: Kanal A
   examples: |
     - kanalu a
