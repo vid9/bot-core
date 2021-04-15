@@ -161,6 +161,6 @@ nlu:
     - Res si smešen
     - Kok si smešen
     - Res si car
-- intent: update_reminder
-  examples: |
-    - uredi mi opomnik
+#- intent: update_reminder
+#  examples: |
+#    - uredi mi opomnik

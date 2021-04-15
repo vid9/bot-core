@@ -15,21 +15,21 @@ nlu:
     - Ustvari nov opomnik
     - Nov opomnik
     - Še en opomnik
-    - Zvečer me opomni, da je danes materinski dan
+    - Zvečer me opomni
     - rad bi nastavil nov opomnik
     - ustvari še en opomnik
-    - nastavi mi [opomnik](reminder) za sestanek za [jutri](day) ob [17](time_number)
+    - nastavi mi opomnik za sestanek za [jutri](day) ob [17:00](time_number)
     - Naredi prosim opomnik za [jutri](day)
     - dej nared prosim en opomnik za [jutri](day)
-    - Ustvari nov opomnik kuhana jajčka [danes](day) [18:33](time_number)
-    - Opomni me na kuhana jajška čez osem minut
+    - Ustvari nov opomnik [danes](day) [18:33](time_number)
+    - Opomni me čez osem minut
     - Nastavi opomnik za sestanek [jutri](day) ob [14:00](time_number)
     - Želim ustvariti opomnik
     - Ali lahko ustvarim opomnik
     - rad bi nastavil opomnik
     - ustvari opomnik [jutri](day) ob [12:30](time_number)
     - Opomni me na sestanek [jutri](day) ob [14:00](time_number)
-    - V [nedeljo]{"entity": "day", "value": "nedelja"} ob 10. uri me spomni, da moram na tržnico.
+    - V [nedeljo]{"entity": "day", "value": "nedelja"} ob 10. uri me spomni
 - intent: help
   examples: |
     - kako lahko ustvarim nov [opomnik](reminder)
@@ -49,12 +49,11 @@ nlu:
     - Izbriši opomnike
     - prekliči zadnji opomnik
     - razveljavi opomnik
-    - zbriši opomnik z imenom koledar
+    - zbriši opomnik z imenom
     - rada bi izbrisala opomnik v koledarju
     - izbriši trenutni opomnik
     - Prosim odstrani prvi opomnik
-    - Odstrani opomnik Sestanek 1
-    - Izbriši opomnik Sestanek 1
+    - Odstrani opomnik
     - Izbriši zadnji opomnik
 - intent: show_reminders
   examples: |

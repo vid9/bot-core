@@ -37,9 +37,8 @@ nlu:
     - želim dodati nove stvari na seznam
     - Dodaj na seznam
     - uredi zadnji seznam
-    - dodaj še borovnice na seznam 5
-    - na seznam sadje dodaj borovnice
-    - uredi seznam, ki vsebuje jabolke, banane, kokos
+    - na seznam sadje dodaj
+    - uredi seznam
     - Dopolni seznam.
     - Želim dopolniti seznam.
     - Lahko dopolniš seznam.
@@ -54,7 +53,6 @@ nlu:
     - prosim odstrani seznam
     - odstrani seznam
     - Izbriši seznam
-    - izbriši seznam 5
     - odstrani seznam seznam
     - odstrani moji seznami
     - izbrši seznam
@@ -80,5 +78,5 @@ nlu:
     - Odpri seznam
     - naštej vse sezname
     - seznami
-    - koliko stvari je na seznam 1
-    - pokaži seznam 1
+    - koliko stvari je na seznam
+    - pokaži seznam
