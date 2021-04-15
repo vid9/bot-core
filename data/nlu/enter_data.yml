@@ -120,6 +120,7 @@ nlu:
     - Tole tukaj, v moji [sobi](light_name)
     - [DANES](day)
     - [tv slo1](program) program
+    - [TV Slovenija ena](light_on)
 - synonym: sreda
   examples: |
     - sredo
@@ -138,6 +139,7 @@ nlu:
     - tvslo1
     - SLO1
     - tv slo1
+    - TV Slovenija ena
 - synonym: TV Golica
   examples: |
     - Golica

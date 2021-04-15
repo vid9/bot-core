@@ -16,6 +16,7 @@ nlu:
     - ustvaari seznam
     - Ustvari seznam
     - napravi seznam
+    - Ustvari nov seznam
 - intent: help
   examples: |
     - kako lahko naredim nov [seznam](list)

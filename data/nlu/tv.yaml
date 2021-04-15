@@ -83,6 +83,7 @@ nlu:
     - Kateri [filmi]{"entity": "category", "value": "film"} bodo [danes](day) na [HBO](program)?
     - [dnevnik]{"entity": "program", "value": "informativni"} na [tv slo 1](program)
     - Kateri [filmi]{"entity": "category", "value": "film"} so na sporedu [jutri](day) na [TV slo 2](program)?
+    - [SLO1]{"entity": "program", "value": "TV SLO 1"}, [jutri](day), [filmi]{"entity": "category", "value": "film"}
 - synonym: TV SLO 2
   examples: |
     - dvojki

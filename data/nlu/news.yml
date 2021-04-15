@@ -47,6 +47,7 @@ nlu:
     - Kaj je novega v [športu]{"entity": "news_category", "value": "sport"}?
     - današnje novice v [športu]{"entity": "news_category", "value": "sport"}
     - [športne](news_category) novice
+    - Zanimajo me novice iz [špotra](news_category)
 - intent: news_subscribe
   examples: |
     - želim se naročiti na dnevne novice
@@ -65,6 +66,7 @@ nlu:
     - želela bi dobivati dnevne novice
     - Prijavi me na dnevna obvestila o novicah
     - prijava na dnevna obvestila o novicah
+    - Prosim da mi pošiljaš dnevna obvestila o novicah
 - intent: news_unsubscribe
   examples: |
     - želim se odjaviti od dnevnih novic
@@ -103,6 +105,7 @@ nlu:
     - Šport
     - športne
     - športa
+    - špotra
 - synonym: zabava-in-slog
   examples: |
     - zabava

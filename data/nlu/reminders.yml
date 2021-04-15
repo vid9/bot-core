@@ -23,6 +23,7 @@ nlu:
     - dej nared prosim en opomnik za [jutri](day)
     - Ustvari nov opomnik kuhana jajčka [danes](day) [18:33](time_number)
     - Opomni me na kuhana jajška čez osem minut
+    - Nastavi opomnik za sestanek [jutri](day) ob [14:00](time_number)
 - intent: help
   examples: |
     - kako lahko ustvarim nov [opomnik](reminder)
@@ -45,6 +46,9 @@ nlu:
     - zbriši opomnik z imenom koledar
     - rada bi izbrisala opomnik v koledarju
     - izbriši trenutni opomnik
+    - Prosim odstrani prvi opomnik
+    - Odstrani opomnik Sestanek 1
+    - Izbriši opomnik Sestanek 1
 - intent: show_reminders
   examples: |
     - prikaži opomnike
@@ -65,3 +69,4 @@ nlu:
     - Prikaži vse moje opomnike
     - Vsi moji opomniki
     - prikaži opomnik
+    - pokaži mi moje opomnike
