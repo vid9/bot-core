@@ -133,6 +133,7 @@ nlu:
     - Zanima me kaj znaš?
     - Kaj znaš
     - Kaj je tvoja naloga?
+    - Kaj mi nudiš?
 - intent: chitchat/handleinsult
   examples: |
     - Rit

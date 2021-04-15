@@ -76,6 +76,8 @@ nlu:
     - zapri
     - Končaj
     - stop, ustavi to
+    - Stop.
+    - Končaj.
 - intent: mood_great
   examples: |
     - zelo dobro
@@ -182,6 +184,7 @@ nlu:
     - Adijo
     - Lepo se imej
     - Lahko noč :)
+    - Nič, bodi še naprej fajn!
 - intent: date
   examples: |
     - kateri dan je [jutri](day)?
@@ -322,6 +325,7 @@ nlu:
     - Imaš kako šalo
     - Poznaš kak vic?
     - Ali poznaš še kakšno šalo
+    - Povej šalo.
 - synonym: danes
   examples: |
     - današnji
