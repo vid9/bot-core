@@ -28,6 +28,7 @@ nlu:
     - Ja
     - da želim
     - to je to
+    - JA
 - intent: deny
   examples: |
     - ne
@@ -58,6 +59,7 @@ nlu:
     - ne, to mi ni všeč
     - ne želim novega opomnika
     - ne ustvari
+    - Ne, hvala.
 - intent: stop
   examples: |
     - stop
@@ -135,6 +137,7 @@ nlu:
     - hvala ker si mi pomagal
     - hvala ti za pomoč
     - Nobeden, hvala
+    - Ok, hvala.
 - intent: greet
   examples: |
     - dober dan
@@ -168,6 +171,7 @@ nlu:
     - Ahoj
     - heeej
     - O
+    - Zdravo.
 - intent: goodbye
   examples: |
     - adijo
