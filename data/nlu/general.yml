@@ -239,6 +239,9 @@ nlu:
     - [Vgasni](light_off) luč v moji [sobi](light_name)
     - [ugasni](light_off) luč v tej [sobi](light_name)
     - [prižgi](light_on) luč v [kuhinji](light_name)
+    - Luč [spalnica](light_name) [off](light_off)
+    - [Izklopi](light_off) luč [spalnica](light_name)
+    - [Zapri](light_off) luč v [spalnici](light_name)
 - intent: traffic_conditions
   examples: |
     - kakšno je stanje na cestah?
@@ -297,6 +300,7 @@ nlu:
     - katere kategorije poznaš?
     - kako lahko vidim kaj je v [novicah](news)
     - Kje bom prejel svoj [opomnik](reminder)
+    - Mi lahko pomagaš s seznamom [programov](tv)?
 - intent: tellajoke
   examples: |
     - povej šalo

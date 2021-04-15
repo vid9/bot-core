@@ -48,7 +48,9 @@ nlu:
     - Kaj bo [danes](day) ob [20h](time_number) na [Planet](program)
     - Kaj je [nocoj](day) na [Pop TV](program)?
     - kaj bo [jutri](day) na programu [planet](program) tv?
-    - kaj bo [jutri](day) na programu [planet](program) tv?
+    - kdaj bo [dnevnik]{"entity": "program", "value": "informativni"} na [tv slo 1](program)
+    - Kakšen je spored za [TV Slovenija 2](program)?
+    - Kakšen je spored za [Slovenija 2](program) [jutri](day)?
 - intent: schedule_query
   examples: |
     - kateri [filmi]{"entity": "category", "value": "film"} so [danes](day) na sporedu?
@@ -79,9 +81,13 @@ nlu:
     - [Filmi]{"entity": "category", "value": "film"} [jutri](day) na [pop tv](program)
     - [Nadaljevanke]{"entity": "category", "value": "nadaljevanka"} na [kanalu a]{"entity": "program", "value": "Kanal A"}
     - Kateri [filmi]{"entity": "category", "value": "film"} bodo [danes](day) na [HBO](program)?
+    - [dnevnik]{"entity": "program", "value": "informativni"} na [tv slo 1](program)
+    - Kateri [filmi]{"entity": "category", "value": "film"} so na sporedu [jutri](day) na [TV slo 2](program)?
 - synonym: TV SLO 2
   examples: |
     - dvojki
+    - TV Slovenija 2
+    - Slovenija 2
 - synonym: Kanal A
   examples: |
     - kanalu a
@@ -90,6 +96,7 @@ nlu:
   examples: |
     - filmi
     - filme
+    - Filmi
     - filmov
 - synonym: informativni
   examples: |
@@ -104,6 +111,7 @@ nlu:
     - nadaljevanke
     - serije
     - Serije
+    - Nadaljevanke
 - synonym: dokumentarni
   examples: |
     - dokumentarec

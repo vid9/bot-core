@@ -344,3 +344,11 @@ stories:
   - intent: remove_list
   - intent: affirm
   - action: action_remove_list
+- story: Remove list with string
+  steps:
+  - intent: remove_list
+  - action: action_remove_list_confirmation
+  - slot_was_set:
+    - list_name: Nakupovalni seznam.
+  - intent: affirm
+  - action: action_remove_list
