@@ -276,6 +276,7 @@ nlu:
     - Zanimajo me informacije o prometu
     - Kakšen je promet v Ljubljani?
     - Kakšno je kaj stanje v prometu
+    - kakšno je trenutno stanje na cestah?
 - intent: help
   examples: |
     - kaj mi lahko poveš o [vremenu](weather)?
