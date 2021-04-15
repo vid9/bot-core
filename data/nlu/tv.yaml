@@ -54,6 +54,9 @@ nlu:
     - kakšen bo program [tvslo2](program) [jutri](day)
     - Kaj bo [jutri](day) na [TV Slovenija 2](program)?
     - Kaj bo [jutri](day) na [TV Slovenija 1](program)?
+    - Kakšen je spored za [TV Slovenija 2](program) [jutri](day) zvečer?
+    - Kakšen je [jutrišnji](day)  TV spored za RTV [SLO1]{"entity": "program", "value": "TV SLO 1"}?
+    - Televizijski spored.
 - intent: schedule_query
   examples: |
     - kateri [filmi]{"entity": "category", "value": "film"} so [danes](day) na sporedu?
@@ -92,6 +95,8 @@ nlu:
     - Kateri [filmi]{"entity": "category", "value": "film"} bodo [jutri](day) na [TV SLO 1](program)?
     - [Filmi]{"entity": "category", "value": "film"} [danes](day) na [Planet](program) TV
     - [Filmi]{"entity": "category", "value": "film"} [danes](day) na [TVSLO2](program)
+    - Zanimajo me [filmi]{"entity": "category", "value": "film"}, ki se bodo [jutri](day) vrteli na programu TV Slovenija
+    - Ali bo [jutri](day) kakšen [film](category) na [POP TV](program)?
 - synonym: TV SLO 2
   examples: |
     - dvojki

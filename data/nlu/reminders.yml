@@ -29,6 +29,7 @@ nlu:
     - rad bi nastavil opomnik
     - ustvari opomnik [jutri](day) ob [12:30](time_number)
     - Opomni me na sestanek [jutri](day) ob [14:00](time_number)
+    - V [nedeljo]{"entity": "day", "value": "nedelja"} ob 10. uri me spomni, da moram na tržnico.
 - intent: help
   examples: |
     - kako lahko ustvarim nov [opomnik](reminder)

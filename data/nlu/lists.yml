@@ -40,6 +40,10 @@ nlu:
     - dodaj še borovnice na seznam 5
     - na seznam sadje dodaj borovnice
     - uredi seznam, ki vsebuje jabolke, banane, kokos
+    - Dopolni seznam.
+    - Želim dopolniti seznam.
+    - Lahko dopolniš seznam.
+    - Dopolni nakupovalni seznam.
 - intent: remove_list
   examples: |
     - izbriši seznam
@@ -54,6 +58,7 @@ nlu:
     - odstrani seznam seznam
     - odstrani moji seznami
     - izbrši seznam
+    - Želim izbrisati seznam.
 - intent: show_list
   examples: |
     - prikaži sezname

@@ -50,6 +50,7 @@ nlu:
     - Zanimajo me novice iz [špotra](news_category)
     - [Športne]{"entity": "news_category", "value": "sport"} novice.
     - Prosim obveščaj me o novicah
+    - Posreduj mi [športne]{"entity": "news_category", "value": "sport"} novice.
 - intent: news_subscribe
   examples: |
     - želim se naročiti na dnevne novice
@@ -71,6 +72,7 @@ nlu:
     - Prosim da mi pošiljaš dnevna obvestila o novicah
     - Ali se lahko prijavim na dnevna obvestila
     - prijavi me na dnevna obvestila o novicah
+    - Me lahko prijaviš na dnevna obvestila?
 - intent: news_unsubscribe
   examples: |
     - želim se odjaviti od dnevnih novic

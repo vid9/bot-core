@@ -121,6 +121,7 @@ nlu:
     - [DANES](day)
     - [tv slo1](program) program
     - [TV Slovenija ena](light_on)
+    - [Slovenjske konjice](location).
 - synonym: sreda
   examples: |
     - sredo
@@ -140,6 +141,7 @@ nlu:
     - SLO1
     - tv slo1
     - TV Slovenija ena
+    - slo 1
 - synonym: TV Golica
   examples: |
     - Golica

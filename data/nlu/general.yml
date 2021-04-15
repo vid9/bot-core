@@ -60,6 +60,7 @@ nlu:
     - ne želim novega opomnika
     - ne ustvari
     - Ne, hvala.
+    - Nič.
 - intent: stop
   examples: |
     - stop
@@ -253,6 +254,7 @@ nlu:
     - Luč [spalnica](light_name) [off](light_off)
     - [Izklopi](light_off) luč [spalnica](light_name)
     - [Zapri](light_off) luč v [spalnici](light_name)
+    - [Ugasni](light_off) luč v moji [kuhinji](light_name).
 - intent: traffic_conditions
   examples: |
     - kakšno je stanje na cestah?
@@ -281,6 +283,8 @@ nlu:
     - Kakšen je promet v Ljubljani?
     - Kakšno je kaj stanje v prometu
     - kakšno je trenutno stanje na cestah?
+    - Mi lahko posreduješ prometne infromacije?
+    - Prometne informacije Slovenija.
 - intent: help
   examples: |
     - kaj mi lahko poveš o [vremenu](weather)?
@@ -337,6 +341,7 @@ nlu:
     - Ali poznaš še kakšno šalo
     - Povej šalo.
     - Mi poveš vic?
+    - Mi lahko poveš kakšno šalo?
 - synonym: danes
   examples: |
     - današnji

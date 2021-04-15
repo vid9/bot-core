@@ -116,6 +116,8 @@ nlu:
     - iz kje si?
     - kje živiš?
     - iz katerega mesta prihajaš?
+    - Od kod si doma?
+    - Kje živiš?
 - intent: chitchat/ask_whatspossible
   examples: |
     - Kaj lahko narediš?
@@ -159,3 +161,6 @@ nlu:
     - Res si smešen
     - Kok si smešen
     - Res si car
+- intent: update_reminder
+  examples: |
+    - uredi mi opomnik
