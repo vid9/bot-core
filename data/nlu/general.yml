@@ -61,6 +61,7 @@ nlu:
     - ne ustvari
     - Ne, hvala.
     - Nič.
+    - Ne.
 - intent: stop
   examples: |
     - stop
@@ -139,6 +140,7 @@ nlu:
     - hvala ti za pomoč
     - Nobeden, hvala
     - Ok, hvala.
+    - Hvala.
 - intent: greet
   examples: |
     - dober dan
@@ -173,6 +175,7 @@ nlu:
     - heeej
     - O
     - Zdravo.
+    - Lep pozdrav.
 - intent: goodbye
   examples: |
     - adijo
@@ -255,6 +258,7 @@ nlu:
     - [Izklopi](light_off) luč [spalnica](light_name)
     - [Zapri](light_off) luč v [spalnici](light_name)
     - [Ugasni](light_off) luč v moji [kuhinji](light_name).
+    - [ugasni](light_off) luč v [kuhinji](light_name)
 - intent: traffic_conditions
   examples: |
     - kakšno je stanje na cestah?

@@ -38,11 +38,11 @@ nlu:
     - Dodaj na seznam
     - uredi zadnji seznam
     - na seznam sadje dodaj
-    - uredi seznam
     - Dopolni seznam.
     - Želim dopolniti seznam.
     - Lahko dopolniš seznam.
     - Dopolni nakupovalni seznam.
+    - Dodaj borovnice na seznam sadje
 - intent: remove_list
   examples: |
     - izbriši seznam
@@ -57,6 +57,7 @@ nlu:
     - odstrani moji seznami
     - izbrši seznam
     - Želim izbrisati seznam.
+    - izbriši seznam Hrana
 - intent: show_list
   examples: |
     - prikaži sezname

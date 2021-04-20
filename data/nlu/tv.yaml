@@ -57,6 +57,8 @@ nlu:
     - Kakšen je spored za [TV Slovenija 2](program) [jutri](day) zvečer?
     - Kakšen je [jutrišnji](day)  TV spored za RTV [SLO1]{"entity": "program", "value": "TV SLO 1"}?
     - Televizijski spored.
+    - [PopTV](program) spored [jutri](day)
+    - Spored na [kanalu a]{"entity": "program", "value": "Kanal A"}
 - intent: schedule_query
   examples: |
     - kateri [filmi]{"entity": "category", "value": "film"} so [danes](day) na sporedu?
@@ -97,6 +99,7 @@ nlu:
     - [Filmi]{"entity": "category", "value": "film"} [danes](day) na [TVSLO2](program)
     - Zanimajo me [filmi]{"entity": "category", "value": "film"}, ki se bodo [jutri](day) vrteli na programu TV Slovenija
     - Ali bo [jutri](day) kakšen [film](category) na [POP TV](program)?
+    - [POP TV](program) [filmi]{"entity": "category", "value": "film"} [jutri](day)
 - synonym: TV SLO 2
   examples: |
     - dvojki
@@ -108,17 +111,17 @@ nlu:
   examples: |
     - kanalu a
     - kanalu A
+- synonym: informativni
+  examples: |
+    - dnevnik
+    - informativne oddaje
+    - Informativne oddaje
 - synonym: film
   examples: |
     - filmi
     - filme
     - Filmi
     - filmov
-- synonym: informativni
-  examples: |
-    - informativne oddaje
-    - Informativne oddaje
-    - dnevnik
 - synonym: FOX
   examples: |
     - Fox

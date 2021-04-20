@@ -30,6 +30,9 @@ nlu:
     - ustvari opomnik [jutri](day) ob [12:30](time_number)
     - Opomni me na sestanek [jutri](day) ob [14:00](time_number)
     - V [nedeljo]{"entity": "day", "value": "nedelja"} ob 10. uri me spomni
+    - Dodaj opomnik
+    - Opomni me
+    - Opomni me, da si zvečer zamenjam spodnje gate
 - intent: help
   examples: |
     - kako lahko ustvarim nov [opomnik](reminder)
@@ -55,6 +58,7 @@ nlu:
     - Prosim odstrani prvi opomnik
     - Odstrani opomnik
     - Izbriši zadnji opomnik
+    - Prekliči opomnik Nakupovalni seznam
 - intent: show_reminders
   examples: |
     - prikaži opomnike
