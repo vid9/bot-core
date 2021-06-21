@@ -6,7 +6,7 @@ Download the install script on the server:
 curl -sSL -o install.sh https://storage.googleapis.com/rasa-x-releases/0.40.1/install.sh
 ```
 
-###2. Install
+### 2. Install
 To install all of the files into the default folder, /etc/rasa, run:
 ```bash
 sudo bash ./install.sh
@@ -26,10 +26,10 @@ sudo rm /etc/apt/sources.list.d/docker.list
 sudo apt update
 ```
 
-###3. Download custom images
+### 3. Download custom images
 docker pull vid99/bot_action_server:latest
 
-###4. Start up Rasa X and wait until all containers are running 
+### 4. Start up Rasa X and wait until all containers are running 
 (-d will run Rasa X in the background):
 ```bash
 cd /etc/rasa
@@ -57,9 +57,9 @@ services:
       - ./classla_resources/:/classla_resources
 ```
 
-###6. Define channel connectors
+### 6. Define channel connectors
 Additional channel connectors can be set in the **credentials.yml** file
 https://rasa.com/docs/rasa/connectors/your-own-website
 
-###7. Create password
+### 7. Create password
 `sudo python rasa_x_commands.py create --update admin me <PASSWORD>`
