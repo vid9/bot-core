@@ -51,12 +51,17 @@ Change this part of code
 x-rasa-services: &default-rasa-service
   restart: always
   image: "rasa/rasa:${RASA_VERSION}"
+  volumes:
+      - ./.config:/.config
 ```
 to
 ```yaml
 x-rasa-services: &default-rasa-service
   restart: always
   image: "vid99/rasa-classla"
+  volumes:
+      - ./classla_resources/:/classla_resources
+      - ./.config:/.config
 ```
 
 ### 6. Create file  docker-compose.override.yml
