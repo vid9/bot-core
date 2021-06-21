@@ -24,16 +24,26 @@ sudo rm /etc/apt/sources.list.d/docker.list
 ###### Run
 ```bash
 sudo apt update
+sudo bash ./install.sh
 ```
 
 ### 3. Download custom images
 docker pull vid99/bot_action_server:latest
 
-### 4. Start up Rasa X and wait until all containers are running 
-(-d will run Rasa X in the background):
-```bash
-cd /etc/rasa
-sudo docker-compose up -d
+### 4. Edit file  docker-compose.yml
+
+
+Change this part of code
+```yaml
+x-rasa-services: &default-rasa-service
+  restart: always
+  image: "rasa/rasa:${RASA_VERSION}"
+```
+to
+```yaml
+x-rasa-services: &default-rasa-service
+  restart: always
+  image: "vid99/rasa-classla"
 ```
 
 ### 5. Create file  docker-compose.override.yml
@@ -57,9 +67,19 @@ services:
       - ./classla_resources/:/classla_resources
 ```
 
-### 6. Define channel connectors
-Additional channel connectors can be set in the **credentials.yml** file
-https://rasa.com/docs/rasa/connectors/your-own-website
+### 6. Start up Rasa X and wait until all containers are running 
+(-d will run Rasa X in the background):
+```bash
+cd /etc/rasa
+sudo docker-compose up -d
+```
 
 ### 7. Create password
 `sudo python rasa_x_commands.py create --update admin me <PASSWORD>`
+
+Visit hostname in a browser and login into rasa X.
+
+
+### . Define channel connectors
+Additional channel connectors can be set in the **credentials.yml** file
+https://rasa.com/docs/rasa/connectors/your-own-website
