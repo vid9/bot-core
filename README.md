@@ -76,7 +76,29 @@ services:
       - ./classla_resources/:/classla_resources
 ```
 
-### 7. Start up Rasa X and wait until all containers are downloaded and running 
+### 7. Install postgres and
+Access postgres shell and execute the commands below.
+```bash
+psql
+```
+Create user
+```bash
+create user rasa; 
+```
+Create database
+```bash
+create database rasadb; 
+```
+Create password for user
+```bash
+alter user rasa with encrypted password 'admin';
+```
+Provide the privileges to the postgres user
+```bash
+grant all privileges on database rasadb to rasa;
+```
+
+### 8. Start up Rasa X and wait until all containers are downloaded and running 
 (-d will run Rasa X in the background):
 ```bash
 cd /etc/rasa
