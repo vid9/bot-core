@@ -72,11 +72,13 @@ services:
   rasa-worker:
     volumes:
       - ./custom_component:/app/custom_component
+      - ./classla_resources:/app/classla_resources
     environment:
       PYTHONPATH: "${PYTHONPATH}:/app/custom_component"
   rasa-production:
     volumes:
       - ./custom_component:/app/custom_component
+      - ./classla_resources:/app/classla_resources
     environment:
       PYTHONPATH: "${PYTHONPATH}:/app/custom_component"
   app:
