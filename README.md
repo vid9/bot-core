@@ -22,50 +22,39 @@ sudo rm /etc/apt/sources.list.d/docker.list
 ```
 
 ###### Run
+If the error is fixed, do step 2 again.
 ```bash
 sudo apt update
 sudo bash ./install.sh
 ```
 
-### 3. Download custom images
-```bash
-docker pull vid99/bot_action_server:latest
-```
-
-```bash
-python3 -m pip install classla
-```
-
 ### 4. Download classla resources 
+Install classla
 ```bash
 python3 -m pip install classla
+```
+Open python console, import classla and download all the slovenian models in "/etc/rasa/classla_resources/".
+```bash
 python3
 import classla
 classla.download("sl", "/etc/rasa/classla_resources/")
 ```
 
 ### 5. Edit file  docker-compose.yml
-
-Change this part of code
+Change x-rasa-services image in docker-compose.yml from image: "rasa/rasa:${RASA_VERSION}"
 ```yaml
 x-rasa-services: &default-rasa-service
   restart: always
   image: "rasa/rasa:${RASA_VERSION}"
-  volumes:
-      - ./.config:/.config
 ```
-to
+to "vid99/rasa-classla".
 ```yaml
 x-rasa-services: &default-rasa-service
   restart: always
   image: "vid99/rasa-classla"
-  volumes:
-      - ./classla_resources/:/classla_resources
-      - ./.config:/.config
 ```
 
 ### 6. Create file  docker-compose.override.yml
-Paste inside:
 ```yaml
 version:"3.4"
 services:
@@ -87,7 +76,7 @@ services:
       - ./classla_resources/:/classla_resources
 ```
 
-### 7. Start up Rasa X and wait until all containers are running 
+### 7. Start up Rasa X and wait until all containers are downloaded and running 
 (-d will run Rasa X in the background):
 ```bash
 cd /etc/rasa
@@ -99,10 +88,8 @@ sudo docker-compose up -d
 
 Visit hostname in a browser and login into rasa X.
 
-### 9. Add Rasa ssh key to the repository and train a model
+### 9. Add Rasa ssh key to the git repository and train a model.
 
 ### . Define channel connectors
 Additional channel connectors can be set in the **credentials.yml** file
 https://rasa.com/docs/rasa/connectors/your-own-website
-
-TODO: create image for data collection
