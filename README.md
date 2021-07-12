@@ -56,7 +56,7 @@ x-rasa-services: &default-rasa-service
 
 ### 6. Create file  docker-compose.override.yml
 ```yaml
-version:"3.4"
+version: '3.4'
 services:
   rasa-worker:
     volumes:
