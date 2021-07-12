@@ -3,7 +3,7 @@
 ### 1. Run
 Download the install script on the server:
 ```bash
-curl -sSL -o install.sh https://storage.googleapis.com/rasa-x-releases/0.40.1/install.sh
+curl -sSL -o install.sh https://storage.googleapis.com/rasa-x-releases/0.41.1/install.sh
 ```
 
 ### 2. Install
