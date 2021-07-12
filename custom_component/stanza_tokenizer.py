@@ -1,4 +1,4 @@
-rom typing import Any, Dict, List, Text
+from typing import Any, Dict, List, Text
 
 from rasa.nlu.tokenizers.tokenizer import Token, Tokenizer
 from rasa.shared.nlu.training_data.message import Message
@@ -18,35 +18,11 @@ class StanzaTokenizer(Tokenizer):
     }
 
     # the StanzaTokenizer only supports languages from this list
-    supported_language_list = [,
+    supported_language_list = [
         "sl",
     ]
 
-   rom typing import Any, Dict, List, Text
-
-from rasa.nlu.tokenizers.tokenizer import Token, Tokenizer
-from rasa.shared.nlu.training_data.message import Message
-from functools import reduce
-from rasa.nlu.tokenizers.spacy_tokenizer import POS_TAG_KEY
-
-import stanza
-
-
-class StanzaTokenizer(Tokenizer):
-
-    defaults = {
-        # What language to use
-        "lang": "sl",
-        # Where to load the model
-        "cache_dir": "stanza_resources",
-    }
-
-    # the StanzaTokenizer only supports languages from this list
-    supported_language_list = [,
-        "sl",
-    ]
-
-       def __init__(self, component_config: Dict[Text, Any] = None) -> None:
+   def __init__(self, component_config: Dict[Text, Any] = None) -> None:
         """Construct a new tokenizer using the Stanza framework."""
 
         super().__init__(component_config)
