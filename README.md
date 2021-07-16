@@ -70,11 +70,17 @@ x-rasa-services: &default-rasa-service
   restart: always
   image: "rasa/rasa:${RASA_VERSION}"
 ```
-to "vid99/rasa-classla".
+to 
 ```yaml
 x-rasa-services: &default-rasa-service
   restart: always
   image: "rasa-classla:1.0"
+```
+
+
+For stanza
+```yaml
+  image: "rasa-stanza:1.0"
 ```
 
 ## 6. Create file  docker-compose.override.yml
