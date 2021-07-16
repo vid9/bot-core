@@ -29,7 +29,7 @@ sudo bash ./install.sh
 ```
 
 ## 3. Download model resources 
-###USING CLASSLA
+### USING CLASSLA
 Install classla
 ```bash
 python3 -m pip install classla
@@ -41,7 +41,7 @@ import classla
 classla.download("sl", "/etc/rasa/classla_resources/")
 ```
 
-###USING STANZA
+### USING STANZA
 Install stanza
 ```bash
 python3 -m pip install stanza
