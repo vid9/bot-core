@@ -145,4 +145,5 @@ Comment line where signal function is called
 
 # Action server
 
-When building action server use files from branch action-server and Dockerfile in that branch.
+When building action server use files from branch action-server and Dockerfile in actions from that branch.
+https://github.com/vid9/bot-core/tree/action-server/data/actions
