@@ -25,7 +25,6 @@ ENV TZ="Europe/Ljubljana"
 
 # To install packages from PyPI
 COPY  ./tmp/requirements.txt /tmp/requirements.txt
-RUN pip install pip install torch==1.4.0+cpu torchvision==0.5.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
 RUN pip install --no-cache-dir -r /tmp/requirements.txt
 
 # Copy actions folder to working directory
