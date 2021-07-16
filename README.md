@@ -1,5 +1,3 @@
-# When building action server use files from branch action-server
-
 # Instructions on how to install Rasa
 
 ## 1. Run
@@ -144,3 +142,7 @@ Comment line where signal function is called
 #if sys.platform != 'win32':
 #  signal(SIGPIPE, SIG_DFL)
 ```
+
+# Action server
+
+When building action server use files from branch action-server and Dockerfile in that branch.
