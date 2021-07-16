@@ -1,12 +1,12 @@
 # Instructions on how to install Rasa
 
-### 1. Run
+## 1. Run
 Download the install script on the server:
 ```bash
 curl -sSL -o install.sh https://storage.googleapis.com/rasa-x-releases/0.41.1/install.sh
 ```
 
-### 2. Install
+## 2. Install
 To install all of the files into the default folder, /etc/rasa, run:
 ```bash
 sudo bash ./install.sh
@@ -28,8 +28,8 @@ sudo apt update
 sudo bash ./install.sh
 ```
 
-### Download model resources 
-**USING CLASSLA**
+## 3. Download model resources 
+###**USING CLASSLA**
 Install classla
 ```bash
 python3 -m pip install classla
@@ -41,7 +41,7 @@ import classla
 classla.download("sl", "/etc/rasa/classla_resources/")
 ```
 
-**USING STANZA**
+###**USING STANZA**
 Install stanza
 ```bash
 python3 -m pip install stanza
@@ -53,17 +53,17 @@ import stanza
 stanza.download("sl", "/etc/rasa/stanza_resources/")
 ```
 
-### Build classla docker image
+## Build docker image
+Classla: 
 ```bash
 sudo docker build -t rasa-classla:1.0 .
 ```
-
-### Build stanza docker image
+Stanza: 
 ```bash
 sudo docker build -t rasa-stanza:1.0 .
 ```
 
-### 5. Edit file  docker-compose.yml
+## 5. Edit file  docker-compose.yml
 Change x-rasa-services image in docker-compose.yml from image: "rasa/rasa:${RASA_VERSION}"
 ```yaml
 x-rasa-services: &default-rasa-service
@@ -77,7 +77,7 @@ x-rasa-services: &default-rasa-service
   image: "rasa-classla:1.0"
 ```
 
-### 6. Create file  docker-compose.override.yml
+## 6. Create file  docker-compose.override.yml
 ```yaml
 version: '3.4'
 services:
@@ -99,16 +99,16 @@ services:
       - ./classla_resources/:/classla_resources
 ```
 
-### 6. Create folder custom_component and create files classla_tokenizer.py and stanza_tokenizer.py
+## 6. Create folder custom_component and create files classla_tokenizer.py and stanza_tokenizer.py
 
-### 8. Start up Rasa X and wait until all containers are downloaded and running 
+## 7. Start up Rasa X and wait until all containers are downloaded and running 
 (-d will run Rasa X in the background):
 ```bash
 cd /etc/rasa
 sudo docker-compose up -d
 ```
 
-### 8. Create password
+## 8. Create password
 `sudo python rasa_x_commands.py create --update admin me <PASSWORD>`
 
 Visit hostname in a browser and login into rasa X.
