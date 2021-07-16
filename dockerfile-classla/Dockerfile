@@ -1,4 +1,4 @@
-ROM rasa/rasa:2.7.1-full
+FROM rasa/rasa:2.7.1-full
 
 # Switch to root user
 USER root
