@@ -1,3 +1,5 @@
+# When building action server use files from branch action-server
+
 # Instructions on how to install Rasa
 
 ## 1. Run
