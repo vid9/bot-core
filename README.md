@@ -28,7 +28,8 @@ sudo apt update
 sudo bash ./install.sh
 ```
 
-### 4. Download classla resources 
+### Download model resources 
+**USING CLASSLA**
 Install classla
 ```bash
 python3 -m pip install classla
@@ -38,6 +39,28 @@ Open python console, import classla and download all the slovenian models in "/e
 python3
 import classla
 classla.download("sl", "/etc/rasa/classla_resources/")
+```
+
+**USING STANZA**
+Install stanza
+```bash
+python3 -m pip install stanza
+```
+Open python console, import stanza and download all the slovenian models in "/etc/rasa/stanza_resources/".
+```bash
+python3
+import stanza
+stanza.download("sl", "/etc/rasa/stanza_resources/")
+```
+
+### Build classla docker image
+```bash
+sudo docker build -t rasa-classla:1.0 .
+```
+
+### Build stanza docker image
+```bash
+sudo docker build -t rasa-stanza:1.0 .
 ```
 
 ### 5. Edit file  docker-compose.yml
@@ -51,7 +74,7 @@ to "vid99/rasa-classla".
 ```yaml
 x-rasa-services: &default-rasa-service
   restart: always
-  image: "vid99/rasa-classla"
+  image: "rasa-classla:1.0"
 ```
 
 ### 6. Create file  docker-compose.override.yml
