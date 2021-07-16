@@ -124,3 +124,21 @@ Visit hostname in a browser and login into rasa X.
 ### . Define channel connectors
 Additional channel connectors can be set in the **credentials.yml** file
 https://rasa.com/docs/rasa/connectors/your-own-website
+
+
+### Problems with classla
+Classla fails to run if it is not used in main thread.
+
+Open bash in both containers that run Rasa, rasa_worker is used for training, production is used for nlu
+```bash
+sudo docker exec -u 0 -it <classla_container_id>    bash 
+```
+Install vim or nano and open tokenizer.py file
+```bash
+nano /opt/venv/lib/python3.8/site-packages/classla/submodules/reldi_tokeniser/tokeniser.py
+```
+Comment line where signal function is called
+```bash
+#if sys.platform != 'win32':
+#  signal(SIGPIPE, SIG_DFL)
+```
